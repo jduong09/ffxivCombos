@@ -1,0 +1,21 @@
+.listJobBasic {
+  display: flex;
+  align-items: center;
+}
+
+.listJobBasic > li {
+  margin-right: 2rem;
+  position: relative;
+}
+
+.listJobBasic > li::after {
+  content: '->';
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+}
+
+.listJobBurst {
+  display: flex;
+  align-items: center;
+}

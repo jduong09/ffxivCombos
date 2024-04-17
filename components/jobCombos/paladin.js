@@ -1,6 +1,7 @@
 import React from 'react';
+import jobStyles from '../../app/jobs/job.module.css';
 
-const ClassIcon = async () => {
+const PaladinCombos = async () => {
   const pld = {
     actions: {
       "Fast Blade": {
@@ -105,8 +106,105 @@ const ClassIcon = async () => {
           id: '002519'
         }
       },
+      "Total Eclipse": {
+        icon: {
+          set: '002000',
+          id: '002511'
+        }
+      },
+      "Shield Bash": {
+        icon: {
+          set: '000000',
+          id: '000154'
+        }
+      },
+      "Iron Will": {
+        icon: {
+          set: '002000',
+          id: '002505'
+        }
+      },
+      "Shield Lob": {
+        icon: {
+          set: '000000',
+          id: '000164'
+        }
+      },
+      "Sheltron": {
+        icon: {
+          set: '002000',
+          id: '002510'
+        }
+      },
+      "Sentinel": {
+        icon: {
+          set: '000000',
+          id: '000151'
+        }
+      },
+      "Prominence": {
+        icon: {
+          set: '002000',
+          id: '002516'
+        }
+      },
+      "Cover": {
+        icon: {
+          set: '002000',
+          id: '002501'
+        }
+      },
+      "Hallowed Ground": {
+        icon: {
+          set: '002000',
+          id: '002502'
+        }
+      },
+      "Bulwark": {
+        icon: {
+          set: '000000',
+          id: '000167'
+        }
+      },
+      "Divine Veil": {
+        icon: {
+          set: '002000',
+          id: '002508'
+        }
+      },
+      "Clemency": {
+        icon: {
+          set: '002000',
+          id: '002509'
+        }
+      },
+      "Intervention": {
+        icon: {
+          set: '002000',
+          id: '002512'
+        }
+      },
+      "Passage of Arms": {
+        icon: {
+          set: '002000',
+          id: '002515'
+        }
+      },
+      "Holy Circle": {
+        icon: {
+          set: '002000',
+          id: '002517'
+        }
+      },
+      "Holy Sheltron": {
+        icon: {
+          set: '002000',
+          id: '002950'
+        }
+      },
     }
   }
+  console.log('Paladins object length: ', Object.keys(pld.actions).length);
 
   const burstArray = ["Fight or Flight", "Holy Spirit", "Expiacion", "Circle of Scorn", "Requiescat", "Intervene", "Goring Blade", "Confiteor", "Intervene", "Blade of Faith", "Blade of Truth", "Blade of Valor", "Atonement", "Atonement"];
   const listItemsBurst = burstArray.map((actionName, idx) => {
@@ -120,9 +218,9 @@ const ClassIcon = async () => {
   return (
     <main>
       <h1>Class Icon</h1>
-      <div id="div-basic-combo">
+      <div>
         <h2>1 - 2 - 3 Combo</h2>
-        <ul>
+        <ul className={jobStyles.listJobBasic}>
           <li>
             <h3>Fast Blade</h3>
             <img className='icon' src='https://xivapi.com/i/000000/000158.png'/>
@@ -144,10 +242,10 @@ const ClassIcon = async () => {
       </div>
       <div id="div-burst">
         <h2>Burst Combo</h2>
-        <ul>{listItemsBurst}</ul>
+        <ul className={jobStyles.listJobBurst}>{listItemsBurst}</ul>
       </div>
     </main>
   )
 }
 
-export default ClassIcon;
+export default PaladinCombos;
