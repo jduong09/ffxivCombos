@@ -1,0 +1,104 @@
+.trademark {
+  width: fit-content;
+  padding: 1rem;
+  border: 2px solid black;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.jobActionsContainer {
+  margin-bottom: 3rem;
+}
+
+.jobActionsContainer > h2 {
+  font-size: 1.5rem;
+}
+
+.jobActionCombo {
+  display: flex;
+}
+
+.listJobAction {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.listJobAction > li {
+  margin-right: 2rem;
+  position: relative;
+}
+
+.listJobAction > li::after {
+  content: '->';
+  width: 16px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 3.5rem;
+  transform: translateY(-50%);
+}
+
+.listJobAction > li:last-of-type:after {
+  display: none;
+}
+
+.videoContainer {
+  width: 30%;
+}
+
+.videoContainer > iframe {
+  display: block;
+  margin: 0 auto;
+}
+
+.jobIcon {
+  order: 1;
+  width: 48px;
+  height: 48px;
+}
+
+.tankDefensiveActions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.tankDefensiveActions > h2, .tankDefensiveActions > div:first-of-type {
+  flex: 1 100%;
+}
+
+.tankDefensivePacks {
+  width: 45%;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  border: 2px solid black;
+}
+
+.tankDefensivePacks > h4 {
+  order: 1;
+  flex: 1 100%;
+  margin-bottom: 1rem;
+}
+
+.tankDefensivePacks > img:first-of-type {
+  order: 2;
+  margin: 0 1rem 1rem 0;
+}
+
+.tankDefensivePacks > img:last-of-type {
+  order: 3;
+  margin-bottom: 1rem;
+}
+
+.tankDefensivePacks > div {
+  order: 4;
+  flex: 1 100%;
+}
+
+
+ 

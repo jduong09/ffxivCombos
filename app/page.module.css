@@ -1,10 +1,25 @@
-.main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
+.navList {
+  margin-right: 5rem;
+}
+
+.navListItem {
+  margin-bottom: .5rem;
+}
+
+.navListLink {
+  font-weight: 700;
+}
+
+.navListLink:hover {
+  color: #ffffff;
+}
+
+.headerNavImage {
+  width: 125px;
+  height: 125px;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .description {
