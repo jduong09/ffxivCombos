@@ -204,45 +204,111 @@ const PaladinCombos = async () => {
       },
     }
   }
-  console.log('Paladins object length: ', Object.keys(pld.actions).length);
+
+  const roleActions = {
+    "Rampart": {
+      icon: {
+        set: '000000',
+        id: '000801'
+      }
+    },
+    "Reprisal": {
+      icon: {
+        set: '000000',
+        id: '000806'
+      }
+    },
+    "Interject": {
+      icon: {
+        set: '000000',
+        id: '000808'
+      }
+    },
+    "Low Blow": {
+      icon: {
+        set: '000000',
+        id: '000802'
+      }
+    },
+    "Provoke": {
+      icon: {
+        set: '000000',
+        id: '000803'
+      }
+    },
+    "Arm's Length": {
+      icon: {
+        set: '000000',
+        id: '000822'
+      }
+    },
+    "Shirk": {
+      icon: {
+        set: '000000',
+        id: '000810'
+      }
+    },
+  }
 
   const burstArray = ["Fight or Flight", "Holy Spirit", "Expiacion", "Circle of Scorn", "Requiescat", "Intervene", "Goring Blade", "Confiteor", "Intervene", "Blade of Faith", "Blade of Truth", "Blade of Valor", "Atonement", "Atonement"];
   const listItemsBurst = burstArray.map((actionName, idx) => {
     return (
       <li key={idx}>
-        <h3>{actionName}</h3>
-        <img className='icon' src={`https://xivapi.com/i/${pld.actions[actionName]['icon']['set']}/${pld.actions[actionName]['icon']['id']}.png`} />
+        <img className={jobStyles.jobIcon} src={`https://xivapi.com/i/${pld.actions[actionName]['icon']['set']}/${pld.actions[actionName]['icon']['id']}.png`} alt={`Action Icon: ${actionName}`} />
       </li>
     )
   })
   return (
     <main>
-      <h1>Class Icon</h1>
-      <div>
+      <div className={jobStyles.trademark}>All icons are property of SQUARE-ENIX Ltd 1 second ago all rights reserved</div>
+      <div className={jobStyles.jobActionsContainer}>
         <h2>1 - 2 - 3 Combo</h2>
-        <ul className={jobStyles.listJobBasic}>
-          <li>
-            <h3>Fast Blade</h3>
-            <img className='icon' src='https://xivapi.com/i/000000/000158.png'/>
-          </li>
-          <li>
-            <h3>Riot Blade</h3>
-            <img className='icon' src='https://xivapi.com/i/000000/000156.png'/>
-          </li>
-          <li>
-            <h3>Rage of Halone/Royal Authority</h3>
-            <img className='icon' src='https://xivapi.com/i/000000/000155.png'/>
-          </li>
-          <li>Grants Free MP</li>
-          <li>
-            <h3>Holy Spirit</h3>
-            <img className='icon' src='https://xivapi.com/i/002000/002514.png'/>
-          </li>
-        </ul>
+        <div className={jobStyles.jobActionCombo}>
+          <ul className={jobStyles.listJobAction}>
+            <li>
+              <img className={jobStyles.jobIcon} src='https://xivapi.com/i/000000/000158.png'/>
+            </li>
+            <li>
+              <img className={jobStyles.jobIcon} src='https://xivapi.com/i/000000/000156.png'/>
+            </li>
+            <li>
+              <img className={jobStyles.jobIcon} src='https://xivapi.com/i/000000/000155.png'/>
+            </li>
+            <li>
+              <img className={jobStyles.jobIcon} src='https://xivapi.com/i/002000/002514.png'/>
+            </li>
+          </ul>
+          <div className={jobStyles.videoContainer}>
+            <iframe id="video-pld-normal" src="http://www.youtube.com/embed//jeKN0lqrfg4" title="paladin normal combo" allowFullScreen/>
+          </div>
+        </div>
       </div>
-      <div id="div-burst">
+      <div className={jobStyles.jobActionsContainer}>
         <h2>Burst Combo</h2>
-        <ul className={jobStyles.listJobBurst}>{listItemsBurst}</ul>
+        <div className={jobStyles.jobActionCombo}>
+          <ul className={jobStyles.listJobAction}>{listItemsBurst}</ul>
+          <div className={jobStyles.videoContainer}>
+            <iframe id="video-pld-burst" src="https://www.youtube.com/embed/i-hsMqDW2-c" title='paladin burst combo' allowFullScreen/>
+          </div>
+        </div>
+      </div>
+      <div className={jobStyles.tankDefensiveActions}>
+        <h2>Defensive Cooldowns</h2>
+        <div>In dungeons, combine defensive cooldowns for each pack.</div>
+        <div className={jobStyles.tankDefensivePacks}>
+          <h4>First Pack</h4>
+          <img className={jobStyles.jobIcon} src={`https://xivapi.com/i/${roleActions['Arm\'s Length']['icon']['set']}/${roleActions['Arm\'s Length']['icon']['id']}.png`} />
+          <img className={jobStyles.jobIcon} src={`https://xivapi.com/i/${pld['actions']['Sentinel']['icon']['set']}/${pld['actions']['Sentinel']['icon']['id']}.png`} />
+          <div>
+            Arm's Length + Sentinel
+          </div>
+        </div>
+        <div className={jobStyles.tankDefensivePacks}>
+          <h4>Second Pack</h4>
+          <img className={jobStyles.jobIcon} src={`https://xivapi.com/i/${roleActions['Rampart']['icon']['set']}/${roleActions['Rampart']['icon']['id']}.png`} />
+          <img className={jobStyles.jobIcon} src={`https://xivapi.com/i/${roleActions['Reprisal']['icon']['set']}/${roleActions['Reprisal']['icon']['id']}.png`} />
+          <div>Reprisal + Reprisal</div>
+        </div>
       </div>
     </main>
   )
