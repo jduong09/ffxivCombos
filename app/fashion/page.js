@@ -1,15 +1,14 @@
-import styles from '../../page.module.css';
-import PaladinCombos from '../../../components/jobCombos/paladin';
+import styles from '../page.module.css';
 import Image from 'next/image';
 
-export default async function PaladinHome() {
+export default async function Fashion() {
   return (
     <div>
       <header>
         <h1>Soppo's Guide to FFXIV</h1>
         <h2>
           <img className='icon' src='https://xivapi.com/cj/svg/ClassJob/PLD.svg' />
-          Paladin Guide
+          Fashion
         </h2>
         <nav>
           <ul className={styles.navList}>
@@ -26,7 +25,9 @@ export default async function PaladinHome() {
           <Image className={styles.headerNavImage} src={'/emotes/soppo_reveal_right.png'} width="299" height="422" />
         </nav>
       </header>
-      <PaladinCombos />
+      <main>
+        <h1>Fashion Page</h1>
+      </main>
     </div>
   )
 }
