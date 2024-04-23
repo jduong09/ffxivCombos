@@ -1,209 +1,111 @@
-const pld = {
-  actions: {
-    "Fast Blade": {
-      icon: {
-        set: '000000',
-        id: '000158'
-      },
-    },
-    "Riot Blade": {
-      icon: {
-        set: '000000',
-        id: '000156'
-      }
-    },
-    "Rage of Halone": {
-      icon: {
-        set: '000000',
-        id: '000156'
-      }
-    },
-    "Royal Authority": {
-      icon: {
-        set: '000000',
-        id: '000156'
-      }
-    },
-    "Holy Spirit": {
-      icon: {
-        set: '002000',
-        id: '002514'
-      }
-    },
-    "Fight or Flight": {
-      icon: {
-        set: '000000',
-        id: '000166'
-      }
-    },
-    "Spirits Within": {
-      icon: {
-        set: '002000',
-        id: '002503'
-      }
-    },
-    "Expiacion": {
-      icon: {
-        set: '002000',
-        id: '002951'
-      }
-    },
-    "Circle of Scorn": {
-      icon: {
-        set: '000000',
-        id: '000161'
-      }
-    },
-    "Requiescat": {
-      icon: {
-        set: '002000',
-        id: '002513'
-      }
-    },
-    "Intervene": {
-      icon: {
-        set: '002000',
-        id: '002520'
-      }
-    },
-    "Goring Blade": {
-      icon: {
-        set: '002000',
-        id: '002506'
-      }
-    },
-    "Confiteor": {
-      icon: {
-        set: '002000',
-        id: '002518'
-      }
-    },
-    "Blade of Faith": {
-      icon: {
-        set: '002000',
-        id: '002952'
-      }
-    },
-    "Blade of Truth": {
-      icon: {
-        set: '002000',
-        id: '002953'
-      }
-    },
-    "Blade of Valor": {
-      icon: {
-        set: '002000',
-        id: '002954'
-      }
-    },
-    "Atonement": {
-      icon: {
-        set: '002000',
-        id: '002519'
-      }
-    },
-    "Total Eclipse": {
-      icon: {
-        set: '002000',
-        id: '002511'
-      }
-    },
-    "Shield Bash": {
-      icon: {
-        set: '000000',
-        id: '000154'
-      }
-    },
-    "Iron Will": {
-      icon: {
-        set: '002000',
-        id: '002505'
-      }
-    },
-    "Shield Lob": {
-      icon: {
-        set: '000000',
-        id: '000164'
-      }
-    },
-    "Sheltron": {
-      icon: {
-        set: '002000',
-        id: '002510'
-      }
-    },
-    "Sentinel": {
-      icon: {
-        set: '000000',
-        id: '000151'
-      }
-    },
-    "Prominence": {
-      icon: {
-        set: '002000',
-        id: '002516'
-      }
-    },
-    "Cover": {
-      icon: {
-        set: '002000',
-        id: '002501'
-      }
-    },
-    "Hallowed Ground": {
-      icon: {
-        set: '002000',
-        id: '002502'
-      }
-    },
-    "Bulwark": {
-      icon: {
-        set: '000000',
-        id: '000167'
-      }
-    },
-    "Divine Veil": {
-      icon: {
-        set: '002000',
-        id: '002508'
-      }
-    },
-    "Clemency": {
-      icon: {
-        set: '002000',
-        id: '002509'
-      }
-    },
-    "Intervention": {
-      icon: {
-        set: '002000',
-        id: '002512'
-      }
-    },
-    "Passage of Arms": {
-      icon: {
-        set: '002000',
-        id: '002515'
-      }
-    },
-    "Holy Circle": {
-      icon: {
-        set: '002000',
-        id: '002517'
-      }
-    },
-    "Holy Sheltron": {
-      icon: {
-        set: '002000',
-        id: '002950'
-      }
-    },
-  }
-}
-
 const ffxivActions = {
   petActions: {
-
+    "healer": {
+      "scholar": {
+        "Embrace": {
+          icon: {
+            set: '002000',
+            id: '002826'
+          }
+        },
+        "Whispering Dawn": {
+          icon: {
+            set: '002000',
+            id: '002827'
+          }
+        },
+        "Fey Illumination": {
+          icon: {
+            set: '002000',
+            id: '002829'
+          }
+        },
+        "Fey Union": {
+          icon: {
+            set: '002000',
+            id: '002818'
+          }
+        },
+        "Fey Blessing": {
+          icon: {
+            set: '002000',
+            id: '002855'
+          }
+        },
+        "Seraphic Veil": {
+          icon: {
+            set: '002000',
+            id: '002847'
+          }
+        },
+        "Angel's Whisper": {
+          icon: {
+            set: '002000',
+            id: '002848'
+          }
+        },
+        "Seraphic Illumination": {
+          icon: {
+            set: '002000',
+            id: '002849'
+          }
+        },
+        "Consolation": {
+          icon: {
+            set: '002000',
+            id: '002846'
+          }
+        },
+      }
+    },
+    "physicalRangedDps": {
+      "summoner": {
+        "Radiant Aegis": {
+          icon: {
+            set: '002000',
+            id: '002775'
+          }
+        },
+      }
+    },
+    "shared": {
+      "Away": {
+        icon: {
+          set: '000000',
+          id: '000530'
+        }
+      },
+      "Heel": {
+        icon: {
+          set: '000000',
+          id: '000529'
+        }
+      },
+      "Place": {
+        icon: {
+          set: '000000',
+          id: '000527'
+        }
+      },
+      "Stay": {
+        icon: {
+          set: '000000',
+          id: '000528'
+        }
+      },
+      "Guard": {
+        icon: {
+          set: '000000',
+          id: '000531'
+        }
+      },
+      "Steady": {
+        icon: {
+          set: '000000',
+          id: '000532'
+        }
+      },
+    }
   },
   roleActions: {
     "tank": {
@@ -2592,36 +2494,1834 @@ const ffxivActions = {
         },
       },
       "samurai": {
-
+        "Hakaze": {
+          icon: {
+            set: '003000',
+            id: '003151'
+          }
+        },
+        "Jinpu": {
+          icon: {
+            set: '003000',
+            id: '003152'
+          }
+        },
+        "Third Eye": {
+          icon: {
+            set: '003000',
+            id: '003153'
+          }
+        },
+        "Enpi": {
+          icon: {
+            set: '003000',
+            id: '003155'
+          }
+        },
+        "Shifu": {
+          icon: {
+            set: '003000',
+            id: '003156'
+          }
+        },
+        "Fuga": {
+          icon: {
+            set: '003000',
+            id: '003157'
+          }
+        },
+        "Gekko": {
+          icon: {
+            set: '003000',
+            id: '003158'
+          }
+        },
+        "Iaijutsu": {
+          icon: {
+            set: '003000',
+            id: '003159'
+          }
+        },
+        "Mangetsu": {
+          icon: {
+            set: '003000',
+            id: '003163'
+          }
+        },
+        "Kasha": {
+          icon: {
+            set: '003000',
+            id: '003164'
+          }
+        },
+        "Oka": {
+          icon: {
+            set: '003000',
+            id: '003165'
+          }
+        },
+        "Yukikaze": {
+          icon: {
+            set: '003000',
+            id: '003166'
+          }
+        },
+        "Meikyo Shisui": {
+          icon: {
+            set: '003000',
+            id: '003167'
+          }
+        },
+        "Hissatsu: Shinten": {
+          icon: {
+            set: '003000',
+            id: '003173'
+          }
+        },
+        "Hissatsu: Gyoten": {
+          icon: {
+            set: '003000',
+            id: '003169'
+          }
+        },
+        "Hissatsu: Yaten": {
+          icon: {
+            set: '003000',
+            id: '003170'
+          }
+        },
+        "Meditate": {
+          icon: {
+            set: '003000',
+            id: '003172'
+          }
+        },
+        "Hissatsu: Kyuten": {
+          icon: {
+            set: '003000',
+            id: '003174'
+          }
+        },
+        "Hagakure": {
+          icon: {
+            set: '003000',
+            id: '003176'
+          }
+        },
+        "Ikishoten": {
+          icon: {
+            set: '003000',
+            id: '003179'
+          }
+        },
+        "Hissatsu: Guren": {
+          icon: {
+            set: '003000',
+            id: '003177'
+          }
+        },
+        "Hissatsu: Senei": {
+          icon: {
+            set: '003000',
+            id: '003178'
+          }
+        },
+        "Tsubame-gaeshi": {
+          icon: {
+            set: '003000',
+            id: '003180'
+          }
+        },
+        "Shoha": {
+          icon: {
+            set: '003000',
+            id: '003184'
+          }
+        },
+        "Shoha II": {
+          icon: {
+            set: '003000',
+            id: '003185'
+          }
+        },
+        "Fuko": {
+          icon: {
+            set: '003000',
+            id: '003189'
+          }
+        },
+        "Ogi Namikiri": {
+          icon: {
+            set: '003000',
+            id: '003187'
+          }
+        },
+        "Kaeshi: Namikiri": {
+          icon: {
+            set: '003000',
+            id: '003188'
+          }
+        },
+        "Higanbana": {
+          icon: {
+            set: '003000',
+            id: '003160'
+          }
+        },
+        "Tenka Goken": {
+          icon: {
+            set: '003000',
+            id: '003161'
+          }
+        },
+        "Midare Setsugekka": {
+          icon: {
+            set: '003000',
+            id: '003167'
+          }
+        },
+        "Kaeshi: Higanbana": {
+          icon: {
+            set: '003000',
+            id: '003181'
+          }
+        },
+        "Kaeshi: Goken": {
+          icon: {
+            set: '003000',
+            id: '003182'
+          }
+        },
+        "Kaeshi: Setsugekka": {
+          icon: {
+            set: '003000',
+            id: '003183'
+          }
+        },
       },
       "reaper": {
-
+        "Slice": {
+          icon: {
+            set: '003000',
+            id: '003601'
+          }
+        },
+        "Waxing Slice": {
+          icon: {
+            set: '003000',
+            id: '003602'
+          }
+        },
+        "Shadow of Death": {
+          icon: {
+            set: '003000',
+            id: '003606'
+          }
+        },
+        "Harpe": {
+          icon: {
+            set: '003000',
+            id: '003614'
+          }
+        },
+        "Hell's Ingress": {
+          icon: {
+            set: '003000',
+            id: '003629'
+          }
+        },
+        "Hell's Egress": {
+          icon: {
+            set: '003000',
+            id: '003630'
+          }
+        },
+        "Spinning Scythe": {
+          icon: {
+            set: '003000',
+            id: '003604'
+          }
+        },
+        "Infernal Slice": {
+          icon: {
+            set: '003000',
+            id: '003603'
+          }
+        },
+        "Whorl of Death": {
+          icon: {
+            set: '003000',
+            id: '003607'
+          }
+        },
+        "Arcane Crest": {
+          icon: {
+            set: '003000',
+            id: '003632'
+          }
+        },
+        "Nightmare Scythe": {
+          icon: {
+            set: '003000',
+            id: '003605'
+          }
+        },
+        "Blood Stalk": {
+          icon: {
+            set: '003000',
+            id: '003617'
+          }
+        },
+        "Grim Swathe": {
+          icon: {
+            set: '003000',
+            id: '003620'
+          }
+        },
+        "Soul Slice": {
+          icon: {
+            set: '003000',
+            id: '003608'
+          }
+        },
+        "Soul Scythe": {
+          icon: {
+            set: '003000',
+            id: '003609'
+          }
+        },
+        "Gibbet": {
+          icon: {
+            set: '003000',
+            id: '003610'
+          }
+        },
+        "Gallows": {
+          icon: {
+            set: '003000',
+            id: '003611'
+          }
+        },
+        "Guillotine": {
+          icon: {
+            set: '003000',
+            id: '003612'
+          }
+        },
+        "Unveiled Gibbet": {
+          icon: {
+            set: '003000',
+            id: '003618'
+          }
+        },
+        "Unveiled Gallows": {
+          icon: {
+            set: '003000',
+            id: '003619'
+          }
+        },
+        "Arcane Circle": {
+          icon: {
+            set: '003000',
+            id: '003633'
+          }
+        },
+        "Regress": {
+          icon: {
+            set: '003000',
+            id: '003631'
+          }
+        },
+        "Gluttony": {
+          icon: {
+            set: '003000',
+            id: '003621'
+          }
+        },
+        "Enshroud": {
+          icon: {
+            set: '003000',
+            id: '003622'
+          }
+        },
+        "Void Reaping": {
+          icon: {
+            set: '003000',
+            id: '003623'
+          }
+        },
+        "Cross Reaping": {
+          icon: {
+            set: '003000',
+            id: '003624'
+          }
+        },
+        "Grim Reaping": {
+          icon: {
+            set: '003000',
+            id: '003625'
+          }
+        },
+        "Soulsow": {
+          icon: {
+            set: '003000',
+            id: '003615'
+          }
+        },
+        "Harvest Moon": {
+          icon: {
+            set: '003000',
+            id: '003616'
+          }
+        },
+        "Lemure's Slice": {
+          icon: {
+            set: '003000',
+            id: '003627'
+          }
+        },
+        "Lemure's Scythe": {
+          icon: {
+            set: '003000',
+            id: '003628'
+          }
+        },
+        "Plentiful Harvest": {
+          icon: {
+            set: '003000',
+            id: '003613'
+          }
+        },
+        "Communio": {
+          icon: {
+            set: '003000',
+            id: '003626'
+          }
+        },
       }
     },
     "physicalRangedDps": {
       "bard": {
-
+        "Heavy Shot": {
+          icon: {
+            set: '000000',
+            id: '000358'
+          }
+        },
+        "Straight Shot": {
+          icon: {
+            set: '000000',
+            id: '000359'
+          }
+        },
+        "Raging Strikes": {
+          icon: {
+            set: '000000',
+            id: '000352'
+          }
+        },
+        "Venomous Bite": {
+          icon: {
+            set: '000000',
+            id: '000363'
+          }
+        },
+        "Bloodletter": {
+          icon: {
+            set: '000000',
+            id: '000361'
+          }
+        },
+        "Repelling Shot": {
+          icon: {
+            set: '000000',
+            id: '000366'
+          }
+        },
+        "Quick Nock": {
+          icon: {
+            set: '000000',
+            id: '000360'
+          }
+        },
+        "Windbite": {
+          icon: {
+            set: '000000',
+            id: '000367'
+          }
+        },
+        "Mage's Ballad": {
+          icon: {
+            set: '002000',
+            id: '002602'
+          }
+        },
+        "The Warden's Paean": {
+          icon: {
+            set: '002000',
+            id: '002609'
+          }
+        },
+        "Barrage": {
+          icon: {
+            set: '000000',
+            id: '000353'
+          }
+        },
+        "Army's Paeon": {
+          icon: {
+            set: '002000',
+            id: '002603'
+          }
+        },
+        "Rain of Death": {
+          icon: {
+            set: '002000',
+            id: '002605'
+          }
+        },
+        "Battle Voice": {
+          icon: {
+            set: '002000',
+            id: '002601'
+          }
+        },
+        "The Wanderer's Minuet": {
+          icon: {
+            set: '002000',
+            id: '002607'
+          }
+        },
+        "Pitch Perfect": {
+          icon: {
+            set: '002000',
+            id: '002611'
+          }
+        },
+        "Empyreal Arrow": {
+          icon: {
+            set: '002000',
+            id: '002606'
+          }
+        },
+        "Iron Jaws": {
+          icon: {
+            set: '002000',
+            id: '002608'
+          }
+        },
+        "Sidewinder": {
+          icon: {
+            set: '002000',
+            id: '002610'
+          }
+        },
+        "Troubadour": {
+          icon: {
+            set: '002000',
+            id: '002612'
+          }
+        },
+        "Caustic Bite": {
+          icon: {
+            set: '002000',
+            id: '002613'
+          }
+        },
+        "Stormbite": {
+          icon: {
+            set: '002000',
+            id: '002614'
+          }
+        },
+        "Nature's Minne": {
+          icon: {
+            set: '002000',
+            id: '002615'
+          }
+        },
+        "Refulgent Arrow": {
+          icon: {
+            set: '002000',
+            id: '002616'
+          }
+        },
+        "Shadowbite": {
+          icon: {
+            set: '002000',
+            id: '002617'
+          }
+        },
+        "Burst Shot": {
+          icon: {
+            set: '002000',
+            id: '002618'
+          }
+        },
+        "Apex Arrow": {
+          icon: {
+            set: '002000',
+            id: '002619'
+          }
+        },
+        "Ladonsbite": {
+          icon: {
+            set: '002000',
+            id: '002620'
+          }
+        },
+        "Blast Arrow": {
+          icon: {
+            set: '002000',
+            id: '002621'
+          }
+        },
+        "Radiant Finale": {
+          icon: {
+            set: '002000',
+            id: '002622'
+          }
+        },
       },
       "machinist": {
-
+        "Split Shot": {
+          icon: {
+            set: '003000',
+            id: '003001'
+          }
+        },
+        "Slug Shot": {
+          icon: {
+            set: '003000',
+            id: '003002'
+          }
+        },
+        "Hot Shot": {
+          icon: {
+            set: '003000',
+            id: '003003'
+          }
+        },
+        "Reassemble": {
+          icon: {
+            set: '003000',
+            id: '003022'
+          }
+        },
+        "Gauss Round": {
+          icon: {
+            set: '003000',
+            id: '003005'
+          }
+        },
+        "Spread Shot": {
+          icon: {
+            set: '003000',
+            id: '003014'
+          }
+        },
+        "Clean Shot": {
+          icon: {
+            set: '003000',
+            id: '003004'
+          }
+        },
+        "Hypercharge": {
+          icon: {
+            set: '003000',
+            id: '003041'
+          }
+        },
+        "Heat Blast": {
+          icon: {
+            set: '003000',
+            id: '003030'
+          }
+        },
+        "Rook Autoturret": {
+          icon: {
+            set: '003000',
+            id: '003026'
+          }
+        },
+        "Rook Overdrive": {
+          icon: {
+            set: '003000',
+            id: '003035'
+          }
+        },
+        "Rook Overload": {
+          icon: {
+            set: '003000',
+            id: '003036'
+          }
+        },
+        "Wildfire": {
+          icon: {
+            set: '003000',
+            id: '003018'
+          }
+        },
+        "Detonator": {
+          icon: {
+            set: '003000',
+            id: '003039'
+          }
+        },
+        "Ricochet": {
+          icon: {
+            set: '003000',
+            id: '003017'
+          }
+        },
+        "Auto Crossbow": {
+          icon: {
+            set: '003000',
+            id: '003042'
+          }
+        },
+        "Heated Split Shot": {
+          icon: {
+            set: '003000',
+            id: '003031'
+          }
+        },
+        "Tactician": {
+          icon: {
+            set: '003000',
+            id: '003040'
+          }
+        },
+        "Drill": {
+          icon: {
+            set: '003000',
+            id: '003043'
+          }
+        },
+        "Heated Slug Shot": {
+          icon: {
+            set: '003000',
+            id: '003032'
+          }
+        },
+        "Dismantle": {
+          icon: {
+            set: '003000',
+            id: '003011'
+          }
+        },
+        "Heated Clean Shot": {
+          icon: {
+            set: '003000',
+            id: '003033'
+          }
+        },
+        "Barrel Stabilizer": {
+          icon: {
+            set: '003000',
+            id: '003034'
+          }
+        },
+        "Flamethrower": {
+          icon: {
+            set: '003000',
+            id: '003038'
+          }
+        },
+        "Bioblaster": {
+          icon: {
+            set: '003000',
+            id: '003044'
+          }
+        },
+        "Air Anchor": {
+          icon: {
+            set: '003000',
+            id: '003045'
+          }
+        },
+        "Automaton Queen": {
+          icon: {
+            set: '003000',
+            id: '003501'
+          }
+        },
+        "Queen Overdrive": {
+          icon: {
+            set: '003000',
+            id: '003502'
+          }
+        },
+        "Arm Punch": {
+          icon: {
+            set: '003000',
+            id: '003504'
+          }
+        },
+        "Roller Dash": {
+          icon: {
+            set: '003000',
+            id: '003505'
+          }
+        },
+        "Pile Bunker": {
+          icon: {
+            set: '003000',
+            id: '003503'
+          }
+        },
+        "Scattergun": {
+          icon: {
+            set: '003000',
+            id: '003046'
+          }
+        },
+        "Crowned Collider": {
+          icon: {
+            set: '003000',
+            id: '003047'
+          }
+        },
+        "Chain Saw": {
+          icon: {
+            set: '003000',
+            id: '003048'
+          }
+        },
       },
       "dancer": {
-
+        "Cascade": {
+          icon: {
+            set: '003000',
+            id: '003451'
+          }
+        },
+        "Fountain": {
+          icon: {
+            set: '003000',
+            id: '003452'
+          }
+        },
+        "Windmill": {
+          icon: {
+            set: '003000',
+            id: '003453'
+          }
+        },
+        "Standard Step": {
+          icon: {
+            set: '003000',
+            id: '003454'
+          }
+        },
+        "Standard Finish": {
+          icon: {
+            set: '003000',
+            id: '003459'
+          }
+        },
+        "Reverse Cascade": {
+          icon: {
+            set: '003000',
+            id: '003460'
+          }
+        },
+        "Bladeshower": {
+          icon: {
+            set: '003000',
+            id: '003461'
+          }
+        },
+        "Fan Dance": {
+          icon: {
+            set: '003000',
+            id: '003462'
+          }
+        },
+        "Rising Windmill": {
+          icon: {
+            set: '003000',
+            id: '003463'
+          }
+        },
+        "Fountainfall": {
+          icon: {
+            set: '003000',
+            id: '003464'
+          }
+        },
+        "Bloodshower": {
+          icon: {
+            set: '003000',
+            id: '003465'
+          }
+        },
+        "Fan Dance II": {
+          icon: {
+            set: '003000',
+            id: '003466'
+          }
+        },
+        "En Avant": {
+          icon: {
+            set: '003000',
+            id: '003467'
+          }
+        },
+        "Curing Waltz": {
+          icon: {
+            set: '003000',
+            id: '003468'
+          }
+        },
+        "Shield Samba": {
+          icon: {
+            set: '003000',
+            id: '003469'
+          }
+        },
+        "Closed Position": {
+          icon: {
+            set: '003000',
+            id: '003470'
+          }
+        },
+        "Ending": {
+          icon: {
+            set: '003000',
+            id: '003478'
+          }
+        },
+        "Devilment": {
+          icon: {
+            set: '003000',
+            id: '003471'
+          }
+        },
+        "Fan Dance III": {
+          icon: {
+            set: '003000',
+            id: '003472'
+          }
+        },
+        "Technical Step": {
+          icon: {
+            set: '003000',
+            id: '003473'
+          }
+        },
+        "Technical Finish": {
+          icon: {
+            set: '003000',
+            id: '003474'
+          }
+        },
+        "Flourish": {
+          icon: {
+            set: '003000',
+            id: '003475'
+          }
+        },
+        "Saber Dance": {
+          icon: {
+            set: '003000',
+            id: '003476'
+          }
+        },
+        "Improvisation": {
+          icon: {
+            set: '003000',
+            id: '003477'
+          }
+        },
+        "Improvised Finish": {
+          icon: {
+            set: '003000',
+            id: '003479'
+          }
+        },
+        "Tillana": {
+          icon: {
+            set: '003000',
+            id: '003480'
+          }
+        },
+        "Fan Dance IV": {
+          icon: {
+            set: '003000',
+            id: '003481'
+          }
+        },
+        "Starfall Dance": {
+          icon: {
+            set: '003000',
+            id: '003482'
+          }
+        },
+        "Emboite": {
+          icon: {
+            set: '003000',
+            id: '003455'
+          }
+        },
+        "Entrechat": {
+          icon: {
+            set: '003000',
+            id: '003456'
+          }
+        },
+        "Jete": {
+          icon: {
+            set: '003000',
+            id: '003457'
+          }
+        },
+        "Pirouette": {
+          icon: {
+            set: '003000',
+            id: '003458'
+          }
+        },
       }
     },
     "magicalRangedDps": {
       "black mage": {
+        "Blizzard": {
+          icon: {
+            set: '000000',
+            id: '000454'
+          }
+        },
+        "Fire": {
+          icon: {
+            set: '000000',
+            id: '000451'
+          }
+        },
+        "Transpose": {
+          icon: {
+            set: '000000',
+            id: '000466'
+          }
+        },
+        "Thunder": {
+          icon: {
+            set: '000000',
+            id: '000457'
+          }
+        },
+        "Blizzard II": {
+          icon: {
+            set: '002000',
+            id: '002668'
+          }
+        },
+        "Scathe": {
+          icon: {
+            set: '000000',
+            id: '000462'
+          }
+        },
+        "Fire II": {
+          icon: {
+            set: '000000',
+            id: '000452'
+          }
+        },
+        "Thunder II": {
+          icon: {
+            set: '000000',
+            id: '000468'
+          }
+        },
+        "Manaward": {
+          icon: {
+            set: '000000',
+            id: '000463'
+          }
+        },
+        "Manafont": {
+          icon: {
+            set: '002000',
+            id: '002651'
+          }
+        },
+        "Fire III": {
+          icon: {
+            set: '000000',
+            id: '000453'
+          }
+        },
+        "Blizzard III": {
+          icon: {
+            set: '000000',
+            id: '000456'
+          }
+        },
+        "Freeze": {
+          icon: {
+            set: '002000',
+            id: '002653'
+          }
+        },
+        "Thunder III": {
+          icon: {
+            set: '000000',
+            id: '000459'
+          }
+        },
+        "Aetherial Manipulation": {
+          icon: {
+            set: '000000',
+            id: '000467'
+          }
+        },
+        "Flare": {
+          icon: {
+            set: '002000',
+            id: '002652'
+          }
+        },
+        "Ley Lines": {
+          icon: {
+            set: '002000',
+            id: '002656'
+          }
+        },
+        "Sharpcast": {
+          icon: {
+            set: '002000',
+            id: '002657'
+          }
+        },
+        "Blizzard IV": {
+          icon: {
+            set: '002000',
+            id: '002659'
+          }
+        },
+        "Fire IV": {
+          icon: {
+            set: '002000',
+            id: '002660'
+          }
+        },
+        "Between the Lines": {
+          icon: {
+            set: '002000',
+            id: '002661'
+          }
+        },
+        "Thunder IV": {
+          icon: {
+            set: '002000',
+            id: '002662'
+          }
+        },
+        "Triplecast": {
+          icon: {
+            set: '002000',
+            id: '002663'
+          }
+        },
+        "Foul": {
+          icon: {
+            set: '002000',
+            id: '002664'
+          }
+        },
+        "Despair": {
+          icon: {
+            set: '002000',
+            id: '002665'
+          }
+        },
+        "Umbral Soul": {
+          icon: {
+            set: '002000',
+            id: '002666'
+          }
+        },
 
+
+
+        "Xenoglossy": {
+          icon: {
+            set: '002000',
+            id: '002667'
+          }
+        },
+        "High Fire II": {
+          icon: {
+            set: '002000',
+            id: '002669'
+          }
+        },
+        "High Blizzard II": {
+          icon: {
+            set: '002000',
+            id: '002670'
+          }
+        },
+        "Amplifier": {
+          icon: {
+            set: '002000',
+            id: '002671'
+          }
+        },
+        "Paradox": {
+          icon: {
+            set: '002000',
+            id: '002672'
+          }
+        },
       },
       "red mage": {
-
+        "Riposte": {
+          icon: {
+            set: '003000',
+            id: '003201'
+          }
+        },
+        "Jolt": {
+          icon: {
+            set: '003000',
+            id: '003202'
+          }
+        },
+        "Verthunder": {
+          icon: {
+            set: '003000',
+            id: '003203'
+          }
+        },
+        "Corps-a-corps": {
+          icon: {
+            set: '003000',
+            id: '003204'
+          }
+        },
+        "Veraero": {
+          icon: {
+            set: '003000',
+            id: '003205'
+          }
+        },
+        "Scatter": {
+          icon: {
+            set: '003000',
+            id: '003207'
+          }
+        },
+        "Verthunder II": {
+          icon: {
+            set: '003000',
+            id: '003229'
+          }
+        },
+        "Veraero II": {
+          icon: {
+            set: '003000',
+            id: '003230'
+          }
+        },
+        "Verfire": {
+          icon: {
+            set: '003000',
+            id: '003208'
+          }
+        },
+        "Verstone": {
+          icon: {
+            set: '003000',
+            id: '003209'
+          }
+        },
+        "Zwerchhau": {
+          icon: {
+            set: '003000',
+            id: '003210'
+          }
+        },
+        "Displacement": {
+          icon: {
+            set: '003000',
+            id: '003211'
+          }
+        },
+        "Engagement": {
+          icon: {
+            set: '003000',
+            id: '003231'
+          }
+        },
+        "Fleche": {
+          icon: {
+            set: '003000',
+            id: '003212'
+          }
+        },
+        "Redoublement": {
+          icon: {
+            set: '003000',
+            id: '003213'
+          }
+        },
+        "Acceleration": {
+          icon: {
+            set: '003000',
+            id: '003214'
+          }
+        },
+        "Moulinet": {
+          icon: {
+            set: '003000',
+            id: '003215'
+          }
+        },
+        "Vercure": {
+          icon: {
+            set: '003000',
+            id: '003216'
+          }
+        },
+        "Contre Sixte": {
+          icon: {
+            set: '003000',
+            id: '003217'
+          }
+        },
+        "Embolden": {
+          icon: {
+            set: '003000',
+            id: '003218'
+          }
+        },
+        "Manafication": {
+          icon: {
+            set: '003000',
+            id: '003219'
+          }
+        },
+        "Jolt II": {
+          icon: {
+            set: '003000',
+            id: '003220'
+          }
+        },
+        "Verraise": {
+          icon: {
+            set: '003000',
+            id: '003221'
+          }
+        },
+        "Impact": {
+          icon: {
+            set: '003000',
+            id: '003222'
+          }
+        },
+        "Verflare": {
+          icon: {
+            set: '003000',
+            id: '003223'
+          }
+        },
+        "Verholy": {
+          icon: {
+            set: '003000',
+            id: '003224'
+          }
+        },
+        "Reprise": {
+          icon: {
+            set: '003000',
+            id: '003233'
+          }
+        },
+        "Scorch": {
+          icon: {
+            set: '003000',
+            id: '003234'
+          }
+        },
+        "Verthunder III": {
+          icon: {
+            set: '003000',
+            id: '003235'
+          }
+        },
+        "Veraero III": {
+          icon: {
+            set: '003000',
+            id: '003236'
+          }
+        },
+        "Magick Barrier": {
+          icon: {
+            set: '003000',
+            id: '003237'
+          }
+        },
+        "Resolution": {
+          icon: {
+            set: '003000',
+            id: '003238'
+          }
+        },
+        "Enchanted Riposte": {
+          icon: {
+            set: '003000',
+            id: '003225'
+          }
+        },
+        "Enchanted Zwerchhau": {
+          icon: {
+            set: '003000',
+            id: '003226'
+          }
+        },
+        "Enchanted Redoublement": {
+          icon: {
+            set: '003000',
+            id: '003227'
+          }
+        },
+        "Enchanted Moulinet": {
+          icon: {
+            set: '003000',
+            id: '003228'
+          }
+        },
+        "Enchanted Reprise": {
+          icon: {
+            set: '003000',
+            id: '003232'
+          }
+        },
       },
       "summoner": {
+        "Ruin": {
+          icon: {
+            set: '000000',
+            id: '000501'
+          }
+        },
+        "Summon Carbuncle": {
+          icon: {
+            set: '00000',
+            id: '000516'
+          }
+        },
+        "Radiant Aegis": {
+          icon: {
+            set: '002000',
+            id: '002750'
+          }
+        },
+        "Physick": {
+          icon: {
+            set: '000000',
+            id: '000508'
+          }
+        },
+        "Aethercharge": {
+          icon: {
+            set: '002000',
+            id: '002751'
+          }
+        },
+        "Summon Ruby": {
+          icon: {
+            set: '002000',
+            id: '002753'
+          }
+        },
+        "Gemshine": {
+          icon: {
+            set: '002000',
+            id: '002753'
+          }
+        },
+        "Ruby Ruin": {
+          icon: {
+            set: '000000',
+            id: '000501'
+          }
+        },
+        "Fester": {
+          icon: {
+            set: '002000',
+            id: '002676'
+          }
+        },
+        "Energy Drain": {
+          icon: {
+            set: '000000',
+            id: '000514'
+          }
+        },
+        "Resurrection": {
+          icon: {
+            set: '000000',
+            id: '000511'
+          }
+        },
+        "Summon Topaz": {
+          icon: {
+            set: '000000',
+            id: '000517'
+          }
+        },
+        "Topaz Ruin": {
+          icon: {
+            set: '000000',
+            id: '000501'
+          }
+        },
+        "Summon Emerald": {
+          icon: {
+            set: '002000',
+            id: '002754'
+          }
+        },
+        "Emerald Ruin": {
+          icon: {
+            set: '000000',
+            id: '000501'
+          }
+        },
+        "Outburst": {
+          icon: {
+            set: '002000',
+            id: '002698'
+          }
+        },
+        "Precious Billiance": {
+          icon: {
+            set: '002000',
+            id: '002777'
+          }
+        },
+        "Ruby Outburst": {
+          icon: {
+            set: '002000',
+            id: '002698'
+          }
+        },
+        "Topaz Outburst": {
+          icon: {
+            set: '002000',
+            id: '002698'
+          }
+        },
+        "Emerald Outburst": {
+          icon: {
+            set: '002000',
+            id: '002698'
+          }
+        },
+        "Ruin II": {
+          icon: {
+            set: '000000',
+            id: '000502'
+          }
+        },
+        "Summon Ifrit": {
+          icon: {
+            set: '002000',
+            id: '002680'
+          }
+        },
+        "Ruby Ruin II": {
+          icon: {
+            set: '000000',
+            id: '000502'
+          }
+        },
+        "Topaz Ruin II": {
+          icon: {
+            set: '000000',
+            id: '000502'
+          }
+        },
+        "Emerald Ruin II": {
+          icon: {
+            set: '000000',
+            id: '000502'
+          }
+        },
+        "Summon Titan": {
+          icon: {
+            set: '002000',
+            id: '002755'
+          }
+        },
+        "Painflare": {
+          icon: {
+            set: '002000',
+            id: '002681'
+          }
+        },
+        "Summon Garuda": {
+          icon: {
+            set: '002000',
+            id: '002756'
+          }
+        },
+        "Energy Siphon": {
+          icon: {
+            set: '002000',
+            id: '002697'
+          }
+        },
+        "Ruin III": {
+          icon: {
+            set: '002000',
+            id: '002682'
+          }
+        },
+        "Ruby Ruin III": {
+          icon: {
+            set: '002000',
+            id: '002682'
+          }
+        },
+        "Topaz Ruin III": {
+          icon: {
+            set: '002000',
+            id: '002682'
+          }
+        },
+        "Emerald Ruin III": {
+          icon: {
+            set: '002000',
+            id: '002682'
+          }
+        },
+        "Dreadwyrm Trance": {
+          icon: {
+            set: '002000',
+            id: '002684'
+          }
+        },
+        "Astral Impulse": {
+          icon: {
+            set: '002000',
+            id: '002757'
+          }
+        },
+        "Astral Flare": {
+          icon: {
+            set: '002000',
+            id: '002758'
+          }
+        },
+        "Astral Flow": {
+          icon: {
+            set: '002000',
+            id: '002759'
+          }
+        },
+        "Deathflare": {
+          icon: {
+            set: '002000',
+            id: '002685'
+          }
+        },
+        "Ruin IV": {
+          icon: {
+            set: '002000',
+            id: '002686'
+          }
+        },
+        "Searing Light": {
+          icon: {
+            set: '002000',
+            id: '002780'
+          }
+        },
+        "Summon Bahamut": {
+          icon: {
+            set: '002000',
+            id: '002691'
+          }
+        },
+        "Wyrmwave": {
+          icon: {
+            set: '002000',
+            id: '002692'
+          }
+        },
+        "Enkindle Bahamut": {
+          icon: {
+            set: '002000',
+            id: '002693'
+          }
+        },
+        "Ark Morn": {
+          icon: {
+            set: '002000',
+            id: '002694'
+          }
+        },
+        "Ruby Rite": {
+          icon: {
+            set: '002000',
+            id: '002760'
+          }
+        },
+        "Topaz Rite": {
+          icon: {
+            set: '002000',
+            id: '002761'
+          }
+        },
+        "Emerald Rite": {
+          icon: {
+            set: '002000',
+            id: '002762'
+          }
+        },
+        "Tri-disaster": {
+          icon: {
+            set: '002000',
+            id: '002763'
+          }
+        },
+        "Ruby Disaster": {
+          icon: {
+            set: '002000',
+            id: '002763'
+          }
+        },
+        "Topaz Disaster": {
+          icon: {
+            set: '002000',
+            id: '002763'
+          }
+        },
+        "Emerald Disaster": {
+          icon: {
+            set: '002000',
+            id: '002763'
+          }
+        },
+        "Fountain of Fire": {
+          icon: {
+            set: '002000',
+            id: '002735'
+          }
+        },
+        "Brand of Purgatory": {
+          icon: {
+            set: '002000',
+            id: '002736'
+          }
+        },
+        "Summon Phoenix": {
+          icon: {
+            set: '002000',
+            id: '002765'
+          }
+        },
+        "Everlasting Flight": {
+          icon: {
+            set: '002000',
+            id: '002731'
+          }
+        },
+        "Rekindle": {
+          icon: {
+            set: '002000',
+            id: '002764'
+          }
+        },
+        "Scarlet Flame": {
+          icon: {
+            set: '002000',
+            id: '002733'
+          }
+        },
+        "Enkindle Phoenix": {
+          icon: {
+            set: '002000',
+            id: '002737'
+          }
+        },
+        "Revelation": {
+          icon: {
+            set: '002000',
+            id: '002732'
+          }
+        },
+        "Ruby Catastrophe": {
+          icon: {
+            set: '002000',
+            id: '002766'
+          }
+        },
+        "Topaz Catastrophe": {
+          icon: {
+            set: '002000',
+            id: '002767'
+          }
+        },
+        "Emerald Catastrophe": {
+          icon: {
+            set: '002000',
+            id: '002768'
+          }
+        },
+
+
+
+
+
+        "Crimson Cyclone": {
+          icon: {
+            set: '002000',
+            id: '002769'
+          }
+        },
+        "Crimson Strike": {
+          icon: {
+            set: '002000',
+            id: '002779'
+          }
+        },
+        "Mountain Buster": {
+          icon: {
+            set: '002000',
+            id: '002770'
+          }
+        },
+        "Slipstream": {
+          icon: {
+            set: '002000',
+            id: '002771'
+          }
+        },
+        "Summon Ifrit II": {
+          icon: {
+            set: '002000',
+            id: '002772'
+          }
+        },
+        "Summon Titan II": {
+          icon: {
+            set: '002000',
+            id: '002773'
+          }
+        },
+        "Summon Garuda II": {
+          icon: {
+            set: '002000',
+            id: '002774'
+          }
+        },
 
       },
-      "blue mage": {
-
-      }
     }
   }
 }
