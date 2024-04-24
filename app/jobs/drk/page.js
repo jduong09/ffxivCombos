@@ -3,18 +3,18 @@ import Image from 'next/image';
 import TankPageCombos from '@/components/jobCombos/tank/tankPageCombos';
 import DefensiveCooldowns from '@/components/jobCombos/tank/defensiveCooldown';
 
-export default async function PaladinPage() {
-  const normalArray = ["Fast Blade", "Riot Blade", "Royal Authority"];
-  const burstArray = ["Fight or Flight", "Holy Spirit", "Expiacion", "Circle of Scorn", "Requiescat", "Intervene", "Goring Blade", "Confiteor", "Intervene", "Blade of Faith", "Blade of Truth", "Blade of Valor", "Atonement", "Atonement"];
-  const firstPack = ["Arm's Length", "Sentinel", "Holy Sheltron"];
-  const secondPack = ["Rampart", "Reprisal", "Bulwark", "Holy Sheltron"];
+export default async function DarkKnightPage() {
+  const normalArray = ["Hard Slash", "Syphon Strike", "Souleater"];
+  const burstArray = ["Edge of Shadow", "Edge of Shadow", "Edge of Shadow", "Blood Weapon", "Delirium", "Bloodspiller", "Salted Earth", "Bloodspiller", "Salt and Darkness","Bloodspiller", "Carve and Spit","Edge of Shadow",];
+  const firstPack = ["Arm's Length", "Shadow Wall", "The Blackest Night"];
+  const secondPack = ["Rampart", "Reprisal", "Oblation", "The Blackest Night"];
   return (
     <div>
       <header>
         <h1>Soppo's Guide to FFXIV</h1>
         <h2>
-          <img className='icon' src='https://xivapi.com/cj/svg/ClassJob/PLD.svg' alt="Icon for job Gunbreaker" />
-          Paladin Guide
+          <img className='icon' src='https://xivapi.com/cj/svg/ClassJob/DRK.svg' alt="Icon for job Dark Knight" />
+          Dark Knight Guide
         </h2>
         <nav>
           <ul className={styles.navList}>
@@ -32,8 +32,8 @@ export default async function PaladinPage() {
         </nav>
       </header>
       <main>
-        <TankPageCombos jobName='paladin' normalArray={normalArray} burstArray={burstArray} />
-        <DefensiveCooldowns jobName='paladin' firstPack={firstPack} secondPack={secondPack} />
+        <TankPageCombos jobName='dark knight' normalArray={normalArray} burstArray={burstArray} />
+        <DefensiveCooldowns jobName='dark knight' firstPack={firstPack} secondPack={secondPack}  />
       </main>
     </div>
   )
