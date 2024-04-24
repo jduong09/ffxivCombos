@@ -3,18 +3,18 @@ import Image from 'next/image';
 import TankPageCombos from '@/components/jobCombos/tank/tankPageCombos';
 import DefensiveCooldowns from '@/components/jobCombos/tank/defensiveCooldown';
 
-export default async function PaladinPage() {
-  const normalArray = ["Fast Blade", "Riot Blade", "Royal Authority"];
-  const burstArray = ["Fight or Flight", "Holy Spirit", "Expiacion", "Circle of Scorn", "Requiescat", "Intervene", "Goring Blade", "Confiteor", "Intervene", "Blade of Faith", "Blade of Truth", "Blade of Valor", "Atonement", "Atonement"];
-  const firstPack = ["Arm's Length", "Sentinel", "Holy Sheltron"];
-  const secondPack = ["Rampart", "Reprisal", "Bulwark", "Holy Sheltron"];
+export default async function GunbreakerPage() {
+  const normalArray = ["Keen Edge", "Brutal Shell", "Solid Barrel"];
+  const burstArray = ["No Mercy", "Double Down", "Sonic Break", "Blasting Zone", "Gnashing Fang", "Jugular Rip","Rough Divide", "Savage Claw", "Abdomen Tear","Rough Divide", "Wicked Talon", "Eye Gouge", "Bloodfest", "Burst Strike", "Hypervelocity", "Burst Strike", "Hypervelocity"];
+  const firstPack = ["Arm's Length", "Nebula", "Aurora", "Heart of Corundum"];
+  const secondPack = ["Rampart", "Reprisal", "Aurora", "Heart of Corundum", "Camouflage"];
   return (
     <div>
       <header>
         <h1>Soppo's Guide to FFXIV</h1>
         <h2>
-          <img className='icon' src='https://xivapi.com/cj/svg/ClassJob/PLD.svg' alt="Icon for job Gunbreaker" />
-          Paladin Guide
+          <img className='icon' src='https://xivapi.com/cj/1/gunbreaker.png' alt="Icon for job Gunbreaker" />
+          Gunbreaker Guide
         </h2>
         <nav>
           <ul className={styles.navList}>
@@ -32,8 +32,8 @@ export default async function PaladinPage() {
         </nav>
       </header>
       <main>
-        <TankPageCombos jobName='paladin' normalArray={normalArray} burstArray={burstArray} />
-        <DefensiveCooldowns jobName='paladin' firstPack={firstPack} secondPack={secondPack} />
+        <TankPageCombos jobName='gunbreaker' normalArray={normalArray} burstArray={burstArray} />
+        <DefensiveCooldowns jobName='gunbreaker' firstPack={firstPack} secondPack={secondPack} />
       </main>
     </div>
   )

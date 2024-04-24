@@ -300,7 +300,7 @@ const ffxivActions = {
     }
   },
   jobActions: {
-    "tanks": {
+    "tank": {
       "paladin": {
         "Fast Blade": {
           icon: {
@@ -317,13 +317,13 @@ const ffxivActions = {
         "Rage of Halone": {
           icon: {
             set: '000000',
-            id: '000156'
+            id: '000155'
           }
         },
         "Royal Authority": {
           icon: {
-            set: '000000',
-            id: '000156'
+            set: '002000',
+            id: '002507'
           }
         },
         "Holy Spirit": {
@@ -863,7 +863,7 @@ const ffxivActions = {
         "Brutal Shell": {
           icon: {
             set: '003000',
-            id: '003043'
+            id: '003403'
           }
         },
         "Camouflage": {
@@ -4324,4 +4324,8 @@ const ffxivActions = {
       },
     }
   }
+}
+
+module.exports = {
+  ffxivActions
 }
