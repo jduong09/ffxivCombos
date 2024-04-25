@@ -228,7 +228,7 @@ const ffxivActions = {
         }
       },
     },
-    "rangedPhysicalDps": {
+    "physicalRangedDps": {
       "Leg Graze": {
         icon: {
           set: '000000',
@@ -266,7 +266,7 @@ const ffxivActions = {
         }
       },
     },
-    "rangedMagicalDps": {
+    "magicalRangedDps": {
       "Addle": {
         icon: {
           set: '000000',
