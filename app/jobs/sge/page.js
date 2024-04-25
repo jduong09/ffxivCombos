@@ -5,8 +5,8 @@ import DefensiveActions from '@/components/jobCombos/healer/defensiveActions';
 
 export default async function SagePage() {
   const normalArray = ["Kardia", "Dosis"];
-  const firstPack = ["Earthly Star", "Aspected Benefic", "Exaltation", "Macrocosmos", "Microcosmos"];
-  const secondPack = ["Aspected Benefic", "Neutral Sect", "Essential Dignity", "Celestial Intersection"];
+  const firstPack = ["Kerachole", "Zoe", "Haima"];
+  const secondPack = ["Taurochole", "Pneuma", "Druochole" ];
   return (
     <div>
       <header>
@@ -31,8 +31,8 @@ export default async function SagePage() {
         </nav>
       </header>
       <main>
-        <HealerCombo jobName='astrologian' normalArray={normalArray} />
-        <DefensiveActions jobName='astrologian' firstPack={firstPack} secondPack={secondPack} />
+        <HealerCombo jobName='sage' normalArray={normalArray} />
+        <DefensiveActions jobName='sage' firstPack={firstPack} secondPack={secondPack} />
       </main>
     </div>
   )

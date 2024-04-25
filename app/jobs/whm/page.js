@@ -6,7 +6,7 @@ import DefensiveActions from '@/components/jobCombos/healer/defensiveActions';
 export default async function WhiteMagePage() {
   const normalArray = ["Dia", "Glare III", "Assize"];
   const firstPack = ["Asylum", "Regen", "Benediction", "Aquaveil", "Divine Benison", "Temperance"];
-  const secondPack = ["Asylum", "Regen", "Divine Benison", "Afflatus Solace", "Litury of the Bell"];
+  const secondPack = ["Asylum", "Regen", "Divine Benison", "Afflatus Solace", "Liturgy of the Bell"];
   return (
     <div>
       <header>
