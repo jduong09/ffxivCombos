@@ -1,4 +1,4 @@
-import styles from '../../page.module.css';
+import styles from '@/app/page.module.css';
 import Image from 'next/image';
 import HealerCombo from '@/components/jobCombos/healer/healerCombo';
 import DefensiveActions from '@/components/jobCombos/healer/defensiveActions';
