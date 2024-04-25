@@ -1,4 +1,4 @@
-import jobStyles from '../../../app/jobs/job.module.css';
+import jobStyles from '@/app/jobs/job.module.css';
 import { ffxivActions } from '@/app/api';
 
 const DefensiveCooldowns = ({ jobName, firstPack, secondPack }) => {

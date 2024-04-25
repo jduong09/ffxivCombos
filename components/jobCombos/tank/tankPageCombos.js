@@ -1,5 +1,5 @@
 import React from 'react';
-import jobStyles from '../../app/jobs/job.module.css';
+import jobStyles from '@/app/jobs/job.module.css';
 import { ffxivActions } from '@/app/api';
 
 // jobName : 'paladin', 'dark knight', 'warrior', 'gunbreaker'
