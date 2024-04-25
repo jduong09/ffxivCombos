@@ -2,7 +2,6 @@ import React from 'react';
 import jobStyles from '@/app/jobs/job.module.css';
 import { ffxivActions } from '@/app/api';
 
-// jobName : 'paladin', 'dark knight', 'warrior', 'gunbreaker'
 const TankPageCombos = ({ jobName, normalArray, burstArray }) => {
 
   const listItemsNormal = normalArray.map((actionName, idx) => {
