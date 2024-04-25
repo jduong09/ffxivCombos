@@ -2492,6 +2492,60 @@ const ffxivActions = {
             id: '002932'
           }
         },
+        "Fuma Shuriken": {
+          icon: {
+            set: '002000',
+            id: '002907'
+          }
+        },
+        "Katon": {
+          icon: {
+            set: '002000',
+            id: '002908'
+          }
+        },
+        "Raiton": {
+          icon: {
+            set: '002000',
+            id: '002912'
+          }
+        },
+        "Hyoton": {
+          icon: {
+            set: '002000',
+            id: '002909'
+          }
+        },
+        "Huton": {
+          icon: {
+            set: '002000',
+            id: '002910'
+          }
+        },
+        "Doton": {
+          icon: {
+            set: '002000',
+            id: '002911'
+          }
+        },
+        "Suiton": {
+          icon: {
+            set: '002000',
+            id: '002913'
+          }
+        },
+        "Goka Mekkyaku": {
+          icon: {
+            set: '002000',
+            id: '002925'
+          }
+        },
+        "Hyosho Ranryu": {
+          icon: {
+            set: '002000',
+            id: '002926'
+          }
+        },
       },
       "samurai": {
         "Hakaze": {
