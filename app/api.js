@@ -4051,7 +4051,7 @@ const ffxivActions = {
             id: '002698'
           }
         },
-        "Precious Billiance": {
+        "Precious Brilliance": {
           icon: {
             set: '002000',
             id: '002777'

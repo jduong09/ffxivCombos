@@ -60,6 +60,7 @@ export default function Jobs() {
             <li><a href="/jobs/nin">Ninja</a></li>
             <li><a href="/jobs/mnk">Monk</a></li>
             <li><a href="/jobs/drg">Dragoon</a></li>
+            <li><a href="/jobs/rpr">Reaper</a></li>
           </ul>
         </div>
       </main>
