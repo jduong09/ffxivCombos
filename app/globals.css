@@ -12,6 +12,10 @@ header, main {
   padding: 3rem;
 }
 
+footer {
+  padding: 1.5rem 3rem;
+}
+
 header {
   width: 100%;
   display: flex;
