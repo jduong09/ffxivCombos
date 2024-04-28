@@ -1,7 +1,7 @@
-import styles from '@/app/page.module.css';
-import Image from 'next/image';
+import HeaderComponent from '@/components/htmlComponent/header';
 import Combos from '@/components/jobCombos/meleeDps/combos';
 import MeleeDpsRoleActions from '@/components/jobCombos/meleeDps/meleeDpsRoleActions';
+import FooterComponent from '@/components/htmlComponent/footer';
 
 export default async function MonkPage() {
   const normalArray = ["Bootshine", "True Strike", "Snap Punch"];
@@ -11,31 +11,12 @@ export default async function MonkPage() {
   const roleActions = ["Feint", "True North"];
   return (
     <div>
-      <header>
-        <h1>Soppo's Guide to FFXIV</h1>
-        <h2>
-          <img className='icon' src='https://xivapi.com/cj/svg/ClassJob/MNK.svg' alt="Icon for job Monk" />
-          Monk Guide
-        </h2>
-        <nav>
-          <ul className={styles.navList}>
-            <li className={styles.navListItem}>
-              <a className={styles.navListLink} href="/jobs">Jobs</a>
-            </li>
-            <li className={styles.navListItem}>
-              <a className={styles.navListLink} href="/fashion">Fashion</a>
-            </li>
-            <li className={styles.navListItem}>
-              <a className={styles.navListLink} href="/housing">Housing</a>
-            </li>
-          </ul>
-          <Image className={styles.headerNavImage} src={'/emotes/soppo_reveal_right.png'} width="299" height="422" alt="Image of ffxiv character doing emote show right" />
-        </nav>
-      </header>
+      <HeaderComponent jobAcronym='MNK' jobName='monk' />
       <main>
         <Combos jobName='monk' normalArray={normalArray} burstArray={burstArray} dungeonPackArray={dungeonPackArray} />
         <MeleeDpsRoleActions jobName='monk' defensiveActions={defensiveActions} roleActions={roleActions} />
       </main>
+      <FooterComponent />
     </div>
   )
 }
