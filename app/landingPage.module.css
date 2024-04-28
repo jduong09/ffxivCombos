@@ -1,0 +1,17 @@
+.divStruggles {
+  padding: 1.5rem 1rem;
+  background-color: white;
+  
+}
+
+.listStruggles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.listStruggles > li {
+  display: flex;
+  flex-direction: column;
+  
+}
