@@ -1,20 +1,21 @@
 body {
   position: relative;
   min-height: 100vh;
-  background-color: #e0d6ff;
+  background-color: #FFFFFF;
 }
 
 h1, h2 {
   font-weight: 700;
 }
 
-header, main {
-  padding: 3rem;
+header {
+  padding: 1.5rem 2rem;
 }
 
 header {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-bottom: 0;
 }
