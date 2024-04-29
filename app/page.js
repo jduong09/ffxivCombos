@@ -12,7 +12,7 @@ export default function Home() {
           <Image className={styles.emoteRevealLeft} src={'/emotes/soppo_reveal_left.png'} width="288" height="423" alt='emote reveal left' />
           <ul className={styles.navList}>
             <li className={styles.navListItem}>
-              <a className={styles.navListLink} href="/classes">Classes</a>
+              <a className={styles.navListLink} href="/jobs">Jobs</a>
             </li>
             <li className={styles.navListItem}>
               <a className={styles.navListLink} href="/housing">Housing</a>
@@ -61,7 +61,7 @@ export default function Home() {
               <span>With this guide, new players can learn a combo for when the fight begins, 2-minute bursts, or what AOE attacks to use between dungeons. Returning players can brush up on combos as well, reminding themselves of tank mitigations to use in dungeon packs, and healer skills to combine.</span>
             </div>
             <div>
-              <a href='/classes'>Check out classes</a>
+              <a href='/jobs'>Check out jobs</a>
             </div>
           </div>
         </div>
