@@ -83,7 +83,7 @@
   width: 25%;
 }
 
-.divStruggles h2, .divHousing h2 {
+.divStruggles h2, .divHousing h2, .divFashion h2 {
   font-size: 1.5rem;
   margin-bottom: .5rem;
 }
@@ -94,7 +94,7 @@
   margin-bottom: 1rem;
 }
 
-.divStruggles a, .divHousing A {
+.divStruggles a, .divHousing a {
   border: 2px solid black;
   padding: .5rem 1rem;
 }
@@ -134,4 +134,37 @@
   width: 250px;
   height: auto;
   border: 2px solid #e0d6ff;
+}
+
+.imageFashion {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.divFashion {
+  display: flex;
+  align-items: center;
+  background-color: #e0d6ff;
+  padding: 2rem;
+}
+
+.divFashion > div:first-of-type {
+  width: 50%;
+}
+
+.divFashion > div > span {
+  display: block;
+  margin-bottom: .5rem;
+  width: 75%;
+}
+
+.divFashion > div:first-of-type > a {
+  display: block;
+  width: fit-content;
+  padding: .5rem 1.5rem;
+  border: 2px solid black;
 }

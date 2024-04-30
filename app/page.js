@@ -80,6 +80,37 @@ export default function Home() {
             </li>
           </ul>
         </div>
+        <div className={landingPage.divFashion}>
+          <div>
+            <h2>Soppo's Gallery of Fashion</h2>
+            <span>Browse Soppos closet, chalk full of outfits for tanks, healers and damage dealers!</span>
+            <a href='/fashion'>Fashion</a>
+          </div>
+          <div className='slider'>
+            <a href='#slide-1'></a>
+            <a href='#slide-2'></a>
+            <a href='#slide-3'></a>
+            <a href='#slide-4'></a>
+            <a href='#slide-5'></a>
+            <ul className='slides'>
+              <li id='slide-1'>
+                <Image className={landingPage.imageFashion} src={'/fashion/soppo_astrologian_4_29_24.png'} width='0' height='0' sizes="100vw" alt='image of astrologian soppo' />
+              </li>
+              <li id='slide-2'>
+                <Image className={landingPage.imageFashion} src={'/fashion/soppo_black_mage_4_29_24.png'} width='0' height='0' sizes="100vw" alt='image of black mage soppo' />
+              </li>
+              <li id='slide-3'>
+                <Image className={landingPage.imageFashion} src={'/fashion/soppo_dragoon_4_29_24.png'} width='0' height='0' sizes="100vw" alt='image of dragoon soppo' />
+              </li>
+              <li id='slide-4'>
+                <Image className={landingPage.imageFashion} src={'/fashion/soppo_gunbreaker_4_29_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
+              </li>
+              <li id='slide-5'>
+                <Image className={landingPage.imageFashion} src={'/fashion/soppo_machinist_4_29_24.png'} width='0' height='0' sizes="100vw" alt='image of machinist soppo' />
+              </li>
+            </ul>
+          </div>
+        </div>
       </main>
     </div>
   );
