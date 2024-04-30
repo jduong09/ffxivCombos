@@ -1,29 +1,12 @@
 import styles from "./page.module.css";
 import Image from "next/image";
 import landingPage from "@/app/landingPage.module.css";
+import HeaderComponent from "@/components/htmlComponent/header";
 
 export default function Home() {
   return (
     <div>
-      <header>
-        <h1>Soppo's Guide to FFXIV</h1>
-        <div></div>
-        <nav className={styles.nav}>
-          <Image className={styles.emoteRevealLeft} src={'/emotes/soppo_reveal_left.png'} width="288" height="423" alt='emote reveal left' />
-          <ul className={styles.navList}>
-            <li className={styles.navListItem}>
-              <a className={styles.navListLink} href="/jobs">Jobs</a>
-            </li>
-            <li className={styles.navListItem}>
-              <a className={styles.navListLink} href="/housing">Housing</a>
-            </li>
-            <li className={styles.navListItem}>
-              <a className={styles.navListLink} href="/fashion">Fashion</a>
-            </li>
-          </ul>
-          <Image className={styles.emoteRevealRight} src={'/emotes/soppo_reveal_right.png'} width="299" height="422" alt='emote reveal right' />
-        </nav>
-      </header>
+      <HeaderComponent />
       <main className={styles.main}>
         <div className={landingPage.divHero}>
           <div>
