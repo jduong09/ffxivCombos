@@ -103,5 +103,85 @@
   flex: 1 100%;
 }
 
+.listClassIcon {
+  display: flex;
+  flex-wrap: row;
+  width: 150px;
+}
 
- 
+.imageClassIcon {
+  display: block;
+  width: 75px;
+  height: auto;
+}
+
+.curtain {
+  width: 250px;
+  height: max-content;
+  overflow: hidden;
+  position: relative;
+}
+
+.curtainWrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.curtainInput {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  opacity: 0;
+  top: 0;
+  left: 0;
+}
+
+.curtainInput:checked ~ .curtainPanelLeft, .curtainInput:checked ~ .curtainPanelRight {
+  transform: translateX(-100%);
+}
+
+.curtainInput:checked ~ .curtainPanelRight {
+  transform: translateX(100%);
+}
+
+.curtainInput:checked ~ .curtainContent {
+  z-index: 1000;
+}
+
+.curtainPanel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: orange;
+  color: #fff;
+  position: relative;
+  width: 50%;
+  height: 100%;
+  float: left;
+  transition: all 1s ease-out;
+  z-index: 2;
+}
+
+.curtainPanelLeft {
+  justify-content: flex-end;
+  transform: translateX(0%);
+}
+
+.curtainPanelRight {
+  justify-content: flex-start;
+  transform: translateX(0%);
+}
+
+.curtainContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+}
+
