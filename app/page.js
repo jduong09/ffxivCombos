@@ -14,7 +14,7 @@ export default function Home() {
             <div>Soppos Guide is filled with dps combos, dungeons pack rotation advice, role action use and job glam.</div>
           </div>
           <div className={landingPage.heroImageContainer}>
-            <Image className={landingPage.heroGIF} src={'/black_mage_burst.gif'} width='276' height='156' alt='gif of soppo black mage burst combo' />
+            <Image className={landingPage.heroGIF} src={'/black_mage_burst.gif'} width='276' height='156' alt='gif of soppo black mage burst combo' unoptimized={true}/>
           </div>
         </div>
         <div className={landingPage.divStruggles}>

@@ -138,15 +138,15 @@
   left: 0;
 }
 
-.curtainInput:checked ~ .curtainPanelLeft, .curtainInput:checked ~ .curtainPanelRight {
+.curtainInput:hover ~ .curtainPanelLeft {
   transform: translateX(-100%);
 }
 
-.curtainInput:checked ~ .curtainPanelRight {
+.curtainInput:hover ~ .curtainPanelRight {
   transform: translateX(100%);
 }
 
-.curtainInput:checked ~ .curtainContent {
+.curtainInput:hover ~ .curtainContent {
   z-index: 1000;
 }
 
@@ -184,4 +184,164 @@
   position: absolute;
   z-index: 1;
 }
+
+.listJobs {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  gap: 4rem;
+}
+
+.listJobs h2 {
+  font-size: 1.15rem;
+  margin-bottom: .75rem;
+}
+
+
+
+/* Cover */
+.book {
+  display: block;
+  width: 100%;
+  height: 250px;
+  position: relative;
+}
+
+.book:nth-child(4n+1) {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.book:nth-child(2n) {
+  grid-column : 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.book:nth-child(3n) {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.book:nth-child(4n) {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3
+}
+
+.cover {
+  width: 100%;
+  height: 100%;
+  background-color: #e0d6ff;
+  opacity: 1.0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.cover > h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.cover:hover {
+  opacity: 0;
+  transition: opacity .55s ease-in-out;
+}
+
+.cover:hover ~ .content {
+  opacity: 1;
+  transition: opacity .55s ease-in;
+}
+
+.imageClassIcon {
+  display: block;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.book:nth-child(4n) .cover > img {
+  right: 1rem;
+}
+
+.content {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #e0d6ff;
+}
+
+.content > span {
+  position: absolute;
+  width: auto;
+  bottom: 0;
+  right: 0;
+  padding: 1rem;
+  border-top-left-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: underline;
+  background-color: #ffffff;
+}
+
+.contentImageSoppo {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 70%;
+  height: auto;
+}
+
+.book:not(:nth-of-type(2n)) .content > .contentImageSoppo {
+  left: 0;
+  border-bottom-right-radius: 8px;
+}
+
+.book:nth-of-type(2n) .content > .contentImageSoppo {
+  right: 0;
+  border-bottom-left-radius: 8px;
+}
+
+.book:nth-of-type(2n) .cover > h3 {
+  left: auto;
+  right: 1rem;
+}
+
+.book:nth-of-type(2n) .cover > img {
+  left: 1rem;
+}
+
+.book:nth-of-type(2n) .content > span {
+  right: auto;
+  left: 0;
+  border-top-left-radius: initial;
+  border-top-right-radius: 8px;
+}
+
+.divMain {
+  width: 100%;
+  padding: 2rem;
+}
+
+.listClassesContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+
+.listFourSquares {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+}
+
 
