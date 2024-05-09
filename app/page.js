@@ -41,7 +41,8 @@ export default function Home() {
           <div>
             <div>
               <h2>Helpful for any type of player!</h2>
-              <span>With this guide, new players can learn a combo for when the fight begins, 2-minute bursts, or what AOE attacks to use between dungeons. Returning players can brush up on combos as well, reminding themselves of tank mitigations to use in dungeon packs, and healer skills to combine.</span>
+              <span>With this guide, new players can learn a combo for when the fight begins, 2-minute bursts, or what AOE attacks to use between dungeons.</span>
+              <span>Returning players can brush up on combos as well, reminding themselves of tank mitigations to use in dungeon packs, and healer skills to combine.</span>
             </div>
             <div>
               <a href='/jobs'>Check out jobs</a>
@@ -69,13 +70,13 @@ export default function Home() {
             <span>Browse Soppos closet, chalk full of outfits for tanks, healers and damage dealers!</span>
             <a href='/fashion'>Fashion</a>
           </div>
-          <div className='slider'>
+          <div className={landingPage.slider}>
             <a href='#slide-1'></a>
             <a href='#slide-2'></a>
             <a href='#slide-3'></a>
             <a href='#slide-4'></a>
             <a href='#slide-5'></a>
-            <ul className='slides'>
+            <ul className={landingPage.slides}>
               <li id='slide-1'>
                 <Image className={landingPage.imageFashion} src={'/fashion/soppo_astrologian_4_29_24.png'} width='0' height='0' sizes="100vw" alt='image of astrologian soppo' />
               </li>
