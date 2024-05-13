@@ -1,8 +1,11 @@
-.nav {
-  position: relative;
-}
+
 
 .navList {
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  background-color: #e0d6ff;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,6 +25,7 @@
 }
 
 .emoteRevealLeft {
+  display: none;
   width: 100px;
   height: 100px;
   position: absolute;
@@ -30,9 +34,37 @@
 }
 
 .emoteRevealRight {
+  display: none;
   width: 100px;
   height: 100px;
   position: absolute;
   top: 0;
   right: 0;
 } 
+
+.navBtn {
+  padding: .5rem;
+  background-color: #ffffff;
+}
+
+@media (min-width: 576px) {
+  .nav {
+    position: relative;
+  }
+
+  .navList {
+    position: initial;
+    top: initial;
+    left: initial;
+    width: fit-content;
+    background-color: transparent;
+  }
+
+  .navBtn {
+    display: none !important;
+  }
+  
+  .emoteRevealLeft, .emoteRevealRight {
+    display: inline-block;
+  }
+}

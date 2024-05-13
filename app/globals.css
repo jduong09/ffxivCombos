@@ -10,6 +10,7 @@ h1, h2 {
 
 header {
   padding: 1.5rem 2rem;
+  position: relative;
 }
 
 footer {
@@ -27,4 +28,8 @@ header {
 
 header h1 {
   font-size: 1.75rem;
+}
+
+.hide {
+  display: none !important;
 }
