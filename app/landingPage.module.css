@@ -41,12 +41,13 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .listStruggles > li {
   display: flex;
   flex-direction: column;
+  margin-bottom: 1.5rem;
 }
 
 .listStruggles > li > h3 {
@@ -243,21 +244,13 @@
 
 
 @media (min-width: 575px) {
-  .divHero {
-    flex-direction: row;
-  }
-
   .divHero > div {
-    width: 45%;
+    width: 75%;
   }
 
   .divHero h1 {
     width: 100%;
     margin: initial initial 1rem initial;
-  }
-
-  .divStruggles > div > div:first-of-type {
-    width: 75%;
   }
 
   .divStruggles > div > div:last-of-type {
@@ -266,33 +259,29 @@
 
   .divStruggles span {
     width: 60%;
+    margin: 0 auto 1rem auto;
   }
 
-
-
   .divHousing > div {
-    width: 25%;
+    width: 60%;
     order: 2;
-    text-align: right;
+    margin: 0 auto;
   }
 
   .listHousingImages {
-    width: 75%;
+    width: 100%;
     flex-direction: row;
+    margin-bottom: 1rem;
   }
-
-  .divHousing a {
-    margin: 0 0 0 auto;
-  }
-
 
   .divFashion {
     flex-direction: row;
   }
 
-  .divFasion > div:first-of-type {
-    width: 50%;
+  .divFashion > div:first-of-type {
+    width: 40%;
     order: 1;
+    text-align: initial;
   }
 
   .slider {
@@ -309,18 +298,98 @@
   }
 }
 
-@media (min-width: 767px) {
+@media (min-width:641px)  { 
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+  .divHousing {
+    flex-direction: row;
+  }
 
+  .listHousingImages, .divHousing > div {
+    width: 50%;
+  }
+
+  .listHousingImages {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .divHousing > div {
+    text-align: right;
+  }
+
+  .divHousing a {
+    margin: 0 0 0 auto;
+  }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 767px) {
+  .listStruggles {
+    flex-direction: row;
+    margin-bottom: 1.5rem;
+  }
 
+  .listStruggles > li {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 922px) {
+  .divHero {
+    flex-direction: row;
+  }
+
+  .divHero > div:first-child {
+    order: 1;
+    text-align: initial;
+  }
+
+  .divHero > div:first-child > div {
+    margin: 0;
+  }
+
+  .divHero > div:last-child {
+    order: 2;
+    margin-bottom: 0;
+  }
+
+  .divStruggles > div {
+    flex-direction: row;
+    text-align: initial;
+  }
+
+  .divStruggles > div > div {
+    width: 50%;
+  }
+
+  .divStruggles > div span {
+    width: 100%;
+  }
+
+  .divStruggles > div span:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .divStruggles > div > div:last-of-type {
+    width: 50%;
+  }
 }
 
 @media (min-width: 1200px) {
+  .divHero, .divStruggles, .divHousing, .divFashion {
+    padding: 4rem;
+  }
 
-}
+  .divHousing > div {
+    width: 40%;
+    margin: 0;
+  }
 
-@media (min-width: 1400px) {
+  .divHousing > div > h2 {
+    width: 85%;
+    margin: 0 0 1rem auto;
+  }
 
+  .listHousingImages {
+    flex-direction: row;
+  }
 }
