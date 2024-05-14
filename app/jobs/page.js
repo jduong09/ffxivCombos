@@ -20,6 +20,7 @@ export default function Jobs() {
                     </div>
                     <div className={jobStyles.content}>
                       <span>Check out Guide</span>
+                      <Image className={jobStyles.imageHeadshot} src={'/headshots_mobile/gnb_headshot_05_08_24.png'} width='0' height='0' sizes="100vw" alt="image of gunbreaker Soppo's head" />
                       <Image className={jobStyles.contentImageSoppo} src={'/poses_generic/gnb_generic_05_08_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
                     </div>
                   </a>
@@ -32,6 +33,7 @@ export default function Jobs() {
                     </div>
                     <div className={jobStyles.content}>
                       <span>Check out Guide</span>
+                      <Image className={jobStyles.imageHeadshot} src={'/headshots_mobile/pld_headshot_05_08_24.png'} width='0' height='0' sizes="100vw" alt="image of gunbreaker Soppo's head" />
                       <Image className={jobStyles.contentImageSoppo} src={'/poses_generic/pld_generic_05_08_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
                     </div>
                   </a>
@@ -44,6 +46,7 @@ export default function Jobs() {
                     </div>
                     <div className={jobStyles.content}>
                       <span>Check out Guide</span>
+                      <Image className={jobStyles.imageHeadshot} src={'/headshots_mobile/war_headshot_05_08_24.png'} width='0' height='0' sizes="100vw" alt="image of gunbreaker Soppo's head" />
                       <Image className={jobStyles.contentImageSoppo} src={'/poses_generic/war_generic_05_08_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
                     </div>
                   </a>
@@ -56,6 +59,7 @@ export default function Jobs() {
                     </div>
                     <div className={jobStyles.content}>
                       <span>Check out Guide</span>
+                      <Image className={jobStyles.imageHeadshot} src={'/headshots_mobile/drk_headshot_05_08_24.png'} width='0' height='0' sizes="100vw" alt="image of gunbreaker Soppo's head" />
                       <Image className={jobStyles.contentImageSoppo} src={'/poses_generic/drk_generic_05_08_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
                     </div>
                   </a>
@@ -74,6 +78,7 @@ export default function Jobs() {
                     </div>
                     <div className={jobStyles.content}>
                       <span>Check out Guide</span>
+                      <Image className={jobStyles.imageHeadshot} src={'/headshots_mobile/sch_headshot_05_08_24.png'} width='0' height='0' sizes="100vw" alt="image of gunbreaker Soppo's head" />
                       <Image className={jobStyles.contentImageSoppo} src={'/poses_generic/sch_generic_05_08_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
                     </div>
                   </a>
@@ -86,6 +91,7 @@ export default function Jobs() {
                     </div>
                     <div className={jobStyles.content}>
                       <span>Check out Guide</span>
+                      <Image className={jobStyles.imageHeadshot} src={'/headshots_mobile/whm_headshot_05_08_24.png'} width='0' height='0' sizes="100vw" alt="image of gunbreaker Soppo's head" />
                       <Image className={jobStyles.contentImageSoppo} src={'/poses_generic/whm_generic_05_08_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
                     </div>
                   </a>
@@ -98,6 +104,7 @@ export default function Jobs() {
                     </div>
                     <div className={jobStyles.content}>
                       <span>Check out Guide</span>
+                      <Image className={jobStyles.imageHeadshot} src={'/headshots_mobile/ast_headshot_05_08_24.png'} width='0' height='0' sizes="100vw" alt="image of gunbreaker Soppo's head" />
                       <Image className={jobStyles.contentImageSoppo} src={'/poses_generic/ast_generic_05_08_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
                     </div>
                   </a>
@@ -110,6 +117,7 @@ export default function Jobs() {
                     </div>
                     <div className={jobStyles.content}>
                       <span>Check out Guide</span>
+                      <Image className={jobStyles.imageHeadshot} src={'/headshots_mobile/sch_headshot_05_08_24.png'} width='0' height='0' sizes="100vw" alt="image of gunbreaker Soppo's head" />
                       <Image className={jobStyles.contentImageSoppo} src={'/poses_generic/sch_generic_05_08_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
                     </div>
                   </a>
@@ -127,6 +135,7 @@ export default function Jobs() {
                     </div>
                     <div className={jobStyles.content}>
                       <span>Check out Guide</span>
+                      <Image className={jobStyles.imageHeadshot} src={'/headshots_mobile/mnk_headshot_05_08_24.png'} width='0' height='0' sizes="100vw" alt="image of gunbreaker Soppo's head" />
                       <Image className={jobStyles.contentImageSoppo} src={'/poses_generic/mnk_generic_05_08_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
                     </div>
                   </a>
@@ -139,6 +148,7 @@ export default function Jobs() {
                     </div>
                     <div className={jobStyles.content}>
                       <span>Check out Guide</span>
+                      <Image className={jobStyles.imageHeadshot} src={'/headshots_mobile/nin_headshot_05_08_24.png'} width='0' height='0' sizes="100vw" alt="image of gunbreaker Soppo's head" />
                       <Image className={jobStyles.contentImageSoppo} src={'/poses_generic/nin_generic_05_08_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
                     </div>
                   </a>
@@ -151,6 +161,7 @@ export default function Jobs() {
                     </div>
                     <div className={jobStyles.content}>
                       <span>Check out Guide</span>
+                      <Image className={jobStyles.imageHeadshot} src={'/headshots_mobile/sam_headshot_05_08_24.png'} width='0' height='0' sizes="100vw" alt="image of gunbreaker Soppo's head" />
                       <Image className={jobStyles.contentImageSoppo} src={'/poses_generic/sam_generic_05_08_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
                     </div>
                   </a>
@@ -163,6 +174,7 @@ export default function Jobs() {
                     </div>
                     <div className={jobStyles.content}>
                       <span>Check out Guide</span>
+                      <Image className={jobStyles.imageHeadshot} src={'/headshots_mobile/drg_headshot_05_08_24.png'} width='0' height='0' sizes="100vw" alt="image of gunbreaker Soppo's head" />
                       <Image className={jobStyles.contentImageSoppo} src={'/poses_generic/drg_generic_05_08_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
                     </div>
                   </a>
@@ -175,6 +187,7 @@ export default function Jobs() {
                     </div>
                     <div className={jobStyles.content}>
                       <span>Check out Guide</span>
+                      <Image className={jobStyles.imageHeadshot} src={'/headshots_mobile/rpr_headshot_05_08_24.png'} width='0' height='0' sizes="100vw" alt="image of gunbreaker Soppo's head" />
                       <Image className={jobStyles.contentImageSoppo} src={'/poses_generic/rpr_generic_05_08_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
                     </div>
                   </a>
@@ -192,6 +205,7 @@ export default function Jobs() {
                     </div>
                     <div className={jobStyles.content}>
                       <span>Check out Guide</span>
+                      <Image className={jobStyles.imageHeadshot} src={'/headshots_mobile/blm_headshot_05_08_24.png'} width='0' height='0' sizes="100vw" alt="image of gunbreaker Soppo's head" />
                       <Image className={jobStyles.contentImageSoppo} src={'/poses_generic/blm_generic_05_08_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
                     </div>
                   </a>
@@ -204,6 +218,7 @@ export default function Jobs() {
                     </div>
                     <div className={jobStyles.content}>
                       <span>Check out Guide</span>
+                      <Image className={jobStyles.imageHeadshot} src={'/headshots_mobile/rdm_headshot_05_08_24.png'} width='0' height='0' sizes="100vw" alt="image of gunbreaker Soppo's head" />
                       <Image className={jobStyles.contentImageSoppo} src={'/poses_generic/rdm_generic_05_08_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
                     </div>
                   </a>
@@ -216,6 +231,7 @@ export default function Jobs() {
                     </div>
                     <div className={jobStyles.content}>
                       <span>Check out Guide</span>
+                      <Image className={jobStyles.imageHeadshot} src={'/headshots_mobile/smn_headshot_05_08_24.png'} width='0' height='0' sizes="100vw" alt="image of gunbreaker Soppo's head" />
                       <Image className={jobStyles.contentImageSoppo} src={'/poses_generic/smn_generic_05_08_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
                     </div>
                   </a>
@@ -228,6 +244,7 @@ export default function Jobs() {
                     </div>
                     <div className={jobStyles.content}>
                       <span>Check out Guide</span>
+                      <Image className={jobStyles.imageHeadshot} src={'/headshots_mobile/mch_headshot_05_08_24.png'} width='0' height='0' sizes="100vw" alt="image of gunbreaker Soppo's head" />
                       <Image className={jobStyles.contentImageSoppo} src={'/poses_generic/mch_generic_05_08_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
                     </div>
                   </a>
@@ -240,6 +257,7 @@ export default function Jobs() {
                     </div>
                     <div className={jobStyles.content}>
                       <span>Check out Guide</span>
+                      <Image className={jobStyles.imageHeadshot} src={'/headshots_mobile/dnc_headshot_05_08_24.png'} width='0' height='0' sizes="100vw" alt="image of gunbreaker Soppo's head" />
                       <Image className={jobStyles.contentImageSoppo} src={'/poses_generic/dnc_generic_05_08_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
                     </div>
                   </a>
@@ -252,6 +270,7 @@ export default function Jobs() {
                     </div>
                     <div className={jobStyles.content}>
                       <span>Check out Guide</span>
+                      <Image className={jobStyles.imageHeadshot} src={'/headshots_mobile/brd_headshot_05_08_24.png'} width='0' height='0' sizes="100vw" alt="image of gunbreaker Soppo's head" />
                       <Image className={jobStyles.contentImageSoppo} src={'/poses_generic/brd_generic_05_08_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
                     </div>
                   </a>
