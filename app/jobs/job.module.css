@@ -237,25 +237,10 @@
   padding: 2rem;
 }
 
-.listClassesContainer {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-}
-
-.listClassesContainer > li:nth-child(3n) {
-  order: 4;
-}
-
-.listClassesContainer > li:nth-child(4n) {
-  order: 3;
-}
-
 .listFourSquares {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(auto-fill, 100px);
   gap: .5rem;
 }
 
@@ -273,53 +258,24 @@
   position: relative;
 }
 
-.book:nth-child(4n+1) {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-}
-
-.book:nth-child(6n+1) {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-}
-
-.book:nth-child(2n) {
-  grid-column : 1 / 2;
-  grid-row: 2 / 3;
-}
-
-.book:nth-child(3n) {
-  grid-column: 1 / 2;
-  grid-row: 3 / 4;
-}
-
-.book:nth-child(4n) {
-  grid-column: 1 / 2;
-  grid-row: 4 / 5;
-}
-
-.book:nth-child(5n) {
-  grid-column: 1 / 2;
-  grid-row: 5 / 6;
-}
-
-.book:nth-child(6n) {
-  grid-column: 1 / 2;
-  grid-row: 6 / 7;
-}
-
 @media (min-width: 575px) {
+  .listFourSquares {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto-fill, 250px);
+  }
 
+  .book {
+    height: 250px;
+  }
+
+  .imageHeadshot {
+    height: 60%;
+  }
 }
 
 @media (min-width: 767px) {
-  .listClassesContainer {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .listFourSquares {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .listSixSquares {
@@ -329,41 +285,6 @@
 
   .book {
     height: 250px;
-  }
-
-  .book:nth-child(4n+1) {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-  }
-
-  .book:nth-child(6n+1) {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-  }
-
-  .book:nth-child(2n) {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-  }
-
-  .book:nth-child(3n) {
-    grid-row: 1 / 2;
-    grid-row: 2 / 3;
-  }
-
-  .book:nth-child(4n) {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-  }
-
-  .book:nth-child(5n) {
-    grid-column: 1 / 2;
-    grid-row: 3 / 4;
-  }
-
-  .book:nth-child(6n) {
-    grid-column: 2 / 3;
-    grid-row: 3 / 4;
   }
 
   .contentImageSoppo {
@@ -380,12 +301,14 @@
 }
 
 @media (min-width: 922px) {
-
+   .listFourSquares {
+    grid-template-columns: repeat(5, 1fr);
+   }
 }
 
 @media (min-width: 1200px) {
-  .listClassesContainer {
-    grid-template-columns: repeat(3, 1fr);
+  .listFourSquares {
+    grid-template-columns: repeat(6, 1fr);
   }
 }
 
