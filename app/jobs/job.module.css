@@ -103,5 +103,212 @@
   flex: 1 100%;
 }
 
+.listClassIcon {
+  display: flex;
+  flex-wrap: row;
+  width: 150px;
+}
 
- 
+.imageClassIcon {
+  display: block;
+  width: 75px;
+  height: auto;
+}
+
+.listJobs {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  gap: 4rem;
+}
+
+.listJobs h2 {
+  font-size: 1.15rem;
+  margin-bottom: .75rem;
+}
+
+/* Cover */
+.book {
+  display: block;
+  width: 100%;
+  height: 250px;
+  position: relative;
+}
+
+.cover {
+  width: 100%;
+  height: 100%;
+  background-color: #e0d6ff;
+  opacity: 1.0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.cover > h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.cover:hover {
+  opacity: 0;
+  transition: opacity .55s ease-in-out;
+}
+
+.cover:hover ~ .content {
+  opacity: 1;
+  transition: opacity .55s ease-in;
+}
+
+.imageClassIcon {
+  display: block;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.book:nth-child(4n) .cover > img {
+  right: 1rem;
+}
+
+.content {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #e0d6ff;
+}
+
+.content > span {
+  position: absolute;
+  width: auto;
+  bottom: 0;
+  right: 0;
+  padding: 1rem;
+  border-top-left-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: underline;
+  background-color: #ffffff;
+}
+
+.imageHeadshot {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: auto;
+  height: 80%;
+}
+
+.book:not(:nth-of-type(2n)) .content > .contentImageSoppo, .book:not(:nth-of-type(2n)) .content > .imageHeadshot {
+  left: 0;
+  border-bottom-right-radius: 8px;
+}
+
+.book:nth-of-type(2n) .content > .contentImageSoppo, .book:nth-child(2n) .content > .imageHeadshot {
+  right: 0;
+  border-bottom-left-radius: 8px;
+}
+
+.book:nth-of-type(2n) .cover > h3 {
+  left: auto;
+  right: 1rem;
+}
+
+.book:nth-of-type(2n) .cover > img {
+  left: 1rem;
+}
+
+.book:nth-of-type(2n) .content > span {
+  right: auto;
+  left: 0;
+  border-top-left-radius: initial;
+  border-top-right-radius: 8px;
+}
+
+.divMain {
+  width: 100%;
+  padding: 2rem;
+}
+
+.listFourSquares {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(auto-fill, 100px);
+  gap: .5rem;
+}
+
+.listSixSquares {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  gap: .5rem;
+}
+
+.book {
+  display: block;
+  width: 100%;
+  height: 100px;
+  position: relative;
+}
+
+@media (min-width: 575px) {
+  .listFourSquares {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto-fill, 250px);
+  }
+
+  .book {
+    height: 250px;
+  }
+
+  .imageHeadshot {
+    height: 60%;
+  }
+}
+
+@media (min-width: 767px) {
+  .listFourSquares {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .listSixSquares {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .book {
+    height: 250px;
+  }
+
+  .contentImageSoppo {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: auto;
+    height: 65%;
+  }
+
+  .imageHeadshot {
+    display: none;
+  }
+}
+
+@media (min-width: 922px) {
+   .listFourSquares {
+    grid-template-columns: repeat(5, 1fr);
+   }
+}
+
+@media (min-width: 1200px) {
+  .listFourSquares {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+

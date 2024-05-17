@@ -1,56 +1,53 @@
 .divHero {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   padding: 4rem 2rem;
 }
 
-.divHero > div {
-  width: 45%;
+.divHero > div:first-child {
+  order: 2;
+  text-align: center;
 }
 
 .divHero h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  width: 75%;
+  width: 100%;
+  font-size: 2.5rem;
+  margin: 0 auto 1rem auto;
+}
+
+.divHero > div:first-child > div {
+  width: 65%;
+  margin: 0 auto;
 }
 
 .heroImageContainer {
-  padding: 0;
+  order: 1;
+  width: 100%;
+  margin-bottom: 2rem;
 }
 
 .heroGIF {
   display: block;
-  width: 300px;
+  width: 100%;
   height: auto;
   margin: 0 auto;
-}
-
-.emoteStruggling {
-  width: 150px;
-  height: auto;
-}
-
-.emoteCheerful {
-  width: 150px;
-  height: auto;
-}
-
-.divStruggles {
-  padding: 1.5rem 2rem;
-  background-color: #e0d6ff;
+  border-radius: 8px;
 }
 
 .listStruggles {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .listStruggles > li {
   display: flex;
   flex-direction: column;
+  margin-bottom: 1.5rem;
 }
 
 .listStruggles > li > h3 {
@@ -70,28 +67,32 @@
   margin: 0 auto;
 }
 
+.divStruggles {
+  padding: 1.5rem 2rem;
+  background-color: #e0d6ff;
+}
+
 .divStruggles > div {
   display: flex;
+  flex-direction: column;
   align-items: center;
-}
-
-.divStruggles > div > div:first-of-type {
-  width: 75%;
-}
-
-.divStruggles > div > div:last-of-type {
-  width: 25%;
+  text-align: center;
 }
 
 .divStruggles h2, .divHousing h2, .divFashion h2 {
   font-size: 1.5rem;
-  margin-bottom: .5rem;
+  margin-bottom: 1rem;
 }
 
 .divStruggles span {
   display: block;
-  width: 60%;
   margin-bottom: 1rem;
+}
+
+.divStruggles a {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .divStruggles a, .divHousing a {
@@ -101,14 +102,14 @@
 
 .divHousing {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   padding: 2rem;
 }
 
 .divHousing > div {
-  width: 25%;
   order: 2;
-  text-align: right;
+  text-align: center;
 }
 
 .divHousing > div > span {
@@ -119,15 +120,15 @@
 .divHousing a {
   display: block;
   width: fit-content;
-  margin: 0 0 0 auto;
+  margin: 0 auto;
 }
 
 .listHousingImages {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-around;
   order: 1;
-  width: 75%;
 }
 
 .imageHousing {
@@ -147,19 +148,90 @@
 
 .divFashion {
   display: flex;
+  flex-direction: column;
   align-items: center;
   background-color: #e0d6ff;
   padding: 2rem;
 }
 
 .divFashion > div:first-of-type {
-  width: 50%;
+  order: 2;
+  text-align: center;
+}
+
+/* Slider */
+.slider {
+  width: 300px;
+  overflow: hidden;
+  text-align: center;
+  margin: 0 auto 1rem auto;
+  order: 1;
+}
+
+.slides {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  border: 2px solid black;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.slides::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.slides::-webkit-scrollbar-thumb {
+  background: #FFFFFF;
+  border-radius: 8px;
+}
+
+.slides::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.slides > li {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 300px;
+  height: 300px;
+  margin-right: 50px;
+  border-radius: 10px;
+  background: #eee;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider > a {
+  display: inline-flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: white;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 .5rem 0.5rem 0.5rem;
+  position: relative;
+}
+.slider > a:active {
+  top: 1px;
+}
+.slider > a:focus {
+  background: #000;
 }
 
 .divFashion > div > span {
   display: block;
   margin-bottom: .5rem;
-  width: 75%;
 }
 
 .divFashion > div:first-of-type > a {
@@ -167,4 +239,157 @@
   width: fit-content;
   padding: .5rem 1.5rem;
   border: 2px solid black;
+  margin: 0 auto;
+}
+
+
+@media (min-width: 575px) {
+  .divHero > div {
+    width: 75%;
+  }
+
+  .divHero h1 {
+    width: 100%;
+    margin: initial initial 1rem initial;
+  }
+
+  .divStruggles > div > div:last-of-type {
+    width: 25%;
+  }
+
+  .divStruggles span {
+    width: 60%;
+    margin: 0 auto 1rem auto;
+  }
+
+  .divHousing > div {
+    width: 60%;
+    order: 2;
+    margin: 0 auto;
+  }
+
+  .listHousingImages {
+    width: 100%;
+    flex-direction: row;
+    margin-bottom: 1rem;
+  }
+
+  .divFashion {
+    flex-direction: row;
+  }
+
+  .divFashion > div:first-of-type {
+    width: 40%;
+    order: 1;
+    text-align: initial;
+  }
+
+  .slider {
+    order: 2;
+    margin-bottom: 1rem;
+  }
+
+  .divFashion > div > span {
+    width: 75%;
+  }
+  
+  .divFashion > div:first-of-type > a {
+    margin: initial;
+  }
+}
+
+@media (min-width:641px)  { 
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+  .divHousing {
+    flex-direction: row;
+  }
+
+  .listHousingImages, .divHousing > div {
+    width: 50%;
+  }
+
+  .listHousingImages {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .divHousing > div {
+    text-align: right;
+  }
+
+  .divHousing a {
+    margin: 0 0 0 auto;
+  }
+}
+
+@media (min-width: 767px) {
+  .listStruggles {
+    flex-direction: row;
+    margin-bottom: 1.5rem;
+  }
+
+  .listStruggles > li {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 922px) {
+  .divHero {
+    flex-direction: row;
+  }
+
+  .divHero > div:first-child {
+    order: 1;
+    text-align: initial;
+  }
+
+  .divHero > div:first-child > div {
+    margin: 0;
+  }
+
+  .divHero > div:last-child {
+    order: 2;
+    margin-bottom: 0;
+  }
+
+  .divStruggles > div {
+    flex-direction: row;
+    text-align: initial;
+  }
+
+  .divStruggles > div > div {
+    width: 50%;
+  }
+
+  .divStruggles > div span {
+    width: 100%;
+  }
+
+  .divStruggles > div span:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .divStruggles > div > div:last-of-type {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .divHero, .divStruggles, .divHousing, .divFashion {
+    padding: 4rem;
+  }
+
+  .divHousing > div {
+    width: 40%;
+    margin: 0;
+  }
+
+  .divHousing > div > h2 {
+    width: 85%;
+    margin: 0 0 1rem auto;
+  }
+
+  .listHousingImages {
+    flex-direction: row;
+  }
 }

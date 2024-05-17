@@ -1,29 +1,14 @@
+"use client";
+
 import styles from "./page.module.css";
 import Image from "next/image";
 import landingPage from "@/app/landingPage.module.css";
+import HeaderComponent from "@/components/htmlComponent/header";
 
 export default function Home() {
   return (
     <div>
-      <header>
-        <h1>Soppo's Guide to FFXIV</h1>
-        <div></div>
-        <nav className={styles.nav}>
-          <Image className={styles.emoteRevealLeft} src={'/emotes/soppo_reveal_left.png'} width="288" height="423" alt='emote reveal left' />
-          <ul className={styles.navList}>
-            <li className={styles.navListItem}>
-              <a className={styles.navListLink} href="/jobs">Jobs</a>
-            </li>
-            <li className={styles.navListItem}>
-              <a className={styles.navListLink} href="/housing">Housing</a>
-            </li>
-            <li className={styles.navListItem}>
-              <a className={styles.navListLink} href="/fashion">Fashion</a>
-            </li>
-          </ul>
-          <Image className={styles.emoteRevealRight} src={'/emotes/soppo_reveal_right.png'} width="299" height="422" alt='emote reveal right' />
-        </nav>
-      </header>
+      <HeaderComponent />
       <main className={styles.main}>
         <div className={landingPage.divHero}>
           <div>
@@ -31,7 +16,7 @@ export default function Home() {
             <div>Soppos Guide is filled with dps combos, dungeons pack rotation advice, role action use and job glam.</div>
           </div>
           <div className={landingPage.heroImageContainer}>
-            <Image className={landingPage.heroGIF} src={'/black_mage_burst.gif'} width='276' height='156' alt='gif of soppo black mage burst combo' />
+            <Image className={landingPage.heroGIF} src={'/black_mage_burst.gif'} width='276' height='156' alt='gif of soppo black mage burst combo' unoptimized={true}/>
           </div>
         </div>
         <div className={landingPage.divStruggles}>
@@ -58,7 +43,8 @@ export default function Home() {
           <div>
             <div>
               <h2>Helpful for any type of player!</h2>
-              <span>With this guide, new players can learn a combo for when the fight begins, 2-minute bursts, or what AOE attacks to use between dungeons. Returning players can brush up on combos as well, reminding themselves of tank mitigations to use in dungeon packs, and healer skills to combine.</span>
+              <span>With this guide, new players can learn a combo for when the fight begins, 2-minute bursts, or what AOE attacks to use between dungeons.</span>
+              <span>Returning players can brush up on combos as well, reminding themselves of tank mitigations to use in dungeon packs, and healer skills to combine.</span>
             </div>
             <div>
               <a href='/jobs'>Check out jobs</a>
@@ -86,13 +72,13 @@ export default function Home() {
             <span>Browse Soppos closet, chalk full of outfits for tanks, healers and damage dealers!</span>
             <a href='/fashion'>Fashion</a>
           </div>
-          <div className='slider'>
+          <div className={landingPage.slider}>
             <a href='#slide-1'></a>
             <a href='#slide-2'></a>
             <a href='#slide-3'></a>
             <a href='#slide-4'></a>
             <a href='#slide-5'></a>
-            <ul className='slides'>
+            <ul className={landingPage.slides}>
               <li id='slide-1'>
                 <Image className={landingPage.imageFashion} src={'/fashion/soppo_astrologian_4_29_24.png'} width='0' height='0' sizes="100vw" alt='image of astrologian soppo' />
               </li>
