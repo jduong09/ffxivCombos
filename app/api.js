@@ -857,7 +857,7 @@ const ffxivActions = {
         "No Mercy": {
           icon: {
             set: '003000',
-            id: '003042'
+            id: '003402'
           }
         },
         "Brutal Shell": {
