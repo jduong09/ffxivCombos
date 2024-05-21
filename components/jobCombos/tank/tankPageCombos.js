@@ -57,9 +57,9 @@ const TankPageCombos = ({ jobName, normalArray, burstArray }) => {
   const renderBurstDiv = () => {
     if (jobName === "gunbreaker") {
       return (
-        <div className={jobStyles.divBurst}>
-          <div>
-            <h2>Gunbreaker: 2 Minute Window</h2>
+        <div className={jobStyles.divComboWithVideo}>
+          <h2>Gunbreaker: 2 Minute Window</h2>
+          <div className={jobStyles.divInfo}>
             <ul className={jobStyles.listJobAction}>{listItemsBurst}</ul>
             <div>The key to Gunbreaker's burst combo is having 3 cartridges in the powder gauge. You obtain 1 cartridge for each 1-2-3 combo, and 3 cartridges for using the skill "Bloodfest". The goal is to either have <b>BloodFest</b> ready when <b>No Mercy</b> is coming off cooldown, or to have 3 cartridges in the powder gauge already prepared.</div>
             <div>Once you are prepared to enter the burst, you use <b>No Mercy</b> followed by either <b>Double Down</b> or <b>Gnashing Fang</b> combo. In this burst, we need to use our oGCDs <b>Sonic Break</b> <b>Blasting Zone</b> <b>Bow Shock</b>.</div>
@@ -71,9 +71,9 @@ const TankPageCombos = ({ jobName, normalArray, burstArray }) => {
       );
     } else if (jobName === "paladin") {
       return (
-        <div className={jobStyles.divBurst}>
-          <div>
-            <h2>2 Minute Window</h2>
+        <div className={jobStyles.divComboWithVideo}>
+          <h2>2 Minute Window</h2>
+          <div className={jobStyles.divInfo}>
             <ul className={jobStyles.listJobAction}>{listItemsBurst}</ul>
             <div>For Paladin, we want to optimize our burst by timing our 1-2-3 combo to finish right before <b>Fight or Flight</b> comes off cooldown. This will give us 1 free use of <b>Holy Spirit</b> to start our burst window. This will also give us 3 atonements to use at the end of the burst window.</div>
             <div>If done correctly, we should fit our whole combo in and finish with 2 of the 3 atonements used in the burst window.</div>
@@ -85,9 +85,9 @@ const TankPageCombos = ({ jobName, normalArray, burstArray }) => {
       )
     } else if (jobName === "dark knight") {
       return (
-        <div className={jobStyles.divBurst}>
-          <div>
-            <h2>2 Minute Window</h2>
+        <div className={jobStyles.divComboWithVideo}>
+          <h2>2 Minute Window</h2>
+          <div className={jobStyles.divInfo}>
             <ul className={jobStyles.listJobAction}>{listItemsBurst}</ul>
             <div>Dark Knight's burst window requires you to have the buff Darkside up. This means that we need MP, because we will use <b>Edge of Darkness</b> (3000 MP).</div>
             <div>Once we have Darkside up, we can start our burst window. Burn through our MP with Edge of Darkness Spam, weaving in our oGCDs (Carve and Spit & Bloodspiller). Then we can use Delirium to get 3 non-mp costing bloodspillers.</div>
@@ -99,9 +99,9 @@ const TankPageCombos = ({ jobName, normalArray, burstArray }) => {
       )
     } else {
       return (
-        <div className={jobStyles.divBurst}>
-          <div>
-            <h2>2 Minute Window</h2>
+        <div className={jobStyles.divComboWithVideo}>
+          <h2>2 Minute Window</h2>
+          <div className={jobStyles.divInfo}>
             <ul className={jobStyles.listJobAction}>{listItemsBurst}</ul>
             <div>Warriors burst window is fairly simple. It's called Fell Cleave spam. We will start by buffing our damage with <b>Inner Release</b>. Follow that up with our biggest potency attack, <b>Primal Rend</b>.</div>
             <div>Using Inner Release, we execute 3 <b>Fell Cleaves</b>, follow that up with a upheaval, and then use Infuriate to increase our beast gauge and execute the upgraded Fell Cleave, <b>Inner Chaos</b>.</div>
@@ -117,7 +117,7 @@ const TankPageCombos = ({ jobName, normalArray, burstArray }) => {
   const renderNonBurstDiv = () => {
     if (jobName === "gunbreaker") {
       return (
-        <div>
+        <div className={jobStyles.divNonBurst}>
           <h2>Non 2-Minute Window</h2>
           <div>While <b>No Mercy</b> is on cooldown (60 seconds), we should be able to get in one <b>Gnashing Fang</b> combo, and one use of <b>Blasting Zone</b>. It is relatively simple, use our normal 1-2-3 combo to obtain cartridges, and try to have 3 cartridges in the powder gauge for when No Mercy is going to be used.</div>
         </div>
@@ -151,12 +151,12 @@ const TankPageCombos = ({ jobName, normalArray, burstArray }) => {
   return (
     <div>
       {renderBurstDiv()}
+      {renderNonBurstDiv()}
       <div className={jobStyles.divNormal}>
         <h2>Normal Combo</h2>
         <ul className={jobStyles.listJobAction}>{listItemsNormal}</ul>
         {renderNormalDiv()}
       </div>
-      {renderNonBurstDiv()}
     </div>
   )
 }
