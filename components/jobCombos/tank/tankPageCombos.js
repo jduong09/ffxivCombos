@@ -124,7 +124,7 @@ const TankPageCombos = ({ jobName, normalArray, burstArray }) => {
       )
     } else if (jobName === "paladin") {
       return (
-        <div>
+        <div className={jobStyles.divNonBurst}>
           <h2>Non 2-Minute Window</h2>
           <div>While we wait our next burst window, paladin will spam the 1-2-3 combo, and use any free <b>Holy Spirit</b> procs we get. Use atonement when it is available.</div>
           <div>The key thing to remember for non-burst window is to time the 1-2-3 combo to end when <b>Fight or Flight</b> is coming off cooldown. The 1-2-3 combo should take 6 seconds, so we should be starting our last 1-2-3 combo when Fight or Flight has 6 seconds of cooldown left.</div>
@@ -132,7 +132,7 @@ const TankPageCombos = ({ jobName, normalArray, burstArray }) => {
       )
     } else if (jobName === "dark knight") {
       return (
-        <div>
+        <div className={jobStyles.divNonBurst}>
           <h2>Non 2-Minute Window</h2>
           <div>After our burst window is on finished, we need to be mindful of our mana. This is particularly important because we use mana for tank buster mitigation with <b>The Blackest Night</b>. We should always have Darkside up, as it gives us 10% increase in damage.</div>
           <div><b>Blood Weapon</b> is our go to ability in order to restore our mana. It will grant us 5 stacks of Blood Weapon, which will restore MP when using weapon skills. Combo this ability with our normal 1-2-3 and get our mana to max for the next burst window.</div>
@@ -140,7 +140,7 @@ const TankPageCombos = ({ jobName, normalArray, burstArray }) => {
       )
     } else {
       return (
-        <div>
+        <div className={jobStyles.divNonBurst}>
           <h2>Non 2-Minute Window</h2>
           <div>Warriors non burst window is fairly simple. We want to use one <b>Upheaval</b> when it comes off cooldown, and keep our <b>Surging Tempest</b> buff up, which we get from combo finishing with Storm's Eye. So we have our normal 1-2-3 combo, with occasionally using <b>Storm's Eye</b> instead of <b>Storm's Path`</b>.</div>
         </div>
