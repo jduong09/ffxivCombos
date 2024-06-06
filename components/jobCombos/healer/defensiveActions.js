@@ -33,7 +33,7 @@ const DefensiveActions = ({ jobName, firstPack, secondPack }) => {
       )
     } else {
       return (
-        <div>This pull is up to the user. Depending on who you are playing with, healer-wise, you may want to wait to use skills. Say its a white mage, they will start with a 4 second stun. Following that stun, we can let ourselves get damaged very low and then use Bloodwhetting to heal ourselves back up. Bloodwhetting with Inner Release + Decimate will heal us back to full. Follow this up with Vengeance and Arm's Length to finish the pack.</div>
+        <div>As I understand, Sage's healing comes mainly from DEALING DAMAGE. <b>Kardia's</b> ability text states 'restoring HP after casting certain magic attacks'. So using Sage's damage ability, <b>Dosis</b>, will cure the person with the effect Kardion by a potency of 170. Can start the pull with <b>Eukrasia</b> with <b>Eukrasian Diagnosis</b>. We can also start with <b>Kerachole</b>.</div>
       )
     }
   }
@@ -49,11 +49,31 @@ const DefensiveActions = ({ jobName, firstPack, secondPack }) => {
       )
     } else if (jobName === "astrologian") {
       return (
-        <div>Dark Knight will use Rampart + Reprisal on second pack. Once these mits are up, we can use Dark Missionary, and Oblation and The Blackest Night.</div>
+        <div>On second pack we can use <b>Exaltation</b> on the tank, and we should have excess to <b>Horoscope</b> after using a number of cards. Use any <b>Essential Dignity</b> stacks before using a GCD such as <b>Benefic II</b></div>
       )
     } else {
       return (
-        <div>Similar to the first pack, gauge what your healer is doing and you can use no mitigation until you drop low and want to get back to full health with bloodwhetting and AOE damage. Use equillibrium as necessary, and dont forget Rampart + Reprisal.</div>
+        <div>On second pull, you should have some addersgall stack to use <b>Zoe</b> with <b>Taurochole</b>.</div>
+      )
+    }
+  }
+
+  const renderTankBuster = () => {
+    if (jobName === "scholar") {
+      return (
+        <div>Scholar has access to <b>Recitate</b>. This will give our next shield a guarenteed critical, so very big shield. This should be enough usually, if its a multi-tankbuster, we can combine this with damage mitigation tool, such as <b>Whispering Dawn</b>.</div>
+      )
+    } else if (jobName === "white mage") {
+      return (
+        <div>White Mage's shield ability is <b>Divine Benison</b>. I like to combine this with <b>Aquaveil</b> for some shield and damage mitigation. Adding a <b>Regen</b> is nice to have, guarenteeing that tanks will have some healing after.</div>
+      )
+    } else if (jobName === "astrologian") {
+      return (
+        <div>Astrologian uses <b>Neutral Sect</b>, which will erect a barrier when using either <b>Aspected Benefic</b> or <b>Aspected Helios</b>. So combine it with <b>Aspected Benefic</b> for tankbusters.</div>
+      )
+    } else {
+      return (
+        <div>Sages tankbuster mitigation is <b>Eukrasia</b> and <b>Eukrasian Diagnosis</b>. If the person who got hit with the tankbuster needs some healing, we can follow that up with <b>Taurochole</b>.</div>
       )
     }
   }
@@ -72,8 +92,13 @@ const DefensiveActions = ({ jobName, firstPack, secondPack }) => {
         <ul className={jobStyles.listTankDefensive}>{listSecondPack}</ul>
         {renderSecondPack()}
       </div>
+      <div className={jobStyles.tankDefensiveActions}>
+        <h2>Tankbusters</h2>
+        <div>Tankbusters will be used by the enemy in boss fights usually. Many times they are telegraphed with an indicator, sometimes they are not. Each healer has different tools to handle these.</div>
+        {renderTankBuster()}
+      </div>
     </div>
-  )
+  );
 }
 
 export default DefensiveActions;
