@@ -5,7 +5,7 @@ import FooterComponent from '@/components/htmlComponent/footer';
 
 export default async function DarkKnightPage() {
   const normalArray = ["Hard Slash", "Syphon Strike", "Souleater"];
-  const burstArray = ["Edge of Shadow", "Edge of Shadow", "Edge of Shadow", "Blood Weapon", "Delirium", "Bloodspiller", "Salted Earth", "Bloodspiller", "Salt and Darkness","Bloodspiller", "Carve and Spit","Edge of Shadow",];
+  const burstArray = ["Edge of Shadow", "Shadowbringer", "Shadowbringer", "Edge of Shadow", "Edge of Shadow", "Blood Weapon", "Delirium", "Bloodspiller", "Salted Earth", "Bloodspiller", "Salt and Darkness","Bloodspiller", "Carve and Spit","Edge of Shadow",];
   const firstPack = ["Arm's Length", "Shadow Wall", "The Blackest Night"];
   const secondPack = ["Rampart", "Reprisal", "Oblation", "The Blackest Night"];
   return (

@@ -19,10 +19,14 @@
 }
 
 .listJobAction {
-  width: 70%;
+  width: 100%;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  padding: 1rem;
+  background-color: lavender;
+  border: 4px solid #e0d6ff;
+  border-radius: 4px;
 }
 
 .listJobAction > li {
@@ -57,50 +61,6 @@
   order: 1;
   width: 48px;
   height: 48px;
-}
-
-.tankDefensiveActions {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.tankDefensiveActions > h2, .tankDefensiveActions > div:first-of-type {
-  flex: 1 100%;
-}
-
-.tankDefensivePacks {
-  width: 45%;
-  padding: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
-  border: 2px solid black;
-}
-
-.tankDefensivePacks > h4 {
-  order: 1;
-  flex: 1 100%;
-  margin-bottom: 1rem;
-}
-
-.listTankDefensive {
-  order: 2;
-  display: flex;
-}
-
-.listTankDefensive > li {
-  margin: 0 1rem 1rem 0;
-}
-
-.listTankDefensive > li:last-of-type {
-  margin-right: 0;
-}
-
-.tankDefensivePacks > div {
-  order: 3;
-  flex: 1 100%;
 }
 
 .listClassIcon {
@@ -258,6 +218,115 @@
   position: relative;
 }
 
+
+/* tankPage */
+.divComboWithVideo, .divNormal, .divNonBurst {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2rem 0rem 2rem;
+  text-align: center;
+}
+
+.divComboWithVideo > h2, .divNormal > h2, .divNonBurst > h2 {
+  margin-bottom: 1rem;
+  order: 1;
+}
+
+.divInfo {
+  display: flex;
+  flex-direction: column;
+  order: 3;
+}
+
+.videoContainer {
+  width: 100%;
+  margin-bottom: 2rem;
+  order: 2;
+}
+
+.listJobAction {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.listJobAction > li:last-child {
+  margin-right: 0;
+}
+
+.divNormal > ul {
+  order: 2;
+}
+
+.divNormal > div {
+  order: 3;
+}
+
+.divNormal > div > div {
+  margin-bottom: .5rem;
+}
+
+.divNonBurst > div {
+  order: 2;
+}
+
+.tankDefensiveActions {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+  text-align: center;
+}
+
+.tankDefensiveActions > h2 {
+  margin-bottom: 1rem;
+}
+
+.tankDefensiveActions > div:first-of-type {
+  width: 85%;
+  margin: 0 auto 1rem auto;
+}
+
+.tankDefensivePacks {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 4px solid #e0d6ff;
+  background-color: lavender;
+  border-radius: 4px;
+}
+
+.tankDefensivePacks > h4 {
+  order: 1;
+  flex: 1 100%;
+  margin-bottom: 1rem;
+}
+
+.listTankDefensive {
+  order: 2;
+  display: flex;
+}
+
+.listTankDefensive > li {
+  margin: 0 1rem 1rem 0;
+}
+
+.listTankDefensive > li:last-of-type {
+  margin-right: 0;
+}
+
+.tankDefensivePacks > div {
+  order: 3;
+  flex: 1 100%;
+}
+
 @media (min-width: 575px) {
   .listFourSquares {
     grid-template-columns: repeat(2, 1fr);
@@ -270,6 +339,20 @@
 
   .imageHeadshot {
     height: 60%;
+  }
+
+  .tankDefensiveActions {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .tankDefensiveActions > h2 {
+    flex: 1;
+  }
+
+  .tankDefensivePacks {
+    width: 48%;
+    margin-bottom: 0;
   }
 }
 
