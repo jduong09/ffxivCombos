@@ -9,12 +9,13 @@ export default async function SummonerPage() {
   const dungeonPackArray = ["Outburst", "Precious Brilliance", "Summon Ruby", "Ruby Outburst", "Aethercharge", "Painflare", "Painflare", "Dreadwyrm Trance", "Astral Flare", "Deathflare"];
   const defensiveActions = ["Resurrection"];
   const roleActions = ["Lucid Dreaming", "Surecast", "Swiftcast"];
+  const jobSpecificActions = ["Resurrection", "Searing Light"]
   return (
     <div>
       <HeaderComponent jobAcronym='SMN' jobName='summoner' />
       <main>
         <Combos jobName='summoner' normalArray={normalArray} burstArray={burstArray} dungeonPackArray={dungeonPackArray} />
-        <MagicalRangedDpsRoleActions jobName='summoner' defensiveActions={defensiveActions} roleActions={roleActions} />
+        <MagicalRangedDpsRoleActions jobName='summoner' defensiveActions={defensiveActions} roleActions={roleActions} jobSpecificActions={jobSpecificActions} />
       </main>
       <FooterComponent />
     </div>
