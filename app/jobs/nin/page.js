@@ -9,12 +9,13 @@ export default async function NinjaPage() {
   const dungeonPackArray = ["Ten", "Jin", "Chi", "Death Blossom", "Hakke Mujinsatsu", "Hellfrog Medium", "Kassatsu", "Chi", "Ten"];
   const defensiveActions = ["Second Wind", "Bloodbath", "Shade Shift"];
   const roleActions = ["Feint", "True North"];
+  const jobSpecificActions = ["Suiton", "Trick Attack", "Mug"];
   return (
     <div>
       <HeaderComponent jobAcronym='NIN' jobName='ninja' />
       <main>
         <Combos jobName='ninja' normalArray={normalArray} burstArray={burstArray} dungeonPackArray={dungeonPackArray} />
-        <MeleeDpsRoleActions jobName='ninja' defensiveActions={defensiveActions} roleActions={roleActions} />
+        <MeleeDpsRoleActions jobName='ninja' defensiveActions={defensiveActions} roleActions={roleActions} jobSpecificActions={jobSpecificActions} />
       </main>
       <FooterComponent />
     </div>

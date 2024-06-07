@@ -9,12 +9,13 @@ export default async function MonkPage() {
   const dungeonPackArray = ["Meditation", "Arm of the Destroyer", "Howling Fist", "Four-point Fury", "Rockbreaker"];
   const defensiveActions = ["Second Wind", "Bloodbath", "Riddle of Earth"];
   const roleActions = ["Feint", "True North"];
+  const jobSpecificActions = ["Riddle of Fire", "Riddle of Earth", "Riddle of Wind", "Mantra", "Brotherhood"];
   return (
     <div>
       <HeaderComponent jobAcronym='MNK' jobName='monk' />
       <main>
         <Combos jobName='monk' normalArray={normalArray} burstArray={burstArray} dungeonPackArray={dungeonPackArray} />
-        <MeleeDpsRoleActions jobName='monk' defensiveActions={defensiveActions} roleActions={roleActions} />
+        <MeleeDpsRoleActions jobName='monk' defensiveActions={defensiveActions} roleActions={roleActions} jobSpecificActions={jobSpecificActions} />
       </main>
       <FooterComponent />
     </div>

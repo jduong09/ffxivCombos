@@ -9,12 +9,13 @@ export default async function SamuraiPage() {
   const dungeonPackArray = ["Fuko", "Mangetsu", "Fuko", "Oka", "Tenka Goken", "Tsubame-gaeshi", "Hissatsu: Kyuten", "Hissatsu: Kyuten", "Hissatsu: Guren"];
   const defensiveActions = ["Second Wind", "Bloodbath", "Third Eye"];
   const roleActions = ["Feint", "True North"];
+
   return (
     <div>
       <HeaderComponent jobAcronym='SAM' jobName='samurai' />
       <main>
         <Combos jobName='samurai' normalArray={normalArray} burstArray={burstArray} dungeonPackArray={dungeonPackArray} />
-        <MeleeDpsRoleActions jobName='samurai' defensiveActions={defensiveActions} roleActions={roleActions} />
+        <MeleeDpsRoleActions jobName='samurai' defensiveActions={defensiveActions} roleActions={roleActions} jobSpecificActions={[]} />
       </main>
       <FooterComponent />
     </div>

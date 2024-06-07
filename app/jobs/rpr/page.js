@@ -9,12 +9,13 @@ export default async function ReaperPage() {
   const dungeonPackArray = ["Arcane Circle", "Whorl of Death", "Spinning Scythe", "Nightmare Scythe", "Grim Swathe", "Guillotine"];
   const defensiveActions = ["Second Wind", "Bloodbath", "Arcane Crest"];
   const roleActions = ["Feint", "True North"];
+  const jobSpecificActions = ["Arcane Crest", "Arcane Circle"];
   return (
     <div>
       <HeaderComponent jobAcronym='RPR' jobName='reaper' />
       <main>
         <Combos jobName='reaper' normalArray={normalArray} burstArray={burstArray} dungeonPackArray={dungeonPackArray} />
-        <MeleeDpsRoleActions jobName='reaper' defensiveActions={defensiveActions} roleActions={roleActions} />
+        <MeleeDpsRoleActions jobName='reaper' defensiveActions={defensiveActions} roleActions={roleActions} jobSpecificActions={jobSpecificActions} />
       </main>
       <FooterComponent />
     </div>
