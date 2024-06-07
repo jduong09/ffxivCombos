@@ -10,12 +10,13 @@ export default async function BardPage() {
   const dungeonPackArray = ["Venomous Bite", "Windbite", "Quick Nock", "Quick Nock", "Quick Nock", "Shadowbite", "Rain of Death", "Rain of Death", "Rain of Death", "Apex Arrow"];
   const defensiveActions = ["Second Wind", "Troubadour"];
   const roleActions = ["Peloton", "Head Graze"];
+  const jobSpecificActions = ["Mage's Ballad", "The Wanderer's Minuet", "Army's Paeon", "Troubadour", "Nature's Minne", "The Warden's Paean", "Battle Voice"];
   return (
     <div>
       <HeaderComponent jobAcronym='BRD' jobName='bard' />
       <main>
         <Combos jobName='bard' normalArray={normalArray} burstArray={burstArray} dungeonPackArray={dungeonPackArray} />
-        <PhysicalRangedDpsRoleActions jobName='bard' defensiveActions={defensiveActions} roleActions={roleActions} />
+        <PhysicalRangedDpsRoleActions jobName='bard' defensiveActions={defensiveActions} roleActions={roleActions} jobSpecificActions={jobSpecificActions} />
       </main>
       <FooterComponent />
     </div>

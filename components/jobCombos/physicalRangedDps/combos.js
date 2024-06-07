@@ -25,6 +25,84 @@ const Combos = ({ jobName, normalArray, burstArray, dungeonPackArray }) => {
       </li>
     )
   });
+
+  const renderNormalDiv = () => {
+    if (jobName === "machinist") {
+      return (
+        <div>
+          <span>Machinist normal combo is <b>Split Shot</b> - <b>Slug Shot</b> - <b>Clean Shot</b>. Performing this combo will gradually increase the heat and battery gauge. In between this combo, Machinist should try to weave in the AOE attack <b>Ricochet</b> and ST attack <b>Gauss Round</b> for extra damage.</span>
+          <span>When not in burst, Machinist can use <b>Drill</b> once before it is needed for the burst phase. <b>Air Anchor</b> and <b>Chain Saw</b> fuel the battery gauge, and should be used when its immediately off cooldown.</span>
+        </div>
+      )
+    } else if (jobName === "bard") {
+      return (
+        <div>
+          <span>Bard's normal combo is a combination of DoT attacks and one attack that can lead to another.<b>Heavy Shot</b> will be your ability to use normally, and there is a 20% chance of it granting Straight Shot Ready, allowing the use of <b>Straight Shot</b>. <b>Bloodletter</b> is an ability that has a maximum charge of 3, and is similar to Machinist's <b>Gauss Round</b>. Use when it is available.</span>
+          <span>Bard has two DoT attacks, <b>Venomous Bite</b> and <b>Windbite</b>. At higher levels, Bards can use <b>Iron Jaws</b> to reset the cooldown of the DoTs, but beforehand you will have to manually reapply both debuffs.</span>
+        </div>
+      )
+    } else {
+      return (
+        <div>
+          <span>Dancer has a 1-2 combo, which can proc other buffs and use oGCDs. <b>Cascade</b> - <b>Fountain</b>. <b>Cascade</b> has a 50% chance of granting Silken Symmetry, allowing the use of <b>Reverse Cascade</b>. <b>Fountain</b> has a 50% chance of granting silken flow, allowing the use of <b>Fountainfall</b>. <b>Reverse Cascade</b> has a 50% chance of granting Fourfold Feather, which in turn allows <b>Fan Dance</b>.</span>
+          <span>The other key to Dancer's kit is dancing, of course. <b>Standard Step</b> will turn some actions to steps, and doing the correct steps will allow us to use <b>Standard Finish</b> and get max potency on an AOE attack, while granting the user and their dance partner a damage bonus.</span>
+        </div>
+      )
+    }
+  }
+
+  const renderBurstDiv = () => {
+    if (jobName === "machinist") {
+      return (
+        <div>
+          <span>Machinist burst phase revolves around the skill <b>Wildfire</b>. For 10 seconds, you need to execute 6 actions for a total of 1440 potency. The 6 actions are usually <b>Heat Blast</b> and <b>Gauss Round</b>, because <b>Heat Blast</b> will reduce the recast time of <b>Gauss Round</b>.</span>
+          <span>Therefore we will either have 50 heat in the gauge in order to use <b>Hypercharge</b>, or we can use <b>Barrel Stabilizer</b> to increase our heat gauge by 50. Apply <b>Wildfire</b> to the target, and begin using Heat Round, and Gauss Round when you have one available. This should be enough to get maximum potency out of <b>Wildfire</b></span>
+          <span>Once the 10 seconds of <b>Wildfire</b> is up, we can use <b>Reassemble</b> with <b>Drill</b> during burst to guarentee maximum damage. Use <b>Chain Saw</b> and <b>Air Anchor</b> when it is off cooldown.</span>
+          <span>In burst phase we also want to activate our <b>Automaton Queen</b> when we have 100 battery.</span>
+        </div>
+      )
+    } else if (jobName === "bard") {
+      return (
+        <div>
+          <span>For Bard's burst, we want to utilize the correct Ballad to boost our party's damage. This will be <b>Battle Voice</b>, which increases direct hit rate of self and all nearby party members by 20% and <b>The Wanderer's Minuet</b>. This will grant the party increase critical hit rate.</span>
+          <span>While we are in this burst, Bard has access to their oGCDs, <b>Sidewinder</b> and <b>Empyreal Arrow</b> and <b>Blast Arrow</b>. Use 50 soul voice gauge in order to use <b>Apex Arrow</b>, and follow up with <b>Blast Arrow</b>.</span>
+        </div>
+      )
+    } else {
+      return (
+        <div>
+          <span>In burst phase, Dancer will need to maintain their standard finish buff. Start with <b>Devilment</b> to buff you and your dance partner. <b>Starfall Dance</b> to start, followed by <b>Technical Step</b>. Do the corresponding dances, and stop at 4 steps, and use <b>Technical Finish</b>.</span>
+          <span>Finishing this dance allows the use of <b>Tillana</b>. From here we can use <b>Fan Dance IV</b>, <b>Reverse Cascade</b>, <b>Fan Dance III</b>, or <b>Fountainfall</b>.</span>
+        </div>
+      )
+    }
+  }
+
+  const renderDungeonDiv = () => {
+    if (jobName === "machinist") {
+      return (
+        <div>
+          <span>In dungeons, our AOE will be <b>Spread Shot</b>/<b>Scatter Gun</b>. There is no combo action, but when we have casts of <b>Ricochet</b>, use them because it is an AOE attack.</span>
+          <span>Manage your heat gauge, and if you can afford it use <b>Hypercharge</b>, in order to then use <b>Auto Crossbow</b>. The AOE oGCD is <b>Bioblaster.</b></span>
+        </div>
+      )
+    } else if (jobName === "bard") {
+      return (
+        <div>
+          <span>For dungeon AOE's, Bard will use <b>Quick Knock</b>, with a 35% chance of becoming shadowbite ready, allowing the use of <b>Shadowbite</b>. Similar to <b>Bloodletter</b>, Bard can use <b>Rain of Death</b> when it is available.</span>
+          <span>Use <b>Mage's Ballad</b>, and hopefully the 80% chance to grant Repertoire, which will reduce the recast time of <b>Rain of Death</b>.</span>
+        </div>
+      )
+    } else {
+      return (
+        <div>
+          <span>Dancer's dungeon skills are similar to their single target skills. <b>Windmill</b> can grant Silken Symmetry, allowing the use of <b>Rising Windmill</b>, while <b>Bladeshower</b> can allow the use of <b>Bloodshower</b> through a 50% chance at getting the buff Silken Flow.</span>
+          <span>Dancer's <b>Standard Finisher</b> is an AOE attack, so make sure to use it on the enemy pack.</span>
+        </div>
+      )
+    }
+  }
+
   return (
     <div>
       <div className={jobStyles.trademark}>All icons are property of SQUARE-ENIX Ltd 1 second ago all rights reserved</div>
@@ -32,30 +110,21 @@ const Combos = ({ jobName, normalArray, burstArray, dungeonPackArray }) => {
         <h2>1 - 2 - 3 Combo</h2>
         <div className={jobStyles.jobActionCombo}>
           <ul className={jobStyles.listJobAction}>{listItemsNormal}</ul>
-          {/*
-          <div className={jobStyles.videoContainer}>
-            <iframe id="video-pld-normal" src="http://www.youtube.com/embed//jeKN0lqrfg4" title="paladin normal combo" allowFullScreen/>
-          </div>*/}
+          {renderNormalDiv()}
         </div>
       </div>
       <div className={jobStyles.jobActionsContainer}>
         <h2>Burst Combo</h2>
         <div className={jobStyles.jobActionCombo}>
           <ul className={jobStyles.listJobAction}>{listItemsBurst}</ul>
-          {/*
-          <div className={jobStyles.videoContainer}>
-            <iframe id="video-pld-burst" src="https://www.youtube.com/embed/i-hsMqDW2-c" title='paladin burst combo' allowFullScreen/>
-          </div>*/}
+          {renderBurstDiv()}
         </div>
       </div>
       <div className={jobStyles.jobActionsContainer}>
         <h2>Dungeon Pack Combo</h2>
         <div className={jobStyles.jobActionCombo}>
           <ul className={jobStyles.listJobAction}>{listItemsDungeon}</ul>
-          {/*
-          <div className={jobStyles.videoContainer}>
-            <iframe id="video-pld-burst" src="https://www.youtube.com/embed/i-hsMqDW2-c" title='paladin burst combo' allowFullScreen/>
-          </div>*/}
+          {renderDungeonDiv()}
         </div>
       </div>
     </div>

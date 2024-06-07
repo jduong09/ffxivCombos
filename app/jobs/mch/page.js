@@ -10,12 +10,13 @@ export default async function MachinistPage() {
   const dungeonPackArray = ["Spread Shot", "Reassemble", "Bioblaster", "Ricochet", "Hypercharge", "Auto Crossbow", "Auto Crossbow", "Auto Crossbow", "Auto Crossbow", "Auto Crossbow", "Ricochet", "Ricochet"];
   const defensiveActions = ["Second Wind", "Tactician", "Dismantle"];
   const roleActions = ["Peloton", "Head Graze"];
+  const jobSpecificActions = ["Tactician"];
   return (
     <div>
       <HeaderComponent jobAcronym='MCH' jobName='machinist' />
       <main>
         <Combos jobName='machinist' normalArray={normalArray} burstArray={burstArray} dungeonPackArray={dungeonPackArray} />
-        <PhysicalRangedDpsRoleActions jobName='machinist' defensiveActions={defensiveActions} roleActions={roleActions} />
+        <PhysicalRangedDpsRoleActions jobName='machinist' defensiveActions={defensiveActions} roleActions={roleActions} jobSpecificActions={jobSpecificActions} />
       </main>
       <FooterComponent />
     </div>
