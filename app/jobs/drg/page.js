@@ -9,7 +9,7 @@ export default async function DragoonPage() {
   const dungeonPackArray = ["Battle Litany", "Dragonfire Dive", "Geirskogul", "Nastrond", "Life Surge", "Stardiver", "Nastrond", "Nastrond"];
   const defensiveActions = ["Second Wind", "Bloodbath"];
   const roleActions = ["Feint", "True North"];
-  const jobSpecificActions = ["Battle Litany", "Dragon Sight"]
+  const jobSpecificActions = ["Battle Litany", "Dragon Sight"];
   return (
     <div>
       <HeaderComponent jobAcronym='DRG' jobName='dragoon' />
