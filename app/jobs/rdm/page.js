@@ -9,13 +9,14 @@ export default async function RedMagePage() {
   const dungeonPackArray = ["Embolden", "Scatter", "Acceleration", "Contre Sixte", "Impact"];
   const defensiveActions = ["Verraise"];
   const roleActions = ["Lucid Dreaming", "Surecast", "Swiftcast"];
+  const jobSpecificActions = ["Verraise", "Embolden", "Magick Barrier"];
   return (
     <div>
       
       <HeaderComponent jobAcronym='RDM' jobName='red mage' />
       <main>
         <Combos jobName='red mage' normalArray={normalArray} burstArray={burstArray} dungeonPackArray={dungeonPackArray} />
-        <MagicalRangedDpsRoleActions jobName='red mage' defensiveActions={defensiveActions} roleActions={roleActions} />
+        <MagicalRangedDpsRoleActions jobName='red mage' defensiveActions={defensiveActions} roleActions={roleActions} jobSpecificActions={jobSpecificActions} />
       </main>
       <FooterComponent />
     </div>

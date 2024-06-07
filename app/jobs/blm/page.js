@@ -9,12 +9,13 @@ export default async function BlackMagePage() {
   const dungeonPackArray = ["Sharpcast", "Thunder IV", "Triplecast", "Blizzard III", "Blizzard IV", "High Fire II", "High Fire II", "High Fire II", "High Fire II", "Foul", "Manafont", "High Fire II", "Thunder IV", "Flare"];
   const defensiveActions = ["Manaward"];
   const roleActions = ["Lucid Dreaming", "Surecast", "Swiftcast"];
+  const jobSpecificActions = ["Ley Lines", "Aetherial Manipulation", "Between the Lines"];
   return (
     <div>
       <HeaderComponent jobAcronym='BLM' jobName='black mage' />
       <main>
         <Combos jobName='black mage' normalArray={normalArray} burstArray={burstArray} dungeonPackArray={dungeonPackArray} />
-        <MagicalRangedDpsRoleActions jobName='black mage' defensiveActions={defensiveActions} roleActions={roleActions} />
+        <MagicalRangedDpsRoleActions jobName='black mage' defensiveActions={defensiveActions} roleActions={roleActions} jobSpecificActions={jobSpecificActions} />
       </main>
       <FooterComponent />
     </div>
