@@ -393,5 +393,26 @@
   .listFourSquares {
     grid-template-columns: repeat(6, 1fr);
   }
+
+  .divComboWithVideo, .divNormal {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .divComboWithVideo {
+    text-align: start;
+  }
+
+  .divInfo {
+    order: 1;
+  }
+
+  .videoContainer {
+    order: 2;
+  }
+
+  .divNormal {
+    text-align: end;
+  }
 }
 

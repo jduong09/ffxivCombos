@@ -109,7 +109,7 @@ const Combos = ({ jobName, normalArray, burstArray, dungeonPackArray }) => {
   return (
     <div>
       <div className={jobStyles.trademark}>All icons are property of SQUARE-ENIX Ltd 1 second ago all rights reserved</div>
-      <div className={jobStyles.jobActionsContainer}>
+      <div className={jobStyles.divNormal}>
         <h2>1 - 2 - 3 Combo</h2>
         <div className={jobStyles.jobActionCombo}>
           <ul className={jobStyles.listJobAction}>{listItemsNormal}</ul>

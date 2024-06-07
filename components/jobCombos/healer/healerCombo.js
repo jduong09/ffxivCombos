@@ -14,7 +14,7 @@ const HealerCombo = ({ jobName, normalArray }) => {
   const renderDamageCombo = () => {
     if (jobName === "scholar") {
       return (
-        <div className={jobStyles.divComboWithVideo}>
+        <div className={jobStyles.divNormal}>
           <h2>DoT + GCD Combo</h2>
           <div className={jobStyles.divInfo}>
             <ul className={jobStyles.listJobAction}>{listItemsNormal}</ul>
@@ -24,7 +24,7 @@ const HealerCombo = ({ jobName, normalArray }) => {
       )
     } else if (jobName === "white mage") {
       return (
-        <div className={jobStyles.divComboWithVideo}>
+        <div className={jobStyles.divNormal}>
           <h2>DoT + GCD Combo</h2>
           <div className={jobStyles.divInfo}>
             <ul className={jobStyles.listJobAction}>{listItemsNormal}</ul>
@@ -34,7 +34,7 @@ const HealerCombo = ({ jobName, normalArray }) => {
       )
     } else if (jobName === "astrologian") {
       return (
-        <div className={jobStyles.divComboWithVideo}>
+        <div className={jobStyles.divNormal}>
           <h2>DoT + GCD Combo</h2>
           <div className={jobStyles.divInfo}>
             <ul className={jobStyles.listJobAction}>{listItemsNormal}</ul>
@@ -44,7 +44,7 @@ const HealerCombo = ({ jobName, normalArray }) => {
       )
     } else {
       return (
-        <div className={jobStyles.divComboWithVideo}>
+        <div className={jobStyles.divNormal}>
           <h2>DoT + GCD Combo</h2>
           <div className={jobStyles.divInfo}>
             <ul className={jobStyles.listJobAction}>{listItemsNormal}</ul>
