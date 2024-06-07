@@ -10,12 +10,13 @@ export default async function DancerPage() {
   const dungeonPackArray = ["Windmill", "Bladeshower", "Windmill", "Rising Windmill", "Fan Dance II", "Fan Dance III"];
   const defensiveActions = ["Second Wind", "Shield Samba"];
   const roleActions = ["Peloton", "Head Graze"];
+  const jobSpecificActions = ["Closed Position", "Shield Samba"];
   return (
     <div>
       <HeaderComponent jobAcronym='DNC' jobName='dancer' />
       <main>
         <Combos jobName='dancer' normalArray={normalArray} burstArray={burstArray} dungeonPackArray={dungeonPackArray} />
-        <PhysicalRangedDpsRoleActions jobName='dancer' defensiveActions={defensiveActions} roleActions={roleActions} />
+        <PhysicalRangedDpsRoleActions jobName='dancer' defensiveActions={defensiveActions} roleActions={roleActions} jobSpecificActions={jobSpecificActions} />
       </main>
       <FooterComponent />
     </div>
