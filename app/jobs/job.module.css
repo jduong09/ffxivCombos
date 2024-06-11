@@ -18,17 +18,6 @@
   display: flex;
 }
 
-.listJobAction {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 1rem;
-  background-color: lavender;
-  border: 4px solid #e0d6ff;
-  border-radius: 4px;
-}
-
 .listJobAction > li {
   margin-right: 2rem;
   position: relative;
@@ -220,22 +209,38 @@
 
 
 /* tankPage */
-.divComboWithVideo, .divNormal, .divNonBurst {
+
+.divMainContainer {
+  padding: 2rem 2rem 0rem 2rem;
+}
+.divComboWithVideo, .divComboNoVideo {
   display: flex;
   flex-direction: column;
-  padding: 2rem 2rem 0rem 2rem;
   text-align: center;
+  margin-bottom: 1.5rem;
 }
 
-.divComboWithVideo > h2, .divNormal > h2, .divNonBurst > h2 {
+.divComboWithVideo > h2, .divComboNoVideo > h2 {
   margin-bottom: 1rem;
   order: 1;
+}
+
+.divComboWithVideo {
+  background-color: lavender;
+  border: 4px solid #e0d6ff;
+  border-radius: 4px;
+  padding: 1rem;
 }
 
 .divInfo {
   display: flex;
   flex-direction: column;
   order: 3;
+}
+
+.divInfo > h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 .videoContainer {
@@ -251,26 +256,23 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 1rem;
+  padding: 1rem;
 }
 
 .listJobAction > li:last-child {
   margin-right: 0;
 }
 
-.divNormal > ul {
+.divComboNoVideo > ul {
   order: 2;
 }
 
-.divNormal > div {
+.divComboNoVideo > div {
   order: 3;
 }
 
-.divNormal > div > div {
+.divComboNoVideo > div > div {
   margin-bottom: .5rem;
-}
-
-.divNonBurst > div {
-  order: 2;
 }
 
 .tankDefensiveActions {
@@ -387,6 +389,35 @@
    .listFourSquares {
     grid-template-columns: repeat(5, 1fr);
    }
+
+   /* /jobs/pld */
+   .divComboWithVideo {
+    flex-direction: row;
+    text-align: start;
+    flex-wrap: wrap;
+    padding: 2rem;
+   }
+
+   .divComboWithVideo > .divInfo {
+    order: 1;
+    width: 50%;
+   }
+
+   .videoContainer {
+    width: 50%;
+    margin-bottom: 0;
+    order: 2;
+   }
+
+   .listJobAction {
+    width: 100%;
+    order: 3;
+    margin-bottom: 0;
+    justify-content: start;
+    align-items: start;
+    padding: 0;
+    margin-top: 1rem;
+   }
 }
 
 @media (min-width: 1200px) {
@@ -394,12 +425,20 @@
     grid-template-columns: repeat(6, 1fr);
   }
 
-  .divComboWithVideo, .divNormal {
+  .divMainContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .divComboWithVideo, .divComboNoVideo {
     flex-direction: row;
     align-items: center;
   }
 
   .divComboWithVideo {
+    width: 100%;
     text-align: start;
   }
 
@@ -411,8 +450,25 @@
     order: 2;
   }
 
-  .divNormal {
-    text-align: end;
+  .divComboNoVideo {
+    width: 47%;
+    flex-direction: column;
+  }
+
+  .divMainContainer:nth-child(1):after {
+    content: '';
+    width: 4px;
+    height: 45%;
+    background-color: #e0d6ff;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    border-radius: 500px;
+  }
+
+  .divComboNoVideo > .listJobAction {
+    justify-content: center;
+    margin-bottom: 1rem;
   }
 }
 
