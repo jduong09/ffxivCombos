@@ -1,4 +1,5 @@
 import jobStyles from '@/app/jobs/job.module.css';
+import classPageStyles from '@/app/jobs/classPage.module.css';
 import { ffxivActions } from '@/app/api';
 
 const DefensiveCooldowns = ({ jobName, firstPack, secondPack }) => {
@@ -81,17 +82,17 @@ const DefensiveCooldowns = ({ jobName, firstPack, secondPack }) => {
   }
 
   return (
-    <div className={jobStyles.tankDefensiveActions}>
+    <div className={classPageStyles.tankDefensiveActions}>
       <h2>Defensive Cooldowns</h2>
-      <div>In dungeons, each boss has usually two major wall to walls before reaching it.</div>
-      <div className={jobStyles.tankDefensivePacks}>
+      <div>In dungeons, each boss has usually two major wall to walls before reaching it. The goal will be use enough mitigation to allow the healer to dps in each pull. Managing tank mitigation is key to tanking dungeons.</div>
+      <div className={classPageStyles.tankDefensivePacks}>
         <h4>First Pack</h4>
-        <ul className={jobStyles.listTankDefensive}>{listFirstPack}</ul>
+        <ul className={classPageStyles.listTankDefensive}>{listFirstPack}</ul>
         {renderFirstPack()}
       </div>
-      <div className={jobStyles.tankDefensivePacks}>
+      <div className={classPageStyles.tankDefensivePacks}>
         <h4>Second Pack</h4>
-        <ul className={jobStyles.listTankDefensive}>{listSecondPack}</ul>
+        <ul className={classPageStyles.listTankDefensive}>{listSecondPack}</ul>
         {renderSecondPack()}
       </div>
     </div>
