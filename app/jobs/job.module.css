@@ -6,46 +6,6 @@
   margin-bottom: 1rem;
 }
 
-.jobActionsContainer {
-  margin-bottom: 3rem;
-}
-
-.jobActionsContainer > h2 {
-  font-size: 1.5rem;
-}
-
-.jobActionCombo {
-  display: flex;
-}
-
-.listJobAction > li {
-  margin-right: 2rem;
-  position: relative;
-}
-
-.listJobAction > li::after {
-  content: '->';
-  width: 16px;
-  height: auto;
-  position: absolute;
-  top: 50%;
-  left: 3.5rem;
-  transform: translateY(-50%);
-}
-
-.listJobAction > li:last-of-type:after {
-  display: none;
-}
-
-.videoContainer {
-  width: 30%;
-}
-
-.videoContainer > iframe {
-  display: block;
-  margin: 0 auto;
-}
-
 .jobIcon {
   order: 1;
   width: 48px;
@@ -207,87 +167,6 @@
   position: relative;
 }
 
-/* tankPage */
-.divMainContainer {
-  padding: 1rem 1rem 0 1rem;
-}
-
-.divComboWithVideo, .divComboNoVideo {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
-
-.divComboWithVideo > h2, .divComboNoVideo > h2 {
-  margin-bottom: 1rem;
-  order: 1;
-}
-
-.divComboWithVideo {
-  background-color: lavender;
-  border: 4px solid #e0d6ff;
-  border-radius: 4px;
-  padding: .5rem;
-}
-
-.videoContainer {
-  width: 100%;
-  margin-bottom: 2rem;
-  order: 2;
-}
-
-.divInfo {
-  display: flex;
-  flex-direction: column;
-  order: 3;
-}
-
-.divInfo > h2 {
-  font-size: 1.25rem;
-  margin-bottom: 1rem;
-}
-
-.listJobAction {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1rem;
-  padding: 1rem;
-}
-
-.listJobAction > li:last-child {
-  margin-right: 0;
-}
-
-.divComboNoVideo {
-  position: relative;
-}
-
-.divComboNoVideo::after {
-  content: '';
-  width: 100%;
-  height: 4px;
-  background-color: #e0d6ff;
-  position: absolute;
-  bottom: -.75rem;
-  left: 0;
-}
-
-.divComboNoVideo > ul {
-  order: 2;
-}
-
-.divComboNoVideo > div {
-  order: 3;
-}
-
-.divComboNoVideo > div > div {
-  margin-bottom: .5rem;
-}
-
 @media (min-width: 575px) {
   .listFourSquares {
     grid-template-columns: repeat(2, 1fr);
@@ -334,123 +213,11 @@
    .listFourSquares {
     grid-template-columns: repeat(5, 1fr);
    }
-
-   /* /jobs/pld */
-   .divComboWithVideo {
-    flex-direction: row;
-    text-align: start;
-    flex-wrap: wrap;
-    padding: 2rem;
-   }
-
-   .divComboWithVideo > .divInfo {
-    order: 1;
-    width: 50%;
-   }
-
-   .videoContainer {
-    width: 50%;
-    margin-bottom: 0;
-    order: 2;
-   }
-
-   .listJobAction {
-    width: 100%;
-    order: 3;
-    align-items: start;
-    padding: 0;
-    margin: 1rem auto 0 auto;
-   }
-
-   .divComboNoVideo {
-    width: 85%;
-    margin: 0 auto 1.5rem auto;
-  }
-}
-
-@media (min-width: 1020px) {
-  .divMainContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    position: relative;
-  }
-
-  .divComboNoVideo {
-    width: 47%;
-    flex-direction: column;
-  }
-
-  .divComboNoVideo::after {
-    display: none;
-  }
-
-  .divMainContainer:nth-child(1):after {
-    content: '';
-    width: 4px;
-    height: 40%;
-    background-color: #e0d6ff;
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    border-radius: 500px;
-  }
-
-  .divComboNoVideo > .listJobAction {
-    justify-content: center;
-    margin-bottom: 1rem;
-  }
 }
 
 @media (min-width: 1200px) {
   .listFourSquares {
     grid-template-columns: repeat(6, 1fr);
-  }
-
-  .divMainContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    position: relative;
-  }
-
-  .divComboWithVideo, .divComboNoVideo {
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .divComboWithVideo {
-    width: 100%;
-    text-align: start;
-  }
-
-  .divInfo {
-    order: 1;
-  }
-
-  .videoContainer {
-    order: 2;
-  }
-
-  .divComboNoVideo {
-    width: 47%;
-    flex-direction: column;
-  }
-
-  .divMainContainer:nth-child(1):after {
-    content: '';
-    width: 4px;
-    height: 40%;
-    background-color: #e0d6ff;
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    border-radius: 500px;
-  }
-
-  .divComboNoVideo > .listJobAction {
-    justify-content: center;
-    margin-bottom: 1rem;
   }
 }
 
