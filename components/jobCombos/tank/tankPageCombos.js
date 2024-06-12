@@ -31,7 +31,7 @@ const TankPageCombos = ({ jobName, normalArray, burstArray, dungeonArray }) => {
   const renderNormalDiv = () => {
     if (jobName === "gunbreaker") {
       return (
-        <div className={jobStyles.divNormal}>
+        <div className={jobStyles.divComboNoVideo}>
           <ul className={jobStyles.listJobAction}>{listItemsNormal}</ul>
           <div>
             <h2>Normal Combo</h2>
@@ -54,7 +54,7 @@ const TankPageCombos = ({ jobName, normalArray, burstArray, dungeonArray }) => {
       )
     } else if (jobName === "dark knight") {
       return (
-        <div className={jobStyles.divNormal}>
+        <div className={jobStyles.divComboNoVideo}>
           <ul className={jobStyles.listJobAction}>{listItemsNormal}</ul>
           <div>
             <h2>Normal Combo</h2>
@@ -65,7 +65,7 @@ const TankPageCombos = ({ jobName, normalArray, burstArray, dungeonArray }) => {
       )
     } else {
       return (
-        <div className={jobStyles.divNormal}>
+        <div className={jobStyles.divComboNoVideo}>
           <ul className={jobStyles.listJobAction}>{listItemsNormal}</ul>
           <div>
             <h2>Normal Combo</h2>
@@ -141,9 +141,14 @@ const TankPageCombos = ({ jobName, normalArray, burstArray, dungeonArray }) => {
   const renderNonBurstDiv = () => {
     if (jobName === "gunbreaker") {
       return (
-        <div className={jobStyles.divNonBurst}>
-          <h2>Non 2-Minute Window</h2>
-          <div>While <b>No Mercy</b> is on cooldown (60 seconds), we should be able to get in one <b>Gnashing Fang</b> combo, and one use of <b>Blasting Zone</b>. It is relatively simple, use our normal 1-2-3 combo to obtain cartridges, and try to have 3 cartridges in the powder gauge for when No Mercy is going to be used.</div>
+        <div className={jobStyles.divComboNoVideo}>
+          <ul className={jobStyles.listJobAction}>{listItemsDungeon}</ul>
+          <div>
+            <h2>Dungeon Combos</h2>
+            <div>During dungeons, Gunbreaker has access to <b>Demon Slice</b> and <b>Demon Slaughter</b>. Fulfilling this combo will give the Gunbreaker a cartridge to your powder gauge.</div>
+            <div>With our cartridge, we can use <b>Fated Circle</b> for 1 cartridge, and <b>Double Down</b> for 2 cartridges.</div>
+            <div>Weave in <b>Bow Shock</b> to add a DoT to enemies during dungeon packs.</div>
+          </div>
         </div>
       )
     } else if (jobName === "paladin") {
@@ -160,17 +165,26 @@ const TankPageCombos = ({ jobName, normalArray, burstArray, dungeonArray }) => {
       )
     } else if (jobName === "dark knight") {
       return (
-        <div className={jobStyles.divNonBurst}>
-          <h2>Non 2-Minute Window</h2>
-          <div>After our burst window is on finished, we need to be mindful of our mana. This is particularly important because we use mana for tank buster mitigation with <b>The Blackest Night</b>. We should always have Darkside up, as it gives us 10% increase in damage.</div>
-          <div><b>Blood Weapon</b> is our go to ability in order to restore our mana. It will grant us 5 stacks of Blood Weapon, which will restore MP when using weapon skills. Combo this ability with our normal 1-2-3 and get our mana to max for the next burst window.</div>
+        <div className={jobStyles.divComboNoVideo}>
+          <ul className={jobStyles.listJobAction}>{listItemsDungeon}</ul>
+          <div className={jobStyles.divNonBurst}>
+            <h2>Dungeon Combos</h2>
+            <div>Dark Knight has access to <b>Unleash</b>, followed by <b>Stalwart Soul</b>. Due to Dark Knight's use of mana for their oGCD's, Stalwart Soul will restore mp.</div>
+            <div><b>Flood of Darkness</b> is Dark's Knight ability to spam when you have the mana for it. It will grant Darkside, increase damage dealt by 10%, extended up to a duration of 60 seconds.</div>
+            <div>The blood gauge gives us access to <b>Quietus</b>, 200 potency for 50 blood gauge.</div>
+          </div>
         </div>
       )
     } else {
       return (
-        <div className={jobStyles.divNonBurst}>
-          <h2>Non 2-Minute Window</h2>
-          <div>Warriors non burst window is fairly simple. We want to use one <b>Upheaval</b> when it comes off cooldown, and keep our <b>Surging Tempest</b> buff up, which we get from combo finishing with Storm's Eye. So we have our normal 1-2-3 combo, with occasionally using <b>Storm's Eye</b> instead of <b>Storm's Path`</b>.</div>
+        <div className={jobStyles.divComboNoVideo}>
+          <ul className={jobStyles.listJobAction}>{listItemsDungeon}</ul>
+          <div className={jobStyles.divNonBurst}>
+            <h2>Dungeon Combos</h2>
+            <div>Warrior has access to abilities that will heal the Warrior in dungeon wall to walls if used in combination with the skill <b>Bloodwhetting</b>. Because much of the mitigation for Warrior comes from <b>Bloodwhetting</b> and healing, we can utilize this ability when our health is low, and maximize healing to full.</div>
+            <div>Warrior uses <b>Overpower</b> and <b>Mythril Tempest</b>, granting Surging Tempest, increasing damage dealt by 10%, up to 60 seconds. This will also increase beast gauge by 20.</div>
+            <div>With the beast gauge, warrior can use <b>Decimate</b>, which will cost 50 beast gauge. This can be upgraded to <b>Chaotic Cyclone</b> using <b>Infuriate</b>.</div>
+          </div>
         </div>
       )
     }
