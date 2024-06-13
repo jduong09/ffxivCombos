@@ -1,4 +1,4 @@
-import jobStyles from '@/app/jobs/job.module.css';
+import classStyles from '@/app/classes/classes.module.css';
 import classPageStyles from '@/app/jobs/classPage.module.css';
 import { ffxivActions } from '@/app/api';
 
@@ -7,13 +7,13 @@ const DefensiveCooldowns = ({ jobName, firstPack, secondPack }) => {
     if (actionName === "Arm's Length") {
       return (
         <li key={idx}>
-          <img className={jobStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.roleActions['tank']['Arm\'s Length']['icon']['set']}/${ffxivActions.roleActions['tank']['Arm\'s Length']['icon']['id']}.png`} />
+          <img className={classStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.roleActions['tank']['Arm\'s Length']['icon']['set']}/${ffxivActions.roleActions['tank']['Arm\'s Length']['icon']['id']}.png`} />
         </li>
       )
     } else {
       return (
         <li key={idx}>
-          <img className={jobStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.jobActions['tank'][jobName][actionName]['icon']['set']}/${ffxivActions.jobActions['tank'][jobName][actionName]['icon']['id']}.png`} />
+          <img className={classStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.jobActions['tank'][jobName][actionName]['icon']['set']}/${ffxivActions.jobActions['tank'][jobName][actionName]['icon']['id']}.png`} />
         </li>
       )
     }
@@ -23,19 +23,19 @@ const DefensiveCooldowns = ({ jobName, firstPack, secondPack }) => {
     if (actionName === 'Reprisal') {
       return (
         <li key={idx}>
-          <img className={jobStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.roleActions['tank']['Reprisal']['icon']['set']}/${ffxivActions.roleActions['tank']['Reprisal']['icon']['id']}.png`} />
+          <img className={classStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.roleActions['tank']['Reprisal']['icon']['set']}/${ffxivActions.roleActions['tank']['Reprisal']['icon']['id']}.png`} />
         </li>
       );
     } else if (actionName === 'Rampart') {
       return (
         <li key={idx}>
-          <img className={jobStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.roleActions['tank']['Rampart']['icon']['set']}/${ffxivActions.roleActions['tank']['Rampart']['icon']['id']}.png`} />
+          <img className={classStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.roleActions['tank']['Rampart']['icon']['set']}/${ffxivActions.roleActions['tank']['Rampart']['icon']['id']}.png`} />
         </li>
       );
     } else {
       return (
         <li key={idx}>
-          <img className={jobStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.jobActions['tank'][jobName][actionName]['icon']['set']}/${ffxivActions.jobActions['tank'][jobName][actionName]['icon']['id']}.png`} />
+          <img className={classStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.jobActions['tank'][jobName][actionName]['icon']['set']}/${ffxivActions.jobActions['tank'][jobName][actionName]['icon']['id']}.png`} />
         </li>
       )
     }

@@ -1,5 +1,5 @@
 import React from 'react';
-import jobStyles from '@/app/jobs/job.module.css';
+import classStyles from '@/app/classes/classes.module.css';
 import classPageStyles from '@/app/jobs/classPage.module.css';
 
 import { ffxivActions } from '@/app/api';
@@ -8,14 +8,14 @@ const Combos = ({ jobName, normalArray, burstArray, dungeonPackArray }) => {
   const listItemsNormal = normalArray.map((actionName, idx) => {
     return (
       <li key={idx}>
-        <img className={jobStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.jobActions['physicalRangedDps'][jobName][actionName]['icon']['set']}/${ffxivActions.jobActions['physicalRangedDps'][jobName][actionName]['icon']['id']}.png`} alt={`Action Icon: ${actionName}`} />
+        <img className={classStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.jobActions['physicalRangedDps'][jobName][actionName]['icon']['set']}/${ffxivActions.jobActions['physicalRangedDps'][jobName][actionName]['icon']['id']}.png`} alt={`Action Icon: ${actionName}`} />
       </li>
     )
   });
   const listItemsBurst = burstArray.map((actionName, idx) => {
     return (
       <li key={idx}>
-        <img className={jobStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.jobActions['physicalRangedDps'][jobName][actionName]['icon']['set']}/${ffxivActions.jobActions['physicalRangedDps'][jobName][actionName]['icon']['id']}.png`} alt={`Action Icon: ${actionName}`} />
+        <img className={classStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.jobActions['physicalRangedDps'][jobName][actionName]['icon']['set']}/${ffxivActions.jobActions['physicalRangedDps'][jobName][actionName]['icon']['id']}.png`} alt={`Action Icon: ${actionName}`} />
       </li>
     )
   });
@@ -23,7 +23,7 @@ const Combos = ({ jobName, normalArray, burstArray, dungeonPackArray }) => {
   const listItemsDungeon = dungeonPackArray.map((actionName, idx) => {
     return (
       <li key={idx}>
-        <img className={jobStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.jobActions['physicalRangedDps'][jobName][actionName]['icon']['set']}/${ffxivActions.jobActions['physicalRangedDps'][jobName][actionName]['icon']['id']}.png`} alt={`Action Icon: ${actionName}`} />
+        <img className={classStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.jobActions['physicalRangedDps'][jobName][actionName]['icon']['set']}/${ffxivActions.jobActions['physicalRangedDps'][jobName][actionName]['icon']['id']}.png`} alt={`Action Icon: ${actionName}`} />
       </li>
     )
   });

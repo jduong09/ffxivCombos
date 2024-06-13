@@ -1,4 +1,4 @@
-import jobStyles from '@/app/jobs/job.module.css';
+import classStyles from '@/app/classes/classes.module.css';
 import classPageStyles from '@/app/jobs/classPage.module.css';
 import { ffxivActions } from '@/app/api';
 
@@ -7,13 +7,13 @@ const PhysicalRangedDpsRoleActions = ({ jobName, defensiveActions, roleActions, 
     if (actionName === "Second Wind") {
       return (
         <li key={idx}>
-          <img className={jobStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.roleActions['physicalRangedDps']['Second Wind']['icon']['set']}/${ffxivActions.roleActions['physicalRangedDps']['Second Wind']['icon']['id']}.png`} />
+          <img className={classStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.roleActions['physicalRangedDps']['Second Wind']['icon']['set']}/${ffxivActions.roleActions['physicalRangedDps']['Second Wind']['icon']['id']}.png`} />
         </li>
       );
     } else {
       return (
         <li key={idx}>
-          <img className={jobStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.jobActions['physicalRangedDps'][jobName][actionName]['icon']['set']}/${ffxivActions.jobActions['physicalRangedDps'][jobName][actionName]['icon']['id']}.png`} />
+          <img className={classStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.jobActions['physicalRangedDps'][jobName][actionName]['icon']['set']}/${ffxivActions.jobActions['physicalRangedDps'][jobName][actionName]['icon']['id']}.png`} />
         </li>
       )
     }
@@ -22,7 +22,7 @@ const PhysicalRangedDpsRoleActions = ({ jobName, defensiveActions, roleActions, 
   const listRoleActions = roleActions.map((actionName, idx) => {
     return (
       <li key={idx}>
-        <img className={jobStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.roleActions['physicalRangedDps'][actionName]['icon']['set']}/${ffxivActions.roleActions['physicalRangedDps'][actionName]['icon']['id']}.png`} />
+        <img className={classStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.roleActions['physicalRangedDps'][actionName]['icon']['set']}/${ffxivActions.roleActions['physicalRangedDps'][actionName]['icon']['id']}.png`} />
       </li>
     );
   });
@@ -30,7 +30,7 @@ const PhysicalRangedDpsRoleActions = ({ jobName, defensiveActions, roleActions, 
   const listJobSpecificActions = jobSpecificActions.map((actionName, idx) => {
     return (
       <li key={idx}>
-        <img className={jobStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.jobActions['physicalRangedDps'][jobName][actionName]['icon']['set']}/${ffxivActions.jobActions['physicalRangedDps'][jobName][actionName]['icon']['id']}.png`} />
+        <img className={classStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.jobActions['physicalRangedDps'][jobName][actionName]['icon']['set']}/${ffxivActions.jobActions['physicalRangedDps'][jobName][actionName]['icon']['id']}.png`} />
       </li>
     )
   });

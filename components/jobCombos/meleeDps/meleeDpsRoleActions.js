@@ -1,4 +1,4 @@
-import jobStyles from '@/app/jobs/job.module.css';
+import classStyles from '@/app/classes/classes.module.css';
 import classPageStyles from '@/app/jobs/classPage.module.css';
 import { ffxivActions } from '@/app/api';
 
@@ -7,19 +7,19 @@ const MeleeDpsRoleActions = ({ jobName, defensiveActions, roleActions, jobSpecif
     if (actionName === "Second Wind") {
       return (
         <li key={idx}>
-          <img className={jobStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.roleActions['meleeDps']['Second Wind']['icon']['set']}/${ffxivActions.roleActions['meleeDps']['Second Wind']['icon']['id']}.png`} />
+          <img className={classStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.roleActions['meleeDps']['Second Wind']['icon']['set']}/${ffxivActions.roleActions['meleeDps']['Second Wind']['icon']['id']}.png`} />
         </li>
       );
     } else if (actionName === 'Bloodbath') {
       return (
         <li key={idx}>
-          <img className={jobStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.roleActions['meleeDps']['Bloodbath']['icon']['set']}/${ffxivActions.roleActions['meleeDps']['Bloodbath']['icon']['id']}.png`} />
+          <img className={classStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.roleActions['meleeDps']['Bloodbath']['icon']['set']}/${ffxivActions.roleActions['meleeDps']['Bloodbath']['icon']['id']}.png`} />
         </li>
       );
     } else {
       return (
         <li key={idx}>
-          <img className={jobStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.jobActions['meleeDps'][jobName][actionName]['icon']['set']}/${ffxivActions.jobActions['meleeDps'][jobName][actionName]['icon']['id']}.png`} />
+          <img className={classStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.jobActions['meleeDps'][jobName][actionName]['icon']['set']}/${ffxivActions.jobActions['meleeDps'][jobName][actionName]['icon']['id']}.png`} />
         </li>
       )
     }
@@ -28,7 +28,7 @@ const MeleeDpsRoleActions = ({ jobName, defensiveActions, roleActions, jobSpecif
   const listRoleActions = roleActions.map((actionName, idx) => {
     return (
       <li key={idx}>
-        <img className={jobStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.roleActions['meleeDps'][actionName]['icon']['set']}/${ffxivActions.roleActions['meleeDps'][actionName]['icon']['id']}.png`} />
+        <img className={classStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.roleActions['meleeDps'][actionName]['icon']['set']}/${ffxivActions.roleActions['meleeDps'][actionName]['icon']['id']}.png`} />
       </li>
     );
   });
@@ -36,7 +36,7 @@ const MeleeDpsRoleActions = ({ jobName, defensiveActions, roleActions, jobSpecif
   const listJobSpecificActions = jobSpecificActions.map((actionName, idx) => {
     return (
       <li key={idx}>
-        <img className={jobStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.jobActions['meleeDps'][jobName][actionName]['icon']['set']}/${ffxivActions.jobActions['meleeDps'][jobName][actionName]['icon']['id']}.png`} />
+        <img className={classStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.jobActions['meleeDps'][jobName][actionName]['icon']['set']}/${ffxivActions.jobActions['meleeDps'][jobName][actionName]['icon']['id']}.png`} />
       </li>
     )
   });

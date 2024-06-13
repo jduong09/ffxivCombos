@@ -1,4 +1,4 @@
-import jobStyles from '@/app/jobs/job.module.css';
+import classStyles from '@/app/classes/classes.module.css';
 import classPageStyles from '@/app/jobs/classPage.module.css';
 import { ffxivActions } from '@/app/api';
 
@@ -6,7 +6,7 @@ const DefensiveActions = ({ jobName, firstPack, secondPack }) => {
   const listFirstPack = firstPack.map((actionName, idx) => {
       return (
         <li key={idx}>
-          <img className={jobStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.jobActions['healer'][jobName][actionName]['icon']['set']}/${ffxivActions.jobActions['healer'][jobName][actionName]['icon']['id']}.png`} />
+          <img className={classStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.jobActions['healer'][jobName][actionName]['icon']['set']}/${ffxivActions.jobActions['healer'][jobName][actionName]['icon']['id']}.png`} />
         </li>
       );
   });
@@ -14,7 +14,7 @@ const DefensiveActions = ({ jobName, firstPack, secondPack }) => {
   const listSecondPack = secondPack.map((actionName, idx) => {
     return (
       <li key={idx}>
-        <img className={jobStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.jobActions['healer'][jobName][actionName]['icon']['set']}/${ffxivActions.jobActions['healer'][jobName][actionName]['icon']['id']}.png`} />
+        <img className={classStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.jobActions['healer'][jobName][actionName]['icon']['set']}/${ffxivActions.jobActions['healer'][jobName][actionName]['icon']['id']}.png`} />
       </li>
     );
   });
