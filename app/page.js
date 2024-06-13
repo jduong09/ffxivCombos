@@ -13,7 +13,7 @@ export default function Home() {
         <div className={landingPage.divHero}>
           <div>
             <h1>From Sprout to Blossomed Player</h1>
-            <div>Soppos Guide is filled with dps combos, dungeons pack rotation advice, role action use and job glam.</div>
+            <div>Soppo&apos;s Guide is filled with dps combos, dungeons pack rotation advice, role action use and job glam.</div>
           </div>
           <div className={landingPage.heroImageContainer}>
             <Image className={landingPage.heroGIF} src={'/black_mage_burst.gif'} width='276' height='156' alt='gif of soppo black mage burst combo' unoptimized={true}/>
@@ -53,7 +53,7 @@ export default function Home() {
         </div>
         <div className={landingPage.divHousing}>
           <div>
-            <h2>Browse Soppo's housing progress over time!</h2>
+            <h2>Browse Soppo&apos;s housing progress over time!</h2>
             <span>With Dawntrail on the horizon, Soppo will provide outfits to their little housing journey. Try out the little minigame, find the sleeping Soppo in the images!</span>
             <a href='/housing'>Housing</a>
           </div>
@@ -68,7 +68,7 @@ export default function Home() {
         </div>
         <div className={landingPage.divFashion}>
           <div>
-            <h2>Soppo's Gallery of Fashion</h2>
+            <h2>Soppo&apos;s Gallery of Fashion</h2>
             <span>Browse Soppos closet, chalk full of outfits for tanks, healers and damage dealers!</span>
             <a href='/fashion'>Fashion</a>
           </div>

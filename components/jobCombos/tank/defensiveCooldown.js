@@ -1,5 +1,5 @@
-import jobStyles from '@/app/jobs/job.module.css';
-import classPageStyles from '@/app/jobs/classPage.module.css';
+import classStyles from '@/app/classes/classes.module.css';
+import classPageStyles from '@/app/classes/classPage.module.css';
 import { ffxivActions } from '@/app/api';
 
 const DefensiveCooldowns = ({ jobName, firstPack, secondPack }) => {
@@ -7,13 +7,13 @@ const DefensiveCooldowns = ({ jobName, firstPack, secondPack }) => {
     if (actionName === "Arm's Length") {
       return (
         <li key={idx}>
-          <img className={jobStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.roleActions['tank']['Arm\'s Length']['icon']['set']}/${ffxivActions.roleActions['tank']['Arm\'s Length']['icon']['id']}.png`} />
+          <img className={classStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.roleActions['tank']['Arm\'s Length']['icon']['set']}/${ffxivActions.roleActions['tank']['Arm\'s Length']['icon']['id']}.png`} />
         </li>
       )
     } else {
       return (
         <li key={idx}>
-          <img className={jobStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.jobActions['tank'][jobName][actionName]['icon']['set']}/${ffxivActions.jobActions['tank'][jobName][actionName]['icon']['id']}.png`} />
+          <img className={classStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.jobActions['tank'][jobName][actionName]['icon']['set']}/${ffxivActions.jobActions['tank'][jobName][actionName]['icon']['id']}.png`} />
         </li>
       )
     }
@@ -23,19 +23,19 @@ const DefensiveCooldowns = ({ jobName, firstPack, secondPack }) => {
     if (actionName === 'Reprisal') {
       return (
         <li key={idx}>
-          <img className={jobStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.roleActions['tank']['Reprisal']['icon']['set']}/${ffxivActions.roleActions['tank']['Reprisal']['icon']['id']}.png`} />
+          <img className={classStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.roleActions['tank']['Reprisal']['icon']['set']}/${ffxivActions.roleActions['tank']['Reprisal']['icon']['id']}.png`} />
         </li>
       );
     } else if (actionName === 'Rampart') {
       return (
         <li key={idx}>
-          <img className={jobStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.roleActions['tank']['Rampart']['icon']['set']}/${ffxivActions.roleActions['tank']['Rampart']['icon']['id']}.png`} />
+          <img className={classStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.roleActions['tank']['Rampart']['icon']['set']}/${ffxivActions.roleActions['tank']['Rampart']['icon']['id']}.png`} />
         </li>
       );
     } else {
       return (
         <li key={idx}>
-          <img className={jobStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.jobActions['tank'][jobName][actionName]['icon']['set']}/${ffxivActions.jobActions['tank'][jobName][actionName]['icon']['id']}.png`} />
+          <img className={classStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.jobActions['tank'][jobName][actionName]['icon']['set']}/${ffxivActions.jobActions['tank'][jobName][actionName]['icon']['id']}.png`} />
         </li>
       )
     }
@@ -44,19 +44,19 @@ const DefensiveCooldowns = ({ jobName, firstPack, secondPack }) => {
   const renderFirstPack = () => {
     if (jobName === "gunbreaker") {
       return (
-        <div>Gunbreakers first pack will utilize Nebula + Arm's Length. We want to use our longest cooldowns first so they come after first boss. Once these two cooldowns go down, use an <b>Aurora</b> with Heart of Corundum.</div>
+        <div>Gunbreakers first pack will utilize Nebula + Arm&apos;s Length. We want to use our longest cooldowns first so they come after first boss. Once these two cooldowns go down, use an <b>Aurora</b> with Heart of Corundum.</div>
       )
     } else if (jobName === "paladin") {
       return (
-        <div>Combine Sentinel with Arm's Length. Use one Holy Sheltron once sentinel buff has run out.</div>
+        <div>Combine Sentinel with Arm&apos;s Length. Use one Holy Sheltron once sentinel buff has run out.</div>
       )
     } else if (jobName === "dark knight") {
       return (
-        <div>Shadow Wall with Arm's Length. Use Oblation similar to Holy Sheltron, and use The Blackest Knight if necessary.</div>
+        <div>Shadow Wall with Arm&apos;s Length. Use Oblation similar to Holy Sheltron, and use The Blackest Knight if necessary.</div>
       )
     } else {
       return (
-        <div>This pull is up to the user. Depending on who you are playing with, healer-wise, you may want to wait to use skills. Say its a white mage, they will start with a 4 second stun. Following that stun, we can let ourselves get damaged very low and then use Bloodwhetting to heal ourselves back up. Bloodwhetting with Inner Release + Decimate will heal us back to full. Follow this up with Vengeance and Arm's Length to finish the pack.</div>
+        <div>This pull is up to the user. Depending on who you are playing with, healer-wise, you may want to wait to use skills. Say its a white mage, they will start with a 4 second stun. Following that stun, we can let ourselves get damaged very low and then use Bloodwhetting to heal ourselves back up. Bloodwhetting with Inner Release + Decimate will heal us back to full. Follow this up with Vengeance and Arm&apos;s Length to finish the pack.</div>
       )
     }
   }
@@ -68,7 +68,7 @@ const DefensiveCooldowns = ({ jobName, firstPack, secondPack }) => {
       );
     } else if (jobName === "paladin") {
       return (
-        <div>Paladin's second pack will consist of Rampart + Reprisal. Finish the pack with Holy Sheltron with Bulwark, and we should be able to mitigate this pack.</div>
+        <div>Paladin&apos;s second pack will consist of Rampart + Reprisal. Finish the pack with Holy Sheltron with Bulwark, and we should be able to mitigate this pack.</div>
       )
     } else if (jobName === "dark knight") {
       return (

@@ -1,12 +1,12 @@
-import jobStyles from '@/app/jobs/job.module.css';
-import classPageStyles from '@/app/jobs/classPage.module.css';
+import classStyles from '@/app/classes/classes.module.css';
+import classPageStyles from '@/app/classes/classPage.module.css';
 import { ffxivActions } from '@/app/api';
 
 const DefensiveActions = ({ jobName, firstPack, secondPack }) => {
   const listFirstPack = firstPack.map((actionName, idx) => {
       return (
         <li key={idx}>
-          <img className={jobStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.jobActions['healer'][jobName][actionName]['icon']['set']}/${ffxivActions.jobActions['healer'][jobName][actionName]['icon']['id']}.png`} />
+          <img className={classStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.jobActions['healer'][jobName][actionName]['icon']['set']}/${ffxivActions.jobActions['healer'][jobName][actionName]['icon']['id']}.png`} />
         </li>
       );
   });
@@ -14,7 +14,7 @@ const DefensiveActions = ({ jobName, firstPack, secondPack }) => {
   const listSecondPack = secondPack.map((actionName, idx) => {
     return (
       <li key={idx}>
-        <img className={jobStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.jobActions['healer'][jobName][actionName]['icon']['set']}/${ffxivActions.jobActions['healer'][jobName][actionName]['icon']['id']}.png`} />
+        <img className={classStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.jobActions['healer'][jobName][actionName]['icon']['set']}/${ffxivActions.jobActions['healer'][jobName][actionName]['icon']['id']}.png`} />
       </li>
     );
   });
@@ -26,7 +26,7 @@ const DefensiveActions = ({ jobName, firstPack, secondPack }) => {
       )
     } else if (jobName === "white mage") {
       return (
-        <div>Asylum is a much longer cooldown than Scholar's Sacred Soil, so utilize it on the first pull. The goal of a healer is to maximize damage on while healing, so we want to use oGCDs heals first. If you feel confident letting the tank drop down to near 0, then use <b>Benediction</b>. <b>Tetragrammaton</b> is our other oGCD to use.</div>
+        <div>Asylum is a much longer cooldown than Scholar&apos;s Sacred Soil, so utilize it on the first pull. The goal of a healer is to maximize damage on while healing, so we want to use oGCDs heals first. If you feel confident letting the tank drop down to near 0, then use <b>Benediction</b>. <b>Tetragrammaton</b> is our other oGCD to use.</div>
       )
     } else if (jobName === "astrologian") {
       return (
@@ -34,7 +34,7 @@ const DefensiveActions = ({ jobName, firstPack, secondPack }) => {
       )
     } else {
       return (
-        <div>As I understand, Sage's healing comes mainly from DEALING DAMAGE. <b>Kardia's</b> ability text states 'restoring HP after casting certain magic attacks'. So using Sage's damage ability, <b>Dosis</b>, will cure the person with the effect Kardion by a potency of 170. Can start the pull with <b>Eukrasia</b> with <b>Eukrasian Diagnosis</b>. We can also start with <b>Kerachole</b>.</div>
+        <div>As I understand, Sage&apos;s healing comes mainly from DEALING DAMAGE. <b>Kardia&apos;s</b> ability text states that restoring HP after casting certain magic attacks&apos;. So using Sage&apos;s damage ability, <b>Dosis</b>, will cure the person with the effect Kardion by a potency of 170. Can start the pull with <b>Eukrasia</b> with <b>Eukrasian Diagnosis</b>. We can also start with <b>Kerachole</b>.</div>
       )
     }
   }
@@ -66,7 +66,7 @@ const DefensiveActions = ({ jobName, firstPack, secondPack }) => {
       )
     } else if (jobName === "white mage") {
       return (
-        <div>White Mage's shield ability is <b>Divine Benison</b>. I like to combine this with <b>Aquaveil</b> for some shield and damage mitigation. Adding a <b>Regen</b> is nice to have, guarenteeing that tanks will have some healing after.</div>
+        <div>White Mage&apos;s shield ability is <b>Divine Benison</b>. I like to combine this with <b>Aquaveil</b> for some shield and damage mitigation. Adding a <b>Regen</b> is nice to have, guarenteeing that tanks will have some healing after.</div>
       )
     } else if (jobName === "astrologian") {
       return (

@@ -1,6 +1,6 @@
 import React from 'react';
-import jobStyles from '@/app/jobs/job.module.css';
-import classPageStyles from '@/app/jobs/classPage.module.css';
+import classStyles from '@/app/classes/classes.module.css';
+import classPageStyles from '@/app/classes/classPage.module.css';
 
 import { ffxivActions } from '@/app/api';
 
@@ -8,14 +8,14 @@ const Combos = ({ jobName, normalArray, burstArray, dungeonPackArray }) => {
   const listItemsNormal = normalArray.map((actionName, idx) => {
     return (
       <li key={idx}>
-        <img className={jobStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.jobActions['physicalRangedDps'][jobName][actionName]['icon']['set']}/${ffxivActions.jobActions['physicalRangedDps'][jobName][actionName]['icon']['id']}.png`} alt={`Action Icon: ${actionName}`} />
+        <img className={classStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.jobActions['physicalRangedDps'][jobName][actionName]['icon']['set']}/${ffxivActions.jobActions['physicalRangedDps'][jobName][actionName]['icon']['id']}.png`} alt={`Action Icon: ${actionName}`} />
       </li>
     )
   });
   const listItemsBurst = burstArray.map((actionName, idx) => {
     return (
       <li key={idx}>
-        <img className={jobStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.jobActions['physicalRangedDps'][jobName][actionName]['icon']['set']}/${ffxivActions.jobActions['physicalRangedDps'][jobName][actionName]['icon']['id']}.png`} alt={`Action Icon: ${actionName}`} />
+        <img className={classStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.jobActions['physicalRangedDps'][jobName][actionName]['icon']['set']}/${ffxivActions.jobActions['physicalRangedDps'][jobName][actionName]['icon']['id']}.png`} alt={`Action Icon: ${actionName}`} />
       </li>
     )
   });
@@ -23,7 +23,7 @@ const Combos = ({ jobName, normalArray, burstArray, dungeonPackArray }) => {
   const listItemsDungeon = dungeonPackArray.map((actionName, idx) => {
     return (
       <li key={idx}>
-        <img className={jobStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.jobActions['physicalRangedDps'][jobName][actionName]['icon']['set']}/${ffxivActions.jobActions['physicalRangedDps'][jobName][actionName]['icon']['id']}.png`} alt={`Action Icon: ${actionName}`} />
+        <img className={classStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.jobActions['physicalRangedDps'][jobName][actionName]['icon']['set']}/${ffxivActions.jobActions['physicalRangedDps'][jobName][actionName]['icon']['id']}.png`} alt={`Action Icon: ${actionName}`} />
       </li>
     )
   });
@@ -50,7 +50,7 @@ const Combos = ({ jobName, normalArray, burstArray, dungeonPackArray }) => {
         <div className={classPageStyles.divComboWithVideo}>
           <div className={classPageStyles.divInfo}>
             <h2>2 Minute Window</h2>
-            <div>For Bard's burst, we want to utilize the correct Ballad to boost our party's damage. This will be <b>Battle Voice</b>, which increases direct hit rate of self and all nearby party members by 20% and <b>The Wanderer's Minuet</b>. This will grant the party increase critical hit rate.</div>
+            <div>For Bard&apos;s burst, we want to utilize the correct Ballad to boost our party&apos;s damage. This will be <b>Battle Voice</b>, which increases direct hit rate of self and all nearby party members by 20% and <b>The Wanderer&apos;s Minuet</b>. This will grant the party increase critical hit rate.</div>
             <div>While we are in this burst, Bard has access to their oGCDs, <b>Sidewinder</b> and <b>Empyreal Arrow</b> and <b>Blast Arrow</b>. Use 50 soul voice gauge in order to use <b>Apex Arrow</b>, and follow up with <b>Blast Arrow</b>.</div>
           </div>
           <div className={classPageStyles.videoContainer}>
@@ -94,7 +94,7 @@ const Combos = ({ jobName, normalArray, burstArray, dungeonPackArray }) => {
           <ul className={classPageStyles.listJobAction}>{listItemsNormal}</ul>
           <div className={classPageStyles.divInfo}>
             <h2>Normal Combo</h2>
-            <div>Bard's normal combo is a combination of DoT attacks and one attack that can lead to another.<b>Heavy Shot</b> will be your ability to use normally, and there is a 20% chance of it granting Straight Shot Ready, allowing the use of <b>Straight Shot</b>. <b>Bloodletter</b> is an ability that has a maximum charge of 3, and is similar to Machinist's <b>Gauss Round</b>. Use when it is available.</div>
+            <div>Bard&apos;s normal combo is a combination of DoT attacks and one attack that can lead to another.<b>Heavy Shot</b> will be your ability to use normally, and there is a 20% chance of it granting Straight Shot Ready, allowing the use of <b>Straight Shot</b>. <b>Bloodletter</b> is an ability that has a maximum charge of 3, and is similar to Machinist&apos;s <b>Gauss Round</b>. Use when it is available.</div>
             <div>Bard has two DoT attacks, <b>Venomous Bite</b> and <b>Windbite</b>. At higher levels, Bards can use <b>Iron Jaws</b> to reset the cooldown of the DoTs, but beforehand you will have to manually reapply both debuffs.</div>
           </div>
         </div>
@@ -106,7 +106,7 @@ const Combos = ({ jobName, normalArray, burstArray, dungeonPackArray }) => {
           <div className={classPageStyles.divInfo}>
             <h2>Normal Combo</h2>
             <div>Dancer has a 1-2 combo, which can proc other buffs and use oGCDs. <b>Cascade</b> - <b>Fountain</b>. <b>Cascade</b> has a 50% chance of granting Silken Symmetry, allowing the use of <b>Reverse Cascade</b>. <b>Fountain</b> has a 50% chance of granting silken flow, allowing the use of <b>Fountainfall</b>. <b>Reverse Cascade</b> has a 50% chance of granting Fourfold Feather, which in turn allows <b>Fan Dance</b>.</div>
-            <div>The other key to Dancer's kit is dancing, of course. <b>Standard Step</b> will turn some actions to steps, and doing the correct steps will allow us to use <b>Standard Finish</b> and get max potency on an AOE attack, while granting the user and their dance partner a damage bonus.</div>
+            <div>The other key to Dancer&apos;s kit is dancing, of course. <b>Standard Step</b> will turn some actions to steps, and doing the correct steps will allow us to use <b>Standard Finish</b> and get max potency on an AOE attack, while granting the user and their dance partner a damage bonus.</div>
           </div>
         </div>
       )
@@ -131,8 +131,8 @@ const Combos = ({ jobName, normalArray, burstArray, dungeonPackArray }) => {
           <ul className={classPageStyles.listJobAction}>{listItemsDungeon}</ul>
           <div className={classPageStyles.divInfo}>
             <h2>Dungeon Combos</h2>
-            <div>For dungeon AOE's, Bard will use <b>Quick Knock</b>, with a 35% chance of becoming shadowbite ready, allowing the use of <b>Shadowbite</b>. Similar to <b>Bloodletter</b>, Bard can use <b>Rain of Death</b> when it is available.</div>
-            <div>Use <b>Mage's Ballad</b>, and hopefully the 80% chance to grant Repertoire, which will reduce the recast time of <b>Rain of Death</b>.</div>
+            <div>For dungeon AOE&apos;s, Bard will use <b>Quick Knock</b>, with a 35% chance of becoming shadowbite ready, allowing the use of <b>Shadowbite</b>. Similar to <b>Bloodletter</b>, Bard can use <b>Rain of Death</b> when it is available.</div>
+            <div>Use <b>Mage&apos;s Ballad</b>, and hopefully the 80% chance to grant Repertoire, which will reduce the recast time of <b>Rain of Death</b>.</div>
           </div>
         </div>
       )
@@ -142,8 +142,8 @@ const Combos = ({ jobName, normalArray, burstArray, dungeonPackArray }) => {
           <ul className={classPageStyles.listJobAction}>{listItemsDungeon}</ul>
           <div className={classPageStyles.divInfo}>
             <h2>Dungeon Combos</h2>
-            <div>Dancer's dungeon skills are similar to their single target skills. <b>Windmill</b> can grant Silken Symmetry, allowing the use of <b>Rising Windmill</b>, while <b>Bladeshower</b> can allow the use of <b>Bloodshower</b> through a 50% chance at getting the buff Silken Flow.</div>
-            <div>Dancer's <b>Standard Finisher</b> is an AOE attack, so make sure to use it on the enemy pack.</div>
+            <div>Dancer&apos;s dungeon skills are similar to their single target skills. <b>Windmill</b> can grant Silken Symmetry, allowing the use of <b>Rising Windmill</b>, while <b>Bladeshower</b> can allow the use of <b>Bloodshower</b> through a 50% chance at getting the buff Silken Flow.</div>
+            <div>Dancer&apos;s <b>Standard Finisher</b> is an AOE attack, so make sure to use it on the enemy pack.</div>
           </div>
         </div>
       )

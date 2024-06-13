@@ -1,5 +1,5 @@
-import jobStyles from '@/app/jobs/job.module.css';
-import classPageStyles from '@/app/jobs/classPage.module.css';
+import classStyles from '@/app/classes/classes.module.css';
+import classPageStyles from '@/app/classes/classPage.module.css';
 import { ffxivActions } from '@/app/api';
 
 const MeleeDpsRoleActions = ({ jobName, defensiveActions, roleActions, jobSpecificActions }) => {
@@ -7,19 +7,19 @@ const MeleeDpsRoleActions = ({ jobName, defensiveActions, roleActions, jobSpecif
     if (actionName === "Second Wind") {
       return (
         <li key={idx}>
-          <img className={jobStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.roleActions['meleeDps']['Second Wind']['icon']['set']}/${ffxivActions.roleActions['meleeDps']['Second Wind']['icon']['id']}.png`} />
+          <img className={classStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.roleActions['meleeDps']['Second Wind']['icon']['set']}/${ffxivActions.roleActions['meleeDps']['Second Wind']['icon']['id']}.png`} />
         </li>
       );
     } else if (actionName === 'Bloodbath') {
       return (
         <li key={idx}>
-          <img className={jobStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.roleActions['meleeDps']['Bloodbath']['icon']['set']}/${ffxivActions.roleActions['meleeDps']['Bloodbath']['icon']['id']}.png`} />
+          <img className={classStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.roleActions['meleeDps']['Bloodbath']['icon']['set']}/${ffxivActions.roleActions['meleeDps']['Bloodbath']['icon']['id']}.png`} />
         </li>
       );
     } else {
       return (
         <li key={idx}>
-          <img className={jobStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.jobActions['meleeDps'][jobName][actionName]['icon']['set']}/${ffxivActions.jobActions['meleeDps'][jobName][actionName]['icon']['id']}.png`} />
+          <img className={classStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.jobActions['meleeDps'][jobName][actionName]['icon']['set']}/${ffxivActions.jobActions['meleeDps'][jobName][actionName]['icon']['id']}.png`} />
         </li>
       )
     }
@@ -28,7 +28,7 @@ const MeleeDpsRoleActions = ({ jobName, defensiveActions, roleActions, jobSpecif
   const listRoleActions = roleActions.map((actionName, idx) => {
     return (
       <li key={idx}>
-        <img className={jobStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.roleActions['meleeDps'][actionName]['icon']['set']}/${ffxivActions.roleActions['meleeDps'][actionName]['icon']['id']}.png`} />
+        <img className={classStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.roleActions['meleeDps'][actionName]['icon']['set']}/${ffxivActions.roleActions['meleeDps'][actionName]['icon']['id']}.png`} />
       </li>
     );
   });
@@ -36,7 +36,7 @@ const MeleeDpsRoleActions = ({ jobName, defensiveActions, roleActions, jobSpecif
   const listJobSpecificActions = jobSpecificActions.map((actionName, idx) => {
     return (
       <li key={idx}>
-        <img className={jobStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.jobActions['meleeDps'][jobName][actionName]['icon']['set']}/${ffxivActions.jobActions['meleeDps'][jobName][actionName]['icon']['id']}.png`} />
+        <img className={classStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.jobActions['meleeDps'][jobName][actionName]['icon']['set']}/${ffxivActions.jobActions['meleeDps'][jobName][actionName]['icon']['id']}.png`} />
       </li>
     )
   });
@@ -52,7 +52,7 @@ const MeleeDpsRoleActions = ({ jobName, defensiveActions, roleActions, jobSpecif
     } else if (jobName === 'ninja') {
       return (
         <div>
-          <span>Ninja does not necessarily have a raidwide mitigation or party buff, but Ninjas will inflict a vulnerability on the enemy, usually boss to start the burst phase for the party. <b>Suiton</b> - <b>Trick Attack</b> - <b>Mug</b> will increase damage you do by 10% and increase the target's damage taken by 5%.</span>
+          <span>Ninja does not necessarily have a raidwide mitigation or party buff, but Ninjas will inflict a vulnerability on the enemy, usually boss to start the burst phase for the party. <b>Suiton</b> - <b>Trick Attack</b> - <b>Mug</b> will increase damage you do by 10% and increase the target&apos;s damage taken by 5%.</span>
         </div>
       )
     }  else if (jobName === 'dragoon') {
@@ -74,7 +74,7 @@ const MeleeDpsRoleActions = ({ jobName, defensiveActions, roleActions, jobSpecif
   return (
     <div className={classPageStyles.tankDefensiveActions}>
       <h2>Defensive and Role Actions</h2>
-      <div>Feint should be used off cooldown, don't overlap it with our party members! True North should be used when you cannot attack from the correct position, for example when resolving a mechanic.</div>
+      <div>Feint should be used off cooldown, don&apos;t overlap it with our party members! True North should be used when you cannot attack from the correct position, for example when resolving a mechanic.</div>
       <div className={classPageStyles.tankDefensivePacks}>
         <h4>Defensive Actions</h4>
         <ul className={classPageStyles.listTankDefensive}>{listDefensiveActions}</ul>

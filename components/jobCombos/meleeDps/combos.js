@@ -1,19 +1,19 @@
-import jobStyles from '@/app/jobs/job.module.css';
-import classPageStyles from '@/app/jobs/classPage.module.css';
+import classStyles from '@/app/classes/classes.module.css';
+import classPageStyles from '@/app/classes/classPage.module.css';
 import { ffxivActions } from '@/app/api';
 
 const MeleeDpsCombos = ({ jobName, normalArray, burstArray, dungeonPackArray }) => {
   const listItemsNormal = normalArray.map((actionName, idx) => {
     return (
       <li key={idx}>
-        <img className={jobStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.jobActions['meleeDps'][jobName][actionName]['icon']['set']}/${ffxivActions.jobActions['meleeDps'][jobName][actionName]['icon']['id']}.png`} alt={`Action Icon: ${actionName}`} />
+        <img className={classStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.jobActions['meleeDps'][jobName][actionName]['icon']['set']}/${ffxivActions.jobActions['meleeDps'][jobName][actionName]['icon']['id']}.png`} alt={`Action Icon: ${actionName}`} />
       </li>
     )
   });
   const listItemsBurst = burstArray.map((actionName, idx) => {
     return (
       <li key={idx}>
-        <img className={jobStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.jobActions['meleeDps'][jobName][actionName]['icon']['set']}/${ffxivActions.jobActions['meleeDps'][jobName][actionName]['icon']['id']}.png`} alt={`Action Icon: ${actionName}`} />
+        <img className={classStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.jobActions['meleeDps'][jobName][actionName]['icon']['set']}/${ffxivActions.jobActions['meleeDps'][jobName][actionName]['icon']['id']}.png`} alt={`Action Icon: ${actionName}`} />
       </li>
     )
   });
@@ -21,7 +21,7 @@ const MeleeDpsCombos = ({ jobName, normalArray, burstArray, dungeonPackArray }) 
   const listItemsDungeon = dungeonPackArray.map((actionName, idx) => {
     return (
       <li key={idx}>
-        <img className={jobStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.jobActions['meleeDps'][jobName][actionName]['icon']['set']}/${ffxivActions.jobActions['meleeDps'][jobName][actionName]['icon']['id']}.png`} alt={`Action Icon: ${actionName}`} />
+        <img className={classStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.jobActions['meleeDps'][jobName][actionName]['icon']['set']}/${ffxivActions.jobActions['meleeDps'][jobName][actionName]['icon']['id']}.png`} alt={`Action Icon: ${actionName}`} />
       </li>
     )
   });
@@ -61,7 +61,7 @@ const MeleeDpsCombos = ({ jobName, normalArray, burstArray, dungeonPackArray }) 
           <div className={classPageStyles.divInfo}>
             <h2>Burst Combo</h2>
             <div>Samurai will actively have Fugetsu and Fuka buffs up, and in preparation they should have a <b>Meikyo Shisui</b> ready to be used and <b>Tsubame-gaeshi</b>. Start with <b>Meikyo Shisui</b>, and use <b>Gekko</b>, <b>Yukikaze</b>, and <b>Kasha</b> in any order. This will grant us 3 Sen, allowing us to use <b>Midare Setsugekka</b>. Follow that up with <b>Tsubame-gaeshi</b>.</div>
-            <div>While we are executing those 3 moves to get our Sen, remember to use oGCD's that will cost Kenki gauge, specifically <b>Hissatsu:Senei</b> when it's off cooldown, and <b>Hissatsu: Shinten</b>.</div>
+            <div>While we are executing those 3 moves to get our Sen, remember to use oGCD&apos;s that will cost Kenki gauge, specifically <b>Hissatsu:Senei</b> when it&apos;s off cooldown, and <b>Hissatsu: Shinten</b>.</div>
             <div>Then use <b>Ikishoten</b> to increase Kenki Gauge by 50 for more <b>Hissatsu: Senei</b>, but to allow uss to use <b>Ogi Namikiri</b> followed up by <b>Kaeshi: Namikiri</b>. This should give sus 3 stacks up meditation, allowing us to finish the burst phase with <b>Shoha</b>.</div>
           </div>
           <div className={classPageStyles.videoContainer}>
@@ -107,7 +107,7 @@ const MeleeDpsCombos = ({ jobName, normalArray, burstArray, dungeonPackArray }) 
           <ul className={classPageStyles.listJobAction}>{listItemsNormal}</ul>
           <div className={classPageStyles.divInfo}>
             <h2>Normal Combo</h2>
-            <div>In general, Monk's attack abilities can only be executed in a certain form, which starts from <b>Bootshine</b>, and will continue to combo into other forms. Start with <b>Bootshine</b> and enter raptor form, and that will allow you to use <b>True Strike</b>. True Strike will turn change you form to Coeurl. Follow up True Strike with <b>Snap Punch</b> from the target's flank.</div>
+            <div>In general, Monk&apos;s attack abilities can only be executed in a certain form, which starts from <b>Bootshine</b>, and will continue to combo into other forms. Start with <b>Bootshine</b> and enter raptor form, and that will allow you to use <b>True Strike</b>. True Strike will turn change you form to Coeurl. Follow up True Strike with <b>Snap Punch</b> from the target&apos;s flank.</div>
             <div>Outside of the general combo, certain forms will allow you to use separate abilities. Monk has a DoT, <b>Demolish</b>. This can only be executed in Coeurl form. So we get there by doing <b>Bootshine</b> - <b>True Strike</b> - <b>Demolish</b>.</div>
             <div>The other thing to manage for Monk is the buff Disciplined Fist. Disciplined Fist effect increases damage effect by 15%, and lasts 15 seconds. So every 15 seconds, we need to to use <b>Bootshine</b> - <b>Twin Snakes</b> - <b>Snap Punch</b> to maintain Disciplined Fist.</div>
           </div>
@@ -130,7 +130,7 @@ const MeleeDpsCombos = ({ jobName, normalArray, burstArray, dungeonPackArray }) 
           <ul className={classPageStyles.listJobAction}>{listItemsNormal}</ul>
           <div className={classPageStyles.divInfo}>
             <h2>Normal Combo</h2>
-            <div>Ninja's normal combo can be a few different things, because we want to create Sen. To create Sen, we use 3 different combos, which in turn grant 3 different Sen. The first Ka is Fuka, which is granted by <b>Hakaze</b> - <b>Shifu</b> - <b>Kasha</b> (flank). Fuka will reduce weaponskill cast time and recast time. Always keep Fuka buff up.</div>
+            <div>Samurai&apos;s normal combo can be a few different things, because we want to create Sen. To create Sen, we use 3 different combos, which in turn grant 3 different Sen. The first Ka is Fuka, which is granted by <b>Hakaze</b> - <b>Shifu</b> - <b>Kasha</b> (flank). Fuka will reduce weaponskill cast time and recast time. Always keep Fuka buff up.</div>
             <div>The other buff that needs to always be up is Fugetsu. This is gained by doing <b>Hakaze</b> - <b>Jinpu</b> - <b>Gekko</b> (rear). Fugetsu will give us increased damage dealt by 13%. Finishing the combo with <b>Gekko</b> will grant Getsu.</div>
             <div>The final Sen to get is Setsu, which is accomplished by 2 actions, <b>Hakaze</b> with <b>Yukikaze</b>. Performing this will gives us 3 unique Sen, allowing massive single target damage with <b>Midare Setsugekka</b>.</div>
           </div>
@@ -142,7 +142,7 @@ const MeleeDpsCombos = ({ jobName, normalArray, burstArray, dungeonPackArray }) 
           <ul className={classPageStyles.listJobAction}>{listItemsNormal}</ul>
           <div className={classPageStyles.divInfo}>
             <h2>Normal Combo</h2>
-            <div>Dragoon's have a buff, Power Surge, that will increase damage dealt by 10%. This is achieved through the combo <b>True Thrust</b> - <b>Vorpal Thrust</b> - <b>Disembowel</b>. Use this to keep that buff up, it is a 30 second buff.</div>
+            <div>Dragoon&apos;s have a buff, Power Surge, that will increase damage dealt by 10%. This is achieved through the combo <b>True Thrust</b> - <b>Vorpal Thrust</b> - <b>Disembowel</b>. Use this to keep that buff up, it is a 30 second buff.</div>
             <div>The normal combo will be <b>True Thrust</b> - <b>Vorpal Thrust</b> - <b>Full Thrust</b>, which at later levels will combo into <b>Fang and Claw</b>.</div>
             <div>At level 50, Dragoon can use <b>Chaos Thrust</b> after <b>Disembowel</b>, to influct a 40 potent DoT for 24 seconds. This will grant Wheel in Motion, allowing us to finish the combo with <b>Wheeling Thrust.</b></div>
           </div>
@@ -154,7 +154,7 @@ const MeleeDpsCombos = ({ jobName, normalArray, burstArray, dungeonPackArray }) 
           <ul className={classPageStyles.listJobAction}>{listItemsNormal}</ul>
           <div className={classPageStyles.divInfo}>
             <h2>Normal Combo</h2>
-            <div>Reaper's normal combo is <b>Slice</b> - <b>Waxing Slice</b> - <b>Infernal Slice</b>. Lots of slicing. Use <b>Shadow of Death</b> to inflict Death's Design on the enemy, increase damage you do by 10%.</div>
+            <div>Reaper&apos;s normal combo is <b>Slice</b> - <b>Waxing Slice</b> - <b>Infernal Slice</b>. Lots of slicing. Use <b>Shadow of Death</b> to inflict Death&apos;s Design on the enemy, increase damage you do by 10%.</div>
             <div>Use <b>Blood Stalk</b> with <b>Gibbet</b> (flank) or <b>Gallows</b> (rear).</div>
           </div>
         </div>
@@ -201,7 +201,7 @@ const MeleeDpsCombos = ({ jobName, normalArray, burstArray, dungeonPackArray }) 
           <div className={classPageStyles.divInfo}>
             <h2>Dungeon Combos</h2>
             <div>Dragoon have access to <b>Doom Spike</b> at level 40. Prior to that, the pre-Dragoon class, Lancer will have to use single target moves at all times. <b>Doom Spike</b> is followed up with <b>Sonic Thrust</b>, which is an attack that AOEs in a line in front of the user. At level 72, finish the combo with <b>Coerthan Torment</b>.</div>
-            <div>Utilize oGCD's, most of Dragoon's kit are AOEs. <b>Geirskogul</b> is on a 30 second cooldown, and <b>Dragonfire Dive</b> is on a 120 second cooldown.</div>
+            <div>Utilize oGCD&apos;s, most of Dragoon&apos;s kit are AOEs. <b>Geirskogul</b> is on a 30 second cooldown, and <b>Dragonfire Dive</b> is on a 120 second cooldown.</div>
           </div>
         </div>
       )

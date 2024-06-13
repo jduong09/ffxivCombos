@@ -27,7 +27,7 @@ const HeaderComponent = ({ jobAcronym, jobName }) => {
 
   return (
     <header>
-      <h1>Soppo's Guide to FFXIV</h1>
+      <h1>Soppo&apos;s Guide to FFXIV</h1>
       {jobName
       ? <h2>
         <img className='icon' src={`https://xivapi.com/cj/svg/ClassJob/${jobAcronym}.svg`} alt={`Icon for job ${jobName}`} />
@@ -44,7 +44,7 @@ const HeaderComponent = ({ jobAcronym, jobName }) => {
         </button>
         <ul ref={listHeaderRef} className={`${styles.navList} ${size.width < 576 ? 'hide' : ''}`}>
           <li className={styles.navListItem}>
-            <a className={styles.navListLink} href="/jobs">Jobs</a>
+            <a className={styles.navListLink} href="/classes">Classes</a>
           </li>
           <li className={styles.navListItem}>
             <a className={styles.navListLink} href="/housing">Housing</a>

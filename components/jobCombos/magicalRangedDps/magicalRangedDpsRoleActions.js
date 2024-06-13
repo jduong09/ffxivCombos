@@ -1,5 +1,5 @@
-import jobStyles from '@/app/jobs/job.module.css';
-import classPageStyles from '@/app/jobs/classPage.module.css';
+import classStyles from '@/app/classes/classes.module.css';
+import classPageStyles from '@/app/classes/classPage.module.css';
 import { ffxivActions } from '@/app/api';
 
 const MagicalRangedDpsRoleActions = ({ jobName, defensiveActions, roleActions, jobSpecificActions }) => {
@@ -7,13 +7,13 @@ const MagicalRangedDpsRoleActions = ({ jobName, defensiveActions, roleActions, j
     if (actionName === "Second Wind") {
       return (
         <li key={idx}>
-          <img className={jobStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.roleActions['magicalRangedDps']['Second Wind']['icon']['set']}/${ffxivActions.roleActions['magicalRangedDps']['Second Wind']['icon']['id']}.png`} />
+          <img className={classStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.roleActions['magicalRangedDps']['Second Wind']['icon']['set']}/${ffxivActions.roleActions['magicalRangedDps']['Second Wind']['icon']['id']}.png`} />
         </li>
       );
     } else {
       return (
         <li key={idx}>
-          <img className={jobStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.jobActions['magicalRangedDps'][jobName][actionName]['icon']['set']}/${ffxivActions.jobActions['magicalRangedDps'][jobName][actionName]['icon']['id']}.png`} />
+          <img className={classStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.jobActions['magicalRangedDps'][jobName][actionName]['icon']['set']}/${ffxivActions.jobActions['magicalRangedDps'][jobName][actionName]['icon']['id']}.png`} />
         </li>
       )
     }
@@ -22,7 +22,7 @@ const MagicalRangedDpsRoleActions = ({ jobName, defensiveActions, roleActions, j
   const listRoleActions = roleActions.map((actionName, idx) => {
     return (
       <li key={idx}>
-        <img className={jobStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.roleActions['magicalRangedDps'][actionName]['icon']['set']}/${ffxivActions.roleActions['magicalRangedDps'][actionName]['icon']['id']}.png`} />
+        <img className={classStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.roleActions['magicalRangedDps'][actionName]['icon']['set']}/${ffxivActions.roleActions['magicalRangedDps'][actionName]['icon']['id']}.png`} />
       </li>
     );
   });
@@ -30,7 +30,7 @@ const MagicalRangedDpsRoleActions = ({ jobName, defensiveActions, roleActions, j
   const listJobSpecificActions = jobSpecificActions.map((actionName, idx) => {
     return (
       <li key={idx}>
-        <img className={jobStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.jobActions['magicalRangedDps'][jobName][actionName]['icon']['set']}/${ffxivActions.jobActions['magicalRangedDps'][jobName][actionName]['icon']['id']}.png`} />
+        <img className={classStyles.jobIcon} src={`https://xivapi.com/i/${ffxivActions.jobActions['magicalRangedDps'][jobName][actionName]['icon']['set']}/${ffxivActions.jobActions['magicalRangedDps'][jobName][actionName]['icon']['id']}.png`} />
       </li>
     );
   });
@@ -64,7 +64,7 @@ const MagicalRangedDpsRoleActions = ({ jobName, defensiveActions, roleActions, j
   return (
     <div className={classPageStyles.tankDefensiveActions}>
       <h2>Defensive and Role Actions</h2>
-      <div>Peloton should be used off cooldown, don't overlap it with our party members! Head Graze should be used to interrupt a mechanic if tank has not used theirs.</div>
+      <div>Peloton should be used off cooldown, don&apos;t overlap it with our party members! Head Graze should be used to interrupt a mechanic if tank has not used theirs.</div>
       <div className={classPageStyles.tankDefensivePacks}>
         <h4>Defensive Actions</h4>
         <ul className={classPageStyles.listTankDefensive}>{listDefensiveActions}</ul>

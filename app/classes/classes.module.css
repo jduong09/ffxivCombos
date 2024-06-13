@@ -6,6 +6,18 @@
   margin-bottom: 1rem;
 }
 
+.divMain {
+  width: 100%;
+  padding: 2rem;
+}
+
+.book {
+  display: block;
+  width: 100%;
+  height: 100px;
+  position: relative;
+}
+
 .jobIcon {
   order: 1;
   width: 48px;
@@ -20,8 +32,11 @@
 
 .imageClassIcon {
   display: block;
-  width: 75px;
+  position: absolute;
+  width: 45px;
   height: auto;
+  top: 1rem;
+  right: 1rem;
 }
 
 .listJobs {
@@ -34,14 +49,6 @@
 .listJobs h2 {
   font-size: 1.15rem;
   margin-bottom: .75rem;
-}
-
-/* Cover */
-.book {
-  display: block;
-  width: 100%;
-  height: 250px;
-  position: relative;
 }
 
 .cover {
@@ -63,21 +70,20 @@
   left: 1rem;
 }
 
-.cover:hover {
-  opacity: 0;
-  transition: opacity .55s ease-in-out;
+.cover > h3, .cover > span, .content > span {
+  color: #524675;
 }
 
-.cover:hover ~ .content {
-  opacity: 1;
-  transition: opacity .55s ease-in;
-}
-
-.imageClassIcon {
-  display: block;
+.cover > span, .content > span {
   position: absolute;
-  bottom: 1rem;
-  right: 1rem;
+  width: auto;
+  bottom: 0;
+  right: 0;
+  padding: .5rem;
+  border-top-left-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: #ffffff;
 }
 
 .book:nth-child(4n) .cover > img {
@@ -92,27 +98,6 @@
   top: 0;
   left: 0;
   background-color: #e0d6ff;
-}
-
-.content > span {
-  position: absolute;
-  width: auto;
-  bottom: 0;
-  right: 0;
-  padding: 1rem;
-  border-top-left-radius: 8px;
-  font-size: 1rem;
-  font-weight: 700;
-  text-decoration: underline;
-  background-color: #ffffff;
-}
-
-.imageHeadshot {
-  display: block;
-  position: absolute;
-  top: 0;
-  width: auto;
-  height: 80%;
 }
 
 .book:not(:nth-of-type(2n)) .content > .contentImageSoppo, .book:not(:nth-of-type(2n)) .content > .imageHeadshot {
@@ -134,17 +119,13 @@
   left: 1rem;
 }
 
-.book:nth-of-type(2n) .content > span {
+.book:nth-of-type(2n) .content > span, .book:nth-child(2n) .cover > span {
   right: auto;
   left: 0;
   border-top-left-radius: initial;
   border-top-right-radius: 8px;
 }
 
-.divMain {
-  width: 100%;
-  padding: 2rem;
-}
 
 .listFourSquares {
   display: grid;
@@ -160,13 +141,6 @@
   gap: .5rem;
 }
 
-.book {
-  display: block;
-  width: 100%;
-  height: 100px;
-  position: relative;
-}
-
 @media (min-width: 575px) {
   .listFourSquares {
     grid-template-columns: repeat(2, 1fr);
@@ -180,11 +154,15 @@
   .imageHeadshot {
     height: 60%;
   }
+
+  .cover > span {
+    padding: 1rem;
+  }
 }
 
 @media (min-width: 767px) {
   .listFourSquares {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .listSixSquares {
@@ -204,15 +182,52 @@
     height: 65%;
   }
 
-  .imageHeadshot {
-    display: none;
+  .cover > span {
+    padding: .5rem
+  }
+
+  .book:nth-of-type(2n) .cover > h3 {
+    right: initial;
+    left: 1rem;
+  }
+
+  .book:nth-of-type(2n) .cover > img {
+    right: 1rem;
+    left: initial;
+  }
+
+  .book:nth-of-type(2n) .cover > span {
+    right: 0;
+    left: initial;
+    border-top-right-radius: 0;
+    border-top-left-radius: 8px;
   }
 }
 
 @media (min-width: 922px) {
    .listFourSquares {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
    }
+
+   .cover > span {
+    display: none !important;
+   }
+
+   .imageClassIcon {
+    width: 75px;    
+    top: initial;
+    bottom: 1rem;
+  }
+
+   .cover:hover {
+    opacity: 0;
+    transition: opacity .55s ease-in-out;
+  }
+  
+  .cover:hover ~ .content {
+    opacity: 1;
+    transition: opacity .55s ease-in;
+  }
 }
 
 @media (min-width: 1200px) {
