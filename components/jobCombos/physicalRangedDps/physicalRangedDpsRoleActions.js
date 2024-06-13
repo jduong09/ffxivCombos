@@ -1,4 +1,5 @@
 import jobStyles from '@/app/jobs/job.module.css';
+import classPageStyles from '@/app/jobs/classPage.module.css';
 import { ffxivActions } from '@/app/api';
 
 const PhysicalRangedDpsRoleActions = ({ jobName, defensiveActions, roleActions, jobSpecificActions }) => {
@@ -34,7 +35,7 @@ const PhysicalRangedDpsRoleActions = ({ jobName, defensiveActions, roleActions, 
     )
   });
 
-  const renderJobSpecific = () => {
+  const renderJobSpecificDiv = () => {
     if (jobName === 'machinist') {
       return (
         <div>
@@ -60,25 +61,25 @@ const PhysicalRangedDpsRoleActions = ({ jobName, defensiveActions, roleActions, 
   }
 
   return (
-    <div className={jobStyles.tankDefensiveActions}>
+    <div className={classPageStyles.tankDefensiveActions}>
       <h2>Defensive and Role Actions</h2>
       <div>Peloton should be used off cooldown, don't overlap it with our party members! Head Graze should be used to interrupt a mechanic if tank has not used theirs.</div>
-      <div className={jobStyles.tankDefensivePacks}>
+      <div className={classPageStyles.tankDefensivePacks}>
         <h4>Defensive Actions</h4>
-        <ul className={jobStyles.listTankDefensive}>{listDefensiveActions}</ul>
+        <ul className={classPageStyles.listTankDefensive}>{listDefensiveActions}</ul>
         <div>
           Second Wind + Job Mitigation
         </div>
       </div>
-      <div className={jobStyles.tankDefensivePacks}>
+      <div className={classPageStyles.tankDefensivePacks}>
         <h4>Role Actions</h4>
-        <ul className={jobStyles.listTankDefensive}>{listRoleActions}</ul>
+        <ul className={classPageStyles.listTankDefensive}>{listRoleActions}</ul>
         <div>Peloton + Head Graze</div>
       </div>
-      <div>
+      <div className={classPageStyles.dpsSpecificActions}>
         <h4>Job Specific Actions</h4>
-        <ul className={jobStyles.listTankDefensive}>{listJobSpecificActions}</ul>
-        {renderJobSpecific()}
+        <ul className={classPageStyles.listTankDefensive}>{listJobSpecificActions}</ul>
+        {renderJobSpecificDiv()}
       </div>
     </div>
   )

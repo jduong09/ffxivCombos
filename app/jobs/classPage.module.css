@@ -123,7 +123,7 @@
   margin: 0 auto 1rem auto;
 }
 
-.tankDefensivePacks {
+.tankDefensivePacks, .dpsSpecificActions {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -136,7 +136,11 @@
   border-radius: 4px;
 }
 
-.tankDefensivePacks > h4 {
+.dpsSpecificActions {
+  margin-top: 1rem;
+}
+
+.tankDefensivePacks > h4, .dpsSpecificActions > h4 {
   order: 1;
   flex: 1 100%;
   margin-bottom: 1rem;
@@ -144,7 +148,7 @@
   font-weight: 700;
 }
 
-.tankDefensivePacks > div {
+.tankDefensivePacks > div, .dpsSpecificActions > div {
   order: 3;
   flex: 1 100%;
 }
