@@ -1,4 +1,5 @@
 import jobStyles from '@/app/jobs/job.module.css';
+import classPageStyles from '@/app/jobs/classPage.module.css';
 import { ffxivActions } from '@/app/api';
 
 const DefensiveActions = ({ jobName, firstPack, secondPack }) => {
@@ -79,20 +80,20 @@ const DefensiveActions = ({ jobName, firstPack, secondPack }) => {
   }
 
   return (
-    <div className={jobStyles.tankDefensiveActions}>
+    <div className={classPageStyles.tankDefensiveActions}>
       <h2>Defensive Cooldowns</h2>
       <div>In dungeons, combine defensive cooldowns for each pack.</div>
-      <div className={jobStyles.tankDefensivePacks}>
+      <div className={classPageStyles.tankDefensivePacks}>
         <h4>First Pack</h4>
-        <ul className={jobStyles.listTankDefensive}>{listFirstPack}</ul>
+        <ul className={classPageStyles.listTankDefensive}>{listFirstPack}</ul>
         {renderFirstPack()}
       </div>
-      <div className={jobStyles.tankDefensivePacks}>
+      <div className={classPageStyles.tankDefensivePacks}>
         <h4>Second Pack</h4>
-        <ul className={jobStyles.listTankDefensive}>{listSecondPack}</ul>
+        <ul className={classPageStyles.listTankDefensive}>{listSecondPack}</ul>
         {renderSecondPack()}
       </div>
-      <div className={jobStyles.tankDefensiveActions}>
+      <div className={classPageStyles.tankDefensiveActions}>
         <h2>Tankbusters</h2>
         <div>Tankbusters will be used by the enemy in boss fights usually. Many times they are telegraphed with an indicator, sometimes they are not. Each healer has different tools to handle these.</div>
         {renderTankBuster()}
