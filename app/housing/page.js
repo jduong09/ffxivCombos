@@ -5,7 +5,7 @@ export default async function Housing() {
   return (
     <div>
       <header>
-        <h1>Soppo's Guide to FFXIV</h1>
+        <h1>Soppo&apos;s Guide to FFXIV</h1>
         <h2>
           <img className='icon' src='https://xivapi.com/cj/svg/ClassJob/PLD.svg' />
           Housing

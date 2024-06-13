@@ -34,7 +34,7 @@ const DefensiveActions = ({ jobName, firstPack, secondPack }) => {
       )
     } else {
       return (
-        <div>As I understand, Sage&apos;s healing comes mainly from DEALING DAMAGE. <b>Kardia&apos;s</b> ability text states 'restoring HP after casting certain magic attacks&apos;. So using Sage&apos;s damage ability, <b>Dosis</b>, will cure the person with the effect Kardion by a potency of 170. Can start the pull with <b>Eukrasia</b> with <b>Eukrasian Diagnosis</b>. We can also start with <b>Kerachole</b>.</div>
+        <div>As I understand, Sage&apos;s healing comes mainly from DEALING DAMAGE. <b>Kardia&apos;s</b> ability text states that restoring HP after casting certain magic attacks&apos;. So using Sage&apos;s damage ability, <b>Dosis</b>, will cure the person with the effect Kardion by a potency of 170. Can start the pull with <b>Eukrasia</b> with <b>Eukrasian Diagnosis</b>. We can also start with <b>Kerachole</b>.</div>
       )
     }
   }

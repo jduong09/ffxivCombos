@@ -46,7 +46,7 @@ const PhysicalRangedDpsRoleActions = ({ jobName, defensiveActions, roleActions, 
       return (
         <div>
           <span>Bard has a number of party buffs, from the three ballads to a party wide mitigation tool in <b>Troubadour</b>. Troubadour cannot be stacked with other physical ranged&apos;s mitigation, so Tactician and Shield Samba. <b>Nature&apos;s Minne</b> incrases HP recovery so use during raidwides for healers.</span>
-          <span>The three ballads are <b>Army&apos;s Paeon</b>, <b>The Wanderer&apos;s Minuet</b>, and <b>Mage&apos;s Ballad</b>. <b>Mage's Ballad</b> is used outside of burst, <b>The Wanderer&apos;s Minuet</b> during burst, and <b>Army&apos;s Paeon</b> after. <b>Battle Voice</b> increases the parties hit rate and should be used during burst.</span>
+          <span>The three ballads are <b>Army&apos;s Paeon</b>, <b>The Wanderer&apos;s Minuet</b>, and <b>Mage&apos;s Ballad</b>. <b>Mage&apos;s Ballad</b> is used outside of burst, <b>The Wanderer&apos;s Minuet</b> during burst, and <b>Army&apos;s Paeon</b> after. <b>Battle Voice</b> increases the parties hit rate and should be used during burst.</span>
           <span>The final action to talk about is <b>The Warden&apos;s Paean</b>. This will remove a detrimental effect from anyone, useful for removing doom if there is a healer that needs to heal or is dead.</span>
         </div>
       );

@@ -94,7 +94,7 @@ const Combos = ({ jobName, normalArray, burstArray, dungeonPackArray }) => {
           <ul className={classPageStyles.listJobAction}>{listItemsNormal}</ul>
           <div className={classPageStyles.divInfo}>
             <h2>Normal Combo</h2>
-            <div>Bard&apos;s normal combo is a combination of DoT attacks and one attack that can lead to another.<b>Heavy Shot</b> will be your ability to use normally, and there is a 20% chance of it granting Straight Shot Ready, allowing the use of <b>Straight Shot</b>. <b>Bloodletter</b> is an ability that has a maximum charge of 3, and is similar to Machinist's <b>Gauss Round</b>. Use when it is available.</div>
+            <div>Bard&apos;s normal combo is a combination of DoT attacks and one attack that can lead to another.<b>Heavy Shot</b> will be your ability to use normally, and there is a 20% chance of it granting Straight Shot Ready, allowing the use of <b>Straight Shot</b>. <b>Bloodletter</b> is an ability that has a maximum charge of 3, and is similar to Machinist&apos;s <b>Gauss Round</b>. Use when it is available.</div>
             <div>Bard has two DoT attacks, <b>Venomous Bite</b> and <b>Windbite</b>. At higher levels, Bards can use <b>Iron Jaws</b> to reset the cooldown of the DoTs, but beforehand you will have to manually reapply both debuffs.</div>
           </div>
         </div>

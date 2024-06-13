@@ -34,7 +34,7 @@ const TankPageCombos = ({ jobName, normalArray, burstArray, dungeonArray }) => {
         <div className={classPageStyles.divComboWithVideo}>
           <div className={classPageStyles.divInfo}>
             <h2>Gunbreaker: 2 Minute Window</h2>
-            <div>The key to Gunbreaker&apos;s burst combo is having 3 cartridges in the powder gauge. You obtain 1 cartridge for each 1-2-3 combo, and 3 cartridges for using the skill "Bloodfest". The goal is to either have <b>BloodFest</b> ready when <b>No Mercy</b> is coming off cooldown, or to have 3 cartridges in the powder gauge already prepared.</div>
+            <div>The key to Gunbreaker&apos;s burst combo is having 3 cartridges in the powder gauge. You obtain 1 cartridge for each 1-2-3 combo, and 3 cartridges for using the skill &apos;Bloodfest&apos;. The goal is to either have <b>BloodFest</b> ready when <b>No Mercy</b> is coming off cooldown, or to have 3 cartridges in the powder gauge already prepared.</div>
             <div>Once you are prepared to enter the burst, you use <b>No Mercy</b> followed by either <b>Double Down</b> or <b>Gnashing Fang</b> combo. In this burst, we need to use our oGCDs <b>Sonic Break</b> <b>Blasting Zone</b> <b>Bow Shock</b>.</div>
           </div>
           <div className={classPageStyles.videoContainer}>
