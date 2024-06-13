@@ -1,4 +1,3 @@
-import React from 'react';
 import jobStyles from '@/app/jobs/job.module.css';
 import classPageStyles from '@/app/jobs/classPage.module.css'
 import { ffxivActions } from '@/app/api';
