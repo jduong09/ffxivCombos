@@ -27,7 +27,7 @@ const HeaderComponent = ({ jobAcronym, jobName }) => {
 
   return (
     <header>
-      <h1>Soppo's Guide to FFXIV</h1>
+      <h1>Soppo&apos;s Guide to FFXIV</h1>
       {jobName
       ? <h2>
         <img className='icon' src={`https://xivapi.com/cj/svg/ClassJob/${jobAcronym}.svg`} alt={`Icon for job ${jobName}`} />

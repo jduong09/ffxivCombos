@@ -45,16 +45,16 @@ const PhysicalRangedDpsRoleActions = ({ jobName, defensiveActions, roleActions, 
     } else if (jobName === 'bard') {
       return (
         <div>
-          <span>Bard has a number of party buffs, from the three ballads to a party wide mitigation tool in <b>Troubadour</b>. Troubadour cannot be stacked with other physical ranged's mitigation, so Tactician and Shield Samba. <b>Nature's Minne</b> incrases HP recovery so use during raidwides for healers.</span>
-          <span>The three ballads are <b>Army's Paeon</b>, <b>The Wanderer's Minuet</b>, and <b>Mage's Ballad</b>. <b>Mage's Ballad</b> is used outside of burst, <b>The Wanderer's Minuet</b> during burst, and <b>Army's Paeon</b> after. <b>Battle Voice</b> increases the parties hit rate and should be used during burst.</span>
-          <span>The final action to talk about is <b>The Warden's Paean</b>. This will remove a detrimental effect from anyone, useful for removing doom if there is a healer that needs to heal or is dead.</span>
+          <span>Bard has a number of party buffs, from the three ballads to a party wide mitigation tool in <b>Troubadour</b>. Troubadour cannot be stacked with other physical ranged&apos;s mitigation, so Tactician and Shield Samba. <b>Nature&apos;s Minne</b> incrases HP recovery so use during raidwides for healers.</span>
+          <span>The three ballads are <b>Army&apos;s Paeon</b>, <b>The Wanderer&apos;s Minuet</b>, and <b>Mage&apos;s Ballad</b>. <b>Mage's Ballad</b> is used outside of burst, <b>The Wanderer&apos;s Minuet</b> during burst, and <b>Army&apos;s Paeon</b> after. <b>Battle Voice</b> increases the parties hit rate and should be used during burst.</span>
+          <span>The final action to talk about is <b>The Warden&apos;s Paean</b>. This will remove a detrimental effect from anyone, useful for removing doom if there is a healer that needs to heal or is dead.</span>
         </div>
       );
     } else {
       return (
         <div>
           <span>Talked about earlier, Dancer can designate a party member as a dance partner with <b>Closed Position</b>, buffing their damage and granting specific damage buffs with either <b>Standard Step</b> or <b>Technical Step</b>.</span>
-          <span>For raidwides, dancer can use <b>Shield Samba</b>, but remember it does not offer extra mitigation if used when the party has received either Machinist's Tactician or Bards Troubadour.</span>
+          <span>For raidwides, dancer can use <b>Shield Samba</b>, but remember it does not offer extra mitigation if used when the party has received either Machinist&apos;s Tactician or Bards Troubadour.</span>
         </div>
       );
     }
@@ -63,7 +63,7 @@ const PhysicalRangedDpsRoleActions = ({ jobName, defensiveActions, roleActions, 
   return (
     <div className={classPageStyles.tankDefensiveActions}>
       <h2>Defensive and Role Actions</h2>
-      <div>Peloton should be used off cooldown, don't overlap it with our party members! Head Graze should be used to interrupt a mechanic if tank has not used theirs.</div>
+      <div>Peloton should be used off cooldown, don&apos;t overlap it with our party members! Head Graze should be used to interrupt a mechanic if tank has not used theirs.</div>
       <div className={classPageStyles.tankDefensivePacks}>
         <h4>Defensive Actions</h4>
         <ul className={classPageStyles.listTankDefensive}>{listDefensiveActions}</ul>

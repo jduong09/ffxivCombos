@@ -19,7 +19,7 @@ const HealerCombo = ({ jobName, normalArray }) => {
           <h2>DoT + GCD Combo</h2>
           <div className={classPageStyles.divInfo}>
             <ul className={classPageStyles.listJobAction}>{listItemsNormal}</ul>
-            <div>Scholar's damage is very simple. Add the DOT <b>Biolysis</b> and then use Broil. We can use <b>Aetherflow</b> to get 3 stacks to expend on <b>Energy Drain</b> if we don't need mitigation. I like to save one stack of Aetherflow for Sacred Soil.</div>
+            <div>Scholar&apos;s damage is very simple. Add the DOT <b>Biolysis</b> and then use Broil. We can use <b>Aetherflow</b> to get 3 stacks to expend on <b>Energy Drain</b> if we don&apos;t need mitigation. I like to save one stack of Aetherflow for Sacred Soil.</div>
           </div>
         </div>
       )
@@ -39,7 +39,7 @@ const HealerCombo = ({ jobName, normalArray }) => {
           <h2>DoT + GCD Combo</h2>
           <div className={classPageStyles.divInfo}>
             <ul className={classPageStyles.listJobAction}>{listItemsNormal}</ul>
-            <div>Astrologian's DoT is Combust III. The GCD is <b>Malefic II</b>. <b>Minor Arcana</b> will either draw either Lord of Crowns or the Lady of Crowns. For damage purposes, you will want to pull the Lord of Crowns card.</div>
+            <div>Astrologian&apos;s DoT is Combust III. The GCD is <b>Malefic II</b>. <b>Minor Arcana</b> will either draw either Lord of Crowns or the Lady of Crowns. For damage purposes, you will want to pull the Lord of Crowns card.</div>
           </div>
         </div>
       )

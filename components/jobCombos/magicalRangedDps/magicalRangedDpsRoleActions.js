@@ -64,7 +64,7 @@ const MagicalRangedDpsRoleActions = ({ jobName, defensiveActions, roleActions, j
   return (
     <div className={classPageStyles.tankDefensiveActions}>
       <h2>Defensive and Role Actions</h2>
-      <div>Peloton should be used off cooldown, don't overlap it with our party members! Head Graze should be used to interrupt a mechanic if tank has not used theirs.</div>
+      <div>Peloton should be used off cooldown, don&apos;t overlap it with our party members! Head Graze should be used to interrupt a mechanic if tank has not used theirs.</div>
       <div className={classPageStyles.tankDefensivePacks}>
         <h4>Defensive Actions</h4>
         <ul className={classPageStyles.listTankDefensive}>{listDefensiveActions}</ul>
