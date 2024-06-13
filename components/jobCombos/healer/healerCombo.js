@@ -1,6 +1,6 @@
 import React from 'react';
 import classStyles from '@/app/classes/classes.module.css';
-import classPageStyles from '@/app/jobs/classPage.module.css';
+import classPageStyles from '@/app/classes/classPage.module.css';
 import { ffxivActions } from '@/app/api';
 
 const HealerCombo = ({ jobName, normalArray }) => {

@@ -1,5 +1,3 @@
-
-
 .navList {
   position: absolute;
   top: 100%;
@@ -11,6 +9,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 3rem 6rem;
+  color: #524675;
 }
 
 .navListItem {

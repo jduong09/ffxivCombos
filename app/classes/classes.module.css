@@ -70,6 +70,10 @@
   left: 1rem;
 }
 
+.cover > h3, .cover > span, .content > span {
+  color: #524675;
+}
+
 .cover > span, .content > span {
   position: absolute;
   width: auto;
