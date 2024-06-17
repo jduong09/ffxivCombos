@@ -11,7 +11,7 @@ export default async function GunbreakerPage() {
   const secondPack = ["Rampart", "Reprisal", "Aurora", "Heart of Corundum", "Camouflage"];
   return (
     <div>
-      <HeaderComponent jobAcronym='GNB' jobName='gunbreaker' />
+      <HeaderComponent jobAcronym='gnb' jobName='gunbreaker' />
       <main>
         <TankPageCombos jobName='gunbreaker' normalArray={normalArray} burstArray={burstArray} dungeonArray={dungeonArray} />
         <DefensiveCooldowns jobName='gunbreaker' firstPack={firstPack} secondPack={secondPack} />

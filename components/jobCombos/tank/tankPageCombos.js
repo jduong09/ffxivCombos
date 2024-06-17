@@ -38,7 +38,7 @@ const TankPageCombos = ({ jobName, normalArray, burstArray, dungeonArray }) => {
             <div>Once you are prepared to enter the burst, you use <b>No Mercy</b> followed by either <b>Double Down</b> or <b>Gnashing Fang</b> combo. In this burst, we need to use our oGCDs <b>Sonic Break</b> <b>Blasting Zone</b> <b>Bow Shock</b>.</div>
           </div>
           <div className={classPageStyles.videoContainer}>
-            <iframe id="video-pld-burst" src="https://www.youtube.com/embed/i-hsMqDW2-c" title='paladin burst combo' allowFullScreen/>
+            <iframe id="video-gnb-burst" src="https://www.youtube.com/embed/a4ol8v9lw4o?si=PyBhwRsxcQB9mSZF" title='Gunbreaker burst combo' allowFullScreen/>
           </div>
           <ul className={classPageStyles.listJobAction}>{listItemsBurst}</ul>
         </div>
@@ -52,7 +52,7 @@ const TankPageCombos = ({ jobName, normalArray, burstArray, dungeonArray }) => {
             <div>If done correctly, we should fit our whole combo in and finish with 2 of the 3 atonements used in the burst window.</div>
           </div>
           <div className={classPageStyles.videoContainer}>
-            <iframe id="video-pld-burst" src="https://www.youtube.com/embed/i-hsMqDW2-c" title='paladin burst combo' allowFullScreen/>
+            <iframe id="video-pld-burst" src="https://www.youtube.com/embed/AvB_DOtMS_4?si=TwYz0LxMiJM2lIuk" frameBorder={0} title='Paladin burst combo' allowFullScreen/>
           </div>
           <ul className={classPageStyles.listJobAction}>{listItemsBurst}</ul>
         </div>
@@ -66,7 +66,7 @@ const TankPageCombos = ({ jobName, normalArray, burstArray, dungeonArray }) => {
             <div>Once we have Darkside up, we can start our burst window. Burn through our MP with Edge of Darkness Spam, weaving in our oGCDs (Carve and Spit & Bloodspiller). Then we can use Delirium to get 3 non-mp costing bloodspillers.</div>
           </div>
           <div className={classPageStyles.videoContainer}>
-            <iframe id="video-pld-burst" src="https://www.youtube.com/embed/i-hsMqDW2-c" title='paladin burst combo' allowFullScreen/>
+            <iframe id="video-drk-burst" src="https://www.youtube.com/embed/GkLCR61dSAc?si=tKE8DoNzRMFqBoWw" title='Dark Knight burst combo' allowFullScreen/>
           </div>
           <ul className={classPageStyles.listJobAction}>{listItemsBurst}</ul>
         </div>
@@ -80,7 +80,7 @@ const TankPageCombos = ({ jobName, normalArray, burstArray, dungeonArray }) => {
             <div>Using Inner Release, we execute 3 <b>Fell Cleaves</b>, follow that up with a upheaval, and then use Infuriate to increase our beast gauge and execute the upgraded Fell Cleave, <b>Inner Chaos</b>.</div>
           </div>
           <div className={classPageStyles.videoContainer}>
-            <iframe id="video-pld-burst" src="https://www.youtube.com/embed/i-hsMqDW2-c" title='paladin burst combo' allowFullScreen/>
+            <iframe id="video-war-burst" src="https://www.youtube.com/embed/ADRDxNlwfqE?si=eP6RRKhI8Tv1Kcy8" title='Warrior burst combo' allowFullScreen/>
           </div>
           <ul className={classPageStyles.listJobAction}>{listItemsBurst}</ul>
         </div>

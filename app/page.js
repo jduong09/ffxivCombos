@@ -70,7 +70,7 @@ export default function Home() {
           <div>
             <h2>Soppo&apos;s Gallery of Fashion</h2>
             <span>Browse Soppos closet, chalk full of outfits for tanks, healers and damage dealers!</span>
-            <a href='/fashion'>Fashion</a>
+            <a className={landingPage.linkFashion} href='/fashion'>Fashion</a>
           </div>
           <div className={landingPage.slider}>
             <a href='#slide-1'></a>

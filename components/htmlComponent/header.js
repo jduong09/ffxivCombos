@@ -30,8 +30,7 @@ const HeaderComponent = ({ jobAcronym, jobName }) => {
       <h1>Soppo&apos;s Guide to FFXIV</h1>
       {jobName
       ? <h2>
-        <img className='icon' src={`https://xivapi.com/cj/svg/ClassJob/${jobAcronym}.svg`} alt={`Icon for job ${jobName}`} />
-        {`${jobName.charAt(0).toUpperCase() + jobName.slice(1)} Guide`}
+        <img className={styles.headerClassIcon} src={`https://xivapi.com/cj/1/${jobName}.png`} alt={`Icon for job ${jobName}`} />
       </h2>
       : <div></div>}
       <nav className={styles.nav}>

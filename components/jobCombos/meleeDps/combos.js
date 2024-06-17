@@ -36,7 +36,7 @@ const MeleeDpsCombos = ({ jobName, normalArray, burstArray, dungeonPackArray }) 
             <div>Then we use <b>Perfect Balance</b> again, and this type we are looking for a total of 2 different beast chakras. <b>Celestial Revolution</b> will be able to be used, and the lunar nadi will be opened. Finally we can use one more <b>Perfect Balance</b>, use 3 unique beast chakras and finish the burst with <b>Tornado Kick</b>, our highest potency move.</div>
           </div>
           <div className={classPageStyles.videoContainer}>
-            <iframe id="video-pld-burst" src="https://www.youtube.com/embed/i-hsMqDW2-c" title='paladin burst combo' allowFullScreen/>
+            <iframe id="video-mnk-burst" src="https://www.youtube.com/embed/Nbj6q4WweJo?si=VWJBNDIZhgIxO36i" title='Monk burst combo' allowFullScreen/>
           </div>
           <ul className={classPageStyles.listJobAction}>{listItemsBurst}</ul>
         </div>
@@ -50,7 +50,7 @@ const MeleeDpsCombos = ({ jobName, normalArray, burstArray, dungeonPackArray }) 
             <div>Now we have our Huton Buff, and the enemy is weakened, we can use <b>Kassatsu</b> and execute <b>Hyosho Ranryu</b>, and apply our dot with <b>Doton</b>. Any leftover mudra cooldowns in the burst window can be used on <b>Raiton</b> with <b>Fleeting Raiju</b>. Make sure to weave in <b>Bhavacakra</b> and <b>Dream within a Dream</b>.</div>
           </div>
           <div className={classPageStyles.videoContainer}>
-            <iframe id="video-pld-burst" src="https://www.youtube.com/embed/i-hsMqDW2-c" title='paladin burst combo' allowFullScreen/>
+            <iframe id="video-nin-burst" src="https://www.youtube.com/embed/5Ry_goPaGgI?si=coGgFCiXtzXO6q0O" title='Ninja burst combo' allowFullScreen/>
           </div>
           <ul className={classPageStyles.listJobAction}>{listItemsBurst}</ul>
         </div>
@@ -65,7 +65,7 @@ const MeleeDpsCombos = ({ jobName, normalArray, burstArray, dungeonPackArray }) 
             <div>Then use <b>Ikishoten</b> to increase Kenki Gauge by 50 for more <b>Hissatsu: Senei</b>, but to allow uss to use <b>Ogi Namikiri</b> followed up by <b>Kaeshi: Namikiri</b>. This should give sus 3 stacks up meditation, allowing us to finish the burst phase with <b>Shoha</b>.</div>
           </div>
           <div className={classPageStyles.videoContainer}>
-            <iframe id="video-pld-burst" src="https://www.youtube.com/embed/i-hsMqDW2-c" title='paladin burst combo' allowFullScreen/>
+            <iframe id="video-sam-burst" src="https://www.youtube.com/embed/f6h-ytPJrl0?si=l27utMmyRN9j4sm9" title='Samurai burst combo' allowFullScreen/>
           </div>
           <ul className={classPageStyles.listJobAction}>{listItemsBurst}</ul>
         </div>
@@ -79,7 +79,7 @@ const MeleeDpsCombos = ({ jobName, normalArray, burstArray, dungeonPackArray }) 
             <div>Weave in <b>High Jump</b>, followed up with <b>Mirage Dive</b> and <b>Spineshatter Dive.</b></div>
           </div>
           <div className={classPageStyles.videoContainer}>
-            <iframe id="video-pld-burst" src="https://www.youtube.com/embed/i-hsMqDW2-c" title='paladin burst combo' allowFullScreen/>
+            <iframe id="video-drg-burst" src="https://www.youtube.com/embed/cTuQLU6TXh4?si=_yUEkGxRcPz3REGm" title='Dragoon burst combo' allowFullScreen/>
           </div>
           <ul className={classPageStyles.listJobAction}>{listItemsBurst}</ul>
         </div>   
@@ -92,7 +92,7 @@ const MeleeDpsCombos = ({ jobName, normalArray, burstArray, dungeonPackArray }) 
             <div>In burst phase, Reaper will utilize <b>Arcane Circle</b> as a raidwide buff. Use <b>Enshroud</b> when your shroud gauge is 50, allowing us to use enhanced moves. <b>Gluttony</b> grants 2 stacks of soul reaver, allowing us to use <b>Void Reaping</b> followed up by <b>Cross Reaping</b>.</div>
           </div>
           <div className={classPageStyles.videoContainer}>
-            <iframe id="video-pld-burst" src="https://www.youtube.com/embed/i-hsMqDW2-c" title='paladin burst combo' allowFullScreen/>
+            <iframe id="video-rpr-burst" src="https://www.youtube.com/embed/E5-VtdcHJFg?si=mmJq_-zdG8MYn9LY" title='Reaper burst combo' allowFullScreen/>
           </div>
           <ul className={classPageStyles.listJobAction}>{listItemsBurst}</ul>
         </div> 

@@ -76,7 +76,7 @@ export default function Classes() {
               </a>
             </li>
             <li className={classStyles.book}>
-              <a href="/jobs/whm">
+              <a href="/classes/whm">
                 <div className={classStyles.cover}>
                   <h3>White Mage</h3>
                   <img className={classStyles.imageClassIcon} src='https://xivapi.com/cj/1/whitemage.png' alt='class icon for paladin' />
