@@ -40,7 +40,7 @@ const Combos = ({ jobName, normalArray, burstArray, dungeonPackArray }) => {
             <div>In burst phase we also want to activate our <b>Automaton Queen</b> when we have 100 battery.</div>
           </div>
           <div className={classPageStyles.videoContainer}>
-            <iframe id="video-pld-burst" src="https://www.youtube.com/embed/i-hsMqDW2-c" title='paladin burst combo' allowFullScreen/>
+            <iframe id="video-mch-burst" src="https://www.youtube.com/embed/oqsc8RRI3Wg?si=f12FLCZKpr9OB55y" title='Machinist burst combo' allowFullScreen/>
           </div>
           <ul className={classPageStyles.listJobAction}>{listItemsBurst}</ul>
         </div>
@@ -54,7 +54,7 @@ const Combos = ({ jobName, normalArray, burstArray, dungeonPackArray }) => {
             <div>While we are in this burst, Bard has access to their oGCDs, <b>Sidewinder</b> and <b>Empyreal Arrow</b> and <b>Blast Arrow</b>. Use 50 soul voice gauge in order to use <b>Apex Arrow</b>, and follow up with <b>Blast Arrow</b>.</div>
           </div>
           <div className={classPageStyles.videoContainer}>
-            <iframe id="video-pld-burst" src="https://www.youtube.com/embed/i-hsMqDW2-c" title='paladin burst combo' allowFullScreen/>
+            <iframe id="video-brd-burst" src="https://www.youtube.com/embed/eYUOzp5hfUM?si=wd_qrrHR29OjgqPH" title='Bard burst combo' allowFullScreen/>
           </div>
           <ul className={classPageStyles.listJobAction}>{listItemsBurst}</ul>
         </div>
@@ -68,7 +68,7 @@ const Combos = ({ jobName, normalArray, burstArray, dungeonPackArray }) => {
             <div>Finishing this dance allows the use of <b>Tillana</b>. From here we can use <b>Fan Dance IV</b>, <b>Reverse Cascade</b>, <b>Fan Dance III</b>, or <b>Fountainfall</b>.</div>
           </div>
           <div className={classPageStyles.videoContainer}>
-            <iframe id="video-pld-burst" src="https://www.youtube.com/embed/i-hsMqDW2-c" title='paladin burst combo' allowFullScreen/>
+            <iframe id="video-dnc-burst" src="https://www.youtube.com/embed/mimsv3Th3WI?si=H0uenPl3ZlJVl7Mr" title='Dancer burst combo' allowFullScreen/>
           </div>
           <ul className={classPageStyles.listJobAction}>{listItemsBurst}</ul>
         </div>

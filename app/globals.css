@@ -4,8 +4,9 @@ body {
   background-color: #FFFFFF;
 }
 
-h1, h2 {
+h1, h2, h3, h4 {
   font-weight: 700;
+  color: #4C3B80;
 }
 
 header {
@@ -19,6 +20,7 @@ header {
 }
 
 header h1 {
+  width: 50%;
   font-size: 1.75rem;
 }
 
@@ -28,4 +30,16 @@ footer {
 
 .hide {
   display: none !important;
+}
+
+@media (min-width: 767px) {
+  header h1 {
+    width: 25%;
+  }
+}
+
+@media (min-width: 922px) {
+  header h1 {
+    width: 20%;
+  }
 }

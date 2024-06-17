@@ -38,7 +38,7 @@ const Combos = ({ jobName, normalArray, burstArray, dungeonPackArray }) => {
             <div>While doing this burst, weave in the two oGCD&apos;s, <b>Fleche</b> and <b>Contre Sixte</b>.</div>
           </div>
           <div className={classPageStyles.videoContainer}>
-            <iframe id="video-pld-burst" src="https://www.youtube.com/embed/i-hsMqDW2-c" title='paladin burst combo' allowFullScreen/>
+            <iframe id="video-rdm-burst" src="https://www.youtube.com/embed/KiWVpyD0zHw?si=DSJCTlASb3b2JFt4" title='Red Mage burst combo' allowFullScreen/>
           </div>
           <ul className={classPageStyles.listJobAction}>{listItemsBurst}</ul>
         </div>
@@ -68,7 +68,7 @@ const Combos = ({ jobName, normalArray, burstArray, dungeonPackArray }) => {
             <div>Reapply the DoT, use polyglot in astral fire phase, and when almost out of mana, use <b>Despair</b> to expend all mana. Follow this up with <b>Blizzard III</b> and repeat the loop from the start.</div>
           </div>
           <div className={classPageStyles.videoContainer}>
-            <iframe id="video-pld-burst" src="https://www.youtube.com/embed/i-hsMqDW2-c" title='paladin burst combo' allowFullScreen/>
+            <iframe id="video-blm-burst" src="https://www.youtube.com/embed/fj_mUKOdcaE?si=3uKjI8ktbOfEMtOn" title='Black Mage Burst Combo' allowFullScreen/>
           </div>
           <ul className={classPageStyles.listJobAction}>{listItemsBurst}</ul>
         </div>

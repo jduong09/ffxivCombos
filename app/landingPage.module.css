@@ -95,9 +95,16 @@
   margin: 0 auto;
 }
 
-.divStruggles a, .divHousing a {
-  border: 2px solid black;
+.divStruggles a, .divHousing a, .linkFashion {
   padding: .5rem 1rem;
+  color: #4C3B80;
+  border: 2px solid #4C3B80;
+  background-color: transparent;
+}
+
+.divStruggles a:hover, .divHousing a:hover, .linkFashion:hover {
+  background-color: #4C3B80;
+  color: #FFFFFF;
 }
 
 .divHousing {
