@@ -25,7 +25,10 @@ header h1 {
 }
 
 footer {
-  padding: 1.5rem 3rem;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  background: #e0d6ff;
+  color: #4C3B80;
 }
 
 .hide {

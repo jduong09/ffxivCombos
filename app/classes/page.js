@@ -19,7 +19,7 @@ export default function Classes() {
                 </div>
                 <div className={classStyles.content}>
                   <span>Check out Guide</span>
-                  <Image className={classStyles.contentImageSoppo} src={'/poses_generic/gnb_generic_05_08_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
+                  <Image className={classStyles.contentImageSoppo} src={'/poses_generic/gunbreaker_06_19_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
                 </div>
               </a>
             </li>
@@ -32,7 +32,7 @@ export default function Classes() {
                 </div>
                 <div className={classStyles.content}>
                   <span>Check out Guide</span>
-                  <Image className={classStyles.contentImageSoppo} src={'/poses_generic/pld_generic_05_08_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
+                  <Image className={classStyles.contentImageSoppo} src={'/poses_generic/paladin_06_19_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
                 </div>
               </a>
             </li>
@@ -45,7 +45,7 @@ export default function Classes() {
                 </div>
                 <div className={classStyles.content}>
                   <span>Check out Guide</span>
-                  <Image className={classStyles.contentImageSoppo} src={'/poses_generic/war_generic_05_08_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
+                  <Image className={classStyles.contentImageSoppo} src={'/poses_generic/warrior_06_19_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
                 </div>
               </a>
             </li>
@@ -58,7 +58,7 @@ export default function Classes() {
                 </div>
                 <div className={classStyles.content}>
                   <span>Check out Guide</span>
-                  <Image className={classStyles.contentImageSoppo} src={'/poses_generic/drk_generic_05_08_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
+                  <Image className={classStyles.contentImageSoppo} src={'/poses_generic/dark_knight_06_19_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
                 </div>
               </a>
             </li>
@@ -71,7 +71,7 @@ export default function Classes() {
                 </div>
                 <div className={classStyles.content}>
                   <span>Check out Guide</span>
-                  <Image className={classStyles.contentImageSoppo} src={'/poses_generic/sch_generic_05_08_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
+                  <Image className={classStyles.contentImageSoppo} src={'/poses_generic/scholar_06_19_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
                 </div>
               </a>
             </li>
@@ -84,7 +84,7 @@ export default function Classes() {
                 </div>
                 <div className={classStyles.content}>
                   <span>Check out Guide</span>
-                  <Image className={classStyles.contentImageSoppo} src={'/poses_generic/whm_generic_05_08_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
+                  <Image className={classStyles.contentImageSoppo} src={'/poses_generic/white_mage_06_19_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
                 </div>
               </a>
             </li>
@@ -97,7 +97,7 @@ export default function Classes() {
                 </div>
                 <div className={classStyles.content}>
                   <span>Check out Guide</span>
-                  <Image className={classStyles.contentImageSoppo} src={'/poses_generic/ast_generic_05_08_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
+                  <Image className={classStyles.contentImageSoppo} src={'/poses_generic/astrologian_06_19_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
                 </div>
               </a>
             </li>
@@ -110,7 +110,7 @@ export default function Classes() {
                 </div>
                 <div className={classStyles.content}>
                   <span>Check out Guide</span>
-                  <Image className={classStyles.contentImageSoppo} src={'/poses_generic/sch_generic_05_08_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
+                  <Image className={classStyles.contentImageSoppo} src={'/poses_generic/sage_06_19_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
                 </div>
               </a>
             </li>
@@ -123,7 +123,7 @@ export default function Classes() {
                 </div>
                 <div className={classStyles.content}>
                   <span>Check out Guide</span>
-                  <Image className={classStyles.contentImageSoppo} src={'/poses_generic/mnk_generic_05_08_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
+                  <Image className={classStyles.contentImageSoppo} src={'/poses_generic/monk_06_19_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
                 </div>
               </a>
             </li>
@@ -136,8 +136,7 @@ export default function Classes() {
                 </div>
                 <div className={classStyles.content}>
                   <span>Check out Guide</span>
-                  <Image className={classStyles.imageHeadshot} src={'/headshots_mobile/nin_headshot_05_08_24.png'} width='0' height='0' sizes="100vw" alt="image of gunbreaker Soppo's head" />
-                  <Image className={classStyles.contentImageSoppo} src={'/poses_generic/nin_generic_05_08_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
+                  <Image className={classStyles.contentImageSoppo} src={'/poses_generic/ninja_06_19_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
                 </div>
               </a>
             </li>
@@ -149,7 +148,7 @@ export default function Classes() {
                 </div>
                 <div className={classStyles.content}>
                   <span>Check out Guide</span>
-                  <Image className={classStyles.contentImageSoppo} src={'/poses_generic/sam_generic_05_08_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
+                  <Image className={classStyles.contentImageSoppo} src={'/poses_generic/samurai_06_19_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
                 </div>
               </a>
             </li>
@@ -162,7 +161,7 @@ export default function Classes() {
                 </div>
                 <div className={classStyles.content}>
                   <span>Check out Guide</span>
-                  <Image className={classStyles.contentImageSoppo} src={'/poses_generic/drg_generic_05_08_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
+                  <Image className={classStyles.contentImageSoppo} src={'/poses_generic/dragoon_06_19_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
                 </div>
               </a>
             </li>
@@ -175,7 +174,7 @@ export default function Classes() {
                 </div>
                 <div className={classStyles.content}>
                   <span>Check out Guide</span>
-                  <Image className={classStyles.contentImageSoppo} src={'/poses_generic/rpr_generic_05_08_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
+                  <Image className={classStyles.contentImageSoppo} src={'/poses_generic/reaper_06_19_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
                 </div>
               </a>
             </li>
@@ -188,7 +187,7 @@ export default function Classes() {
                 </div>
                 <div className={classStyles.content}>
                   <span>Check out Guide</span>
-                  <Image className={classStyles.contentImageSoppo} src={'/poses_generic/blm_generic_05_08_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
+                  <Image className={classStyles.contentImageSoppo} src={'/poses_generic/black_mage_06_19_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
                 </div>
               </a>
             </li>
@@ -201,7 +200,7 @@ export default function Classes() {
                 </div>
                 <div className={classStyles.content}>
                   <span>Check out Guide</span>
-                  <Image className={classStyles.contentImageSoppo} src={'/poses_generic/rdm_generic_05_08_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
+                  <Image className={classStyles.contentImageSoppo} src={'/poses_generic/red_mage_06_19_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
                 </div>
               </a>
             </li>
@@ -214,7 +213,7 @@ export default function Classes() {
                 </div>
                 <div className={classStyles.content}>
                   <span>Check out Guide</span>
-                  <Image className={classStyles.contentImageSoppo} src={'/poses_generic/smn_generic_05_08_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
+                  <Image className={classStyles.contentImageSoppo} src={'/poses_generic/summoner_06_19_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
                 </div>
               </a>
             </li>
@@ -227,7 +226,7 @@ export default function Classes() {
                 </div>
                 <div className={classStyles.content}>
                   <span>Check out Guide</span>
-                  <Image className={classStyles.contentImageSoppo} src={'/poses_generic/mch_generic_05_08_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
+                  <Image className={classStyles.contentImageSoppo} src={'/poses_generic/machinist_06_19_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
                 </div>
               </a>
             </li>
@@ -240,7 +239,7 @@ export default function Classes() {
                 </div>
                 <div className={classStyles.content}>
                   <span>Check out Guide</span>
-                  <Image className={classStyles.contentImageSoppo} src={'/poses_generic/dnc_generic_05_08_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
+                  <Image className={classStyles.contentImageSoppo} src={'/poses_generic/dancer_06_19_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
                 </div>
               </a>
             </li>
@@ -253,7 +252,7 @@ export default function Classes() {
                 </div>
                 <div className={classStyles.content}>
                   <span>Check out Guide</span>
-                  <Image className={classStyles.contentImageSoppo} src={'/poses_generic/brd_generic_05_08_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
+                  <Image className={classStyles.contentImageSoppo} src={'/poses_generic/bard_06_19_24.png'} width='0' height='0' sizes="100vw" alt='image of gunbreaker soppo' />
                 </div>
               </a>
             </li>
