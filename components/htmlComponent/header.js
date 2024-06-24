@@ -25,13 +25,15 @@ const HeaderComponent = ({ jobAcronym, jobName }) => {
     btnNavOpen.current.classList.remove('hide');
   };
 
+  const classIcon = jobAcronym === 'RPR' || jobAcronym === 'SGE'
+    ? <Image className={styles.headerClassIcon} src={`/classIcons/${jobName}.png`} alt={`Icon for job ${jobName}`} width='0' height='0' sizes='100vw' />
+    : <img className={styles.headerClassIcon} src={`https://xivapi.com/cj/1/${jobName}.png`} alt={`Icon for job ${jobName}`} />
+
   return (
     <header>
       <h1>Soppo&apos;s Guide to FFXIV</h1>
       {jobName
-      ? <h2>
-        <img className={styles.headerClassIcon} src={`https://xivapi.com/cj/1/${jobName}.png`} alt={`Icon for job ${jobName}`} />
-      </h2>
+      ? <h2>{classIcon}</h2>
       : <div></div>}
       <nav className={styles.nav}>
         <Image className={styles.emoteRevealLeft} src={'/emotes/soppo_reveal_left.png'} width="288" height="423" alt='emote reveal left' />

@@ -13,7 +13,7 @@ export default async function RedMagePage() {
   return (
     <div>
       
-      <HeaderComponent jobAcronym='RDM' jobName='red mage' />
+      <HeaderComponent jobAcronym='RDM' jobName='redmage' />
       <main>
         <Combos jobName='red mage' normalArray={normalArray} burstArray={burstArray} dungeonPackArray={dungeonPackArray} />
         <MagicalRangedDpsRoleActions jobName='red mage' defensiveActions={defensiveActions} roleActions={roleActions} jobSpecificActions={jobSpecificActions} />

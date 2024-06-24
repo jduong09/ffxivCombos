@@ -9,7 +9,7 @@ export default async function WhiteMagePage() {
   const secondPack = ["Asylum", "Regen", "Divine Benison", "Afflatus Solace", "Liturgy of the Bell"];
   return (
     <div>
-      <HeaderComponent jobAcronym='WHM' jobName='white mage' />
+      <HeaderComponent jobAcronym='WHM' jobName='whitemage' />
       <main>
         <HealerCombo jobName='white mage' normalArray={normalArray} />
         <DefensiveActions jobName='white mage' firstPack={firstPack} secondPack={secondPack} />
