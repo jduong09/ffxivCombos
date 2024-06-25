@@ -31,6 +31,10 @@ footer {
   color: #4C3B80;
 }
 
+.active {
+  background-color: black !important;
+}
+
 .hide {
   display: none !important;
 }

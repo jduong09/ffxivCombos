@@ -181,9 +181,7 @@
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
-  border: 2px solid black;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
+  margin-bottom: 1rem;
 }
 
 .slides::-webkit-scrollbar {
@@ -192,7 +190,7 @@
 }
 
 .slides::-webkit-scrollbar-thumb {
-  background: #FFFFFF;
+  background: #4C3B80;
   border-radius: 8px;
 }
 
@@ -206,7 +204,6 @@
   width: 300px;
   height: 300px;
   margin-right: 50px;
-  border-radius: 10px;
   background: #eee;
   transform-origin: center center;
   transform: scale(1);
@@ -219,9 +216,9 @@
 
 .slider > a {
   display: inline-flex;
-  width: 1.5rem;
-  height: 1.5rem;
-  background: white;
+  width: 24px;
+  height: 24px;
+  border: 1px solid black;
   text-decoration: none;
   align-items: center;
   justify-content: center;
@@ -231,9 +228,8 @@
 }
 .slider > a:active {
   top: 1px;
-}
-.slider > a:focus {
-  background: #000;
+  color: #4C3B80;
+  border-color: #4C3B80;
 }
 
 .divFashion > div > span {
@@ -248,7 +244,6 @@
   border: 2px solid black;
   margin: 0 auto;
 }
-
 
 @media (min-width: 575px) {
   .divHero > div {

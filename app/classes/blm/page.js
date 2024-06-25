@@ -12,7 +12,7 @@ export default async function BlackMagePage() {
   const jobSpecificActions = ["Ley Lines", "Aetherial Manipulation", "Between the Lines"];
   return (
     <div>
-      <HeaderComponent jobAcronym='BLM' jobName='black mage' />
+      <HeaderComponent jobAcronym='BLM' jobName='blackmage' />
       <main>
         <Combos jobName='black mage' normalArray={normalArray} burstArray={burstArray} dungeonPackArray={dungeonPackArray} />
         <MagicalRangedDpsRoleActions jobName='black mage' defensiveActions={defensiveActions} roleActions={roleActions} jobSpecificActions={jobSpecificActions} />

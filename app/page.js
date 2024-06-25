@@ -1,11 +1,29 @@
 "use client";
-
+import { useRef } from "react";
 import styles from "./page.module.css";
 import Image from "next/image";
 import landingPage from "@/app/landingPage.module.css";
 import HeaderComponent from "@/components/htmlComponent/header";
 
 export default function Home() {
+  const slides = useRef(null);
+  const handleLeftSliderClick = (e) => {
+    e.preventDefault();
+    if (slides.current.scrollLeft <= 300) {
+      slides.current.scrollLeft = 1400;
+    } else {
+      slides.current.scrollLeft -= 300; 
+    }
+  }
+  const handleRightSliderClick = (e) => {
+    e.preventDefault();
+    if (slides.current.scrollLeft >= 1400) {
+      slides.current.scrollLeft = 0;
+    } else {
+      slides.current.scrollLeft += 300;
+    }
+  }
+  
   return (
     <div>
       <HeaderComponent />
@@ -13,7 +31,7 @@ export default function Home() {
         <div className={landingPage.divHero}>
           <div>
             <h1>From Sprout to Blossomed Player</h1>
-            <div>Soppo&apos;s Guide is filled with dps combos, dungeons pack rotation advice, role action use and job glam.</div>
+            <div className={styles.info}>Soppo&apos;s Guide is filled with dps combos, dungeons pack rotation advice, role action use and job glam.</div>
           </div>
           <div className={landingPage.heroImageContainer}>
             <Image className={landingPage.heroGIF} src={'/black_mage_burst.gif'} width='276' height='156' alt='gif of soppo black mage burst combo' unoptimized={true}/>
@@ -43,19 +61,19 @@ export default function Home() {
           <div>
             <div>
               <h2>Helpful for any type of player!</h2>
-              <span>With this guide, new players can learn a combo for when the fight begins, 2-minute bursts, or what AOE attacks to use between dungeons.</span>
-              <span>Returning players can brush up on combos as well, reminding themselves of tank mitigations to use in dungeon packs, and healer skills to combine.</span>
+              <span className={styles.info}>With this guide, new players can learn a combo for when the fight begins, 2-minute bursts, or what AOE attacks to use between dungeons.</span>
+              <span className={styles.info}>Returning players can brush up on combos as well, reminding themselves of tank mitigations to use in dungeon packs, and healer skills to combine.</span>
             </div>
             <div>
-              <a href='/jobs'>Check out jobs</a>
+              <a href='/classes'>Check out Classes</a>
             </div>
           </div>
         </div>
         <div className={landingPage.divHousing}>
           <div>
             <h2>Browse Soppo&apos;s housing progress over time!</h2>
-            <span>With Dawntrail on the horizon, Soppo will provide outfits to their little housing journey. Try out the little minigame, find the sleeping Soppo in the images!</span>
-            <a href='/housing'>Housing</a>
+            <span className={styles.info}>With Dawntrail on the horizon, Soppo will provide outfits to their little housing journey. Try out the little minigame, find the sleeping Soppo in the images!</span>
+            <a href='/housing'>Browse Housing Blogs</a>
           </div>
           <ul className={landingPage.listHousingImages}>
             <li>
@@ -69,16 +87,11 @@ export default function Home() {
         <div className={landingPage.divFashion}>
           <div>
             <h2>Soppo&apos;s Gallery of Fashion</h2>
-            <span>Browse Soppos closet, chalk full of outfits for tanks, healers and damage dealers!</span>
-            <a className={landingPage.linkFashion} href='/fashion'>Fashion</a>
+            <span className={styles.info}>Browse Soppos closet, chalk full of outfits for tanks, healers and damage dealers!</span>
+            <a className={landingPage.linkFashion} href='/fashion'>Check out Fashion</a>
           </div>
           <div className={landingPage.slider}>
-            <a href='#slide-1'></a>
-            <a href='#slide-2'></a>
-            <a href='#slide-3'></a>
-            <a href='#slide-4'></a>
-            <a href='#slide-5'></a>
-            <ul className={landingPage.slides}>
+            <ul className={landingPage.slides} ref={slides}>
               <li id='slide-1'>
                 <Image className={landingPage.imageFashion} src={'/fashion/soppo_astrologian_4_29_24.png'} width='0' height='0' sizes="100vw" alt='image of astrologian soppo' />
               </li>
@@ -95,6 +108,8 @@ export default function Home() {
                 <Image className={landingPage.imageFashion} src={'/fashion/soppo_machinist_4_29_24.png'} width='0' height='0' sizes="100vw" alt='image of machinist soppo' />
               </li>
             </ul>
+            <a onClick={handleLeftSliderClick}>&lt;</a>
+            <a onClick={handleRightSliderClick}>&gt;</a>
           </div>
         </div>
       </main>

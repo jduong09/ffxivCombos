@@ -52,6 +52,10 @@
   background-color: #ffffff;
 }
 
+.info {
+  line-height: 1.25rem;
+}
+
 @media (min-width: 767px) {
   .nav {
     position: relative;

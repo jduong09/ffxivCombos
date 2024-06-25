@@ -90,7 +90,7 @@
 }
 
 .listJobAction > li::after {
-  content: '->';
+  content: '>';
   width: 16px;
   height: auto;
   position: absolute;
@@ -165,15 +165,6 @@
 .listTankDefensive > li:last-of-type {
   margin-right: 0;
 }
-
-
-
-
-
-
-
-
-
 
 @media (min-width: 575px) {
 
