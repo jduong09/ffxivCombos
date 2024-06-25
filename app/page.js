@@ -1,11 +1,29 @@
 "use client";
-
+import { useRef } from "react";
 import styles from "./page.module.css";
 import Image from "next/image";
 import landingPage from "@/app/landingPage.module.css";
 import HeaderComponent from "@/components/htmlComponent/header";
 
 export default function Home() {
+  const slides = useRef(null);
+  const handleLeftSliderClick = (e) => {
+    e.preventDefault();
+    if (slides.current.scrollLeft <= 300) {
+      slides.current.scrollLeft = 1400;
+    } else {
+      slides.current.scrollLeft -= 300; 
+    }
+  }
+  const handleRightSliderClick = (e) => {
+    e.preventDefault();
+    if (slides.current.scrollLeft >= 1400) {
+      slides.current.scrollLeft = 0;
+    } else {
+      slides.current.scrollLeft += 300;
+    }
+  }
+  
   return (
     <div>
       <HeaderComponent />
@@ -73,12 +91,7 @@ export default function Home() {
             <a className={landingPage.linkFashion} href='/fashion'>Check out Fashion</a>
           </div>
           <div className={landingPage.slider}>
-            <a href='#slide-1'></a>
-            <a href='#slide-2'></a>
-            <a href='#slide-3'></a>
-            <a href='#slide-4'></a>
-            <a href='#slide-5'></a>
-            <ul className={landingPage.slides}>
+            <ul className={landingPage.slides} ref={slides}>
               <li id='slide-1'>
                 <Image className={landingPage.imageFashion} src={'/fashion/soppo_astrologian_4_29_24.png'} width='0' height='0' sizes="100vw" alt='image of astrologian soppo' />
               </li>
@@ -95,6 +108,8 @@ export default function Home() {
                 <Image className={landingPage.imageFashion} src={'/fashion/soppo_machinist_4_29_24.png'} width='0' height='0' sizes="100vw" alt='image of machinist soppo' />
               </li>
             </ul>
+            <a onClick={handleLeftSliderClick}>&lt;</a>
+            <a onClick={handleRightSliderClick}>&gt;</a>
           </div>
         </div>
       </main>
