@@ -119,9 +119,16 @@
   text-align: center;
 }
 
-.divHousing > div > span {
+.divHousing > div > span, .divFashion > div > span {
   display: block;
+}
+
+.divHousing > div > span:first-of-type, .divFashion > div > span:first-of-type {
   margin-bottom: 1rem;
+}
+
+.divHousing > div > span:last-of-type {
+  margin: 0 0 0 auto;
 }
 
 .divHousing a {
@@ -232,17 +239,20 @@
   border-color: #4C3B80;
 }
 
-.divFashion > div > span {
-  display: block;
-  margin-bottom: .5rem;
-}
-
 .divFashion > div:first-of-type > a {
   display: block;
   width: fit-content;
   padding: .5rem 1.5rem;
   border: 2px solid black;
   margin: 0 auto;
+}
+
+
+.spanUpdate {
+  width: fit-content;
+  border: 2px solid #4C3B80;
+  color: #4C3B80;
+  padding: .5rem 1.5rem;
 }
 
 @media (min-width: 575px) {
@@ -291,7 +301,7 @@
     margin-bottom: 1rem;
   }
 
-  .divFashion > div > span {
+  .divFashion > div > span:first-of-type {
     width: 75%;
   }
   

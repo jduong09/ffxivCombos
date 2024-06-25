@@ -47,12 +47,14 @@ const HeaderComponent = ({ jobAcronym, jobName }) => {
           <li className={styles.navListItem}>
             <a className={styles.navListLink} href="/classes">Classes</a>
           </li>
+          {/*
           <li className={styles.navListItem}>
             <a className={styles.navListLink} href="/housing">Housing</a>
           </li>
           <li className={styles.navListItem}>
             <a className={styles.navListLink} href="/fashion">Fashion</a>
-          </li>
+          </li> 
+          */}
         </ul>
         <Image className={styles.emoteRevealRight} src={'/emotes/soppo_reveal_right.png'} width="299" height="422" alt='emote reveal right' />
       </nav>
